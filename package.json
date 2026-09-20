@@ -1,0 +1,12 @@
+{
+  "name": "clothoffai-fun",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && node scripts/serve.mjs",
+    "build": "node scripts/build-static.mjs && node scripts/prepare-sites-build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "test:sites": "node --test tests/sites-worker.test.mjs"
+  }
+}
