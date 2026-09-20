@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+import Icon from "../../components/Icon.astro";
+import PostCard from "../../components/PostCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { site } from "../../data/site";
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "ClothOff AI safety, privacy and comparison guides",
+  url: `${site.url}/blog/`,
+  description: "Original guides for evaluating ClothOff AI-style services and choosing consent-first fashion workflows.",
+  hasPart: posts.map((post) => ({ "@type": "Article", headline: post.data.title, url: `${site.url}/blog/${post.id}/`, datePublished: post.data.publishDate.toISOString() })),
+};
+---
+
+<BaseLayout title="ClothOff AI Blog: Safety, Privacy & Comparisons" description="ClothOff AI guides and comparisons covering privacy, consent, virtual try-on, and safer AI outfit-changing alternatives." keywords={["ClothOff AI blog", "ClothOff AI safety", "AI virtual try-on comparisons", "AI outfit changer"]} jsonLd={jsonLd}>
+  <section class="page-hero"><div class="page-orb"></div><div class="section-kicker">ClothOff AI research library</div><h1>Safety, privacy &<br /><span>better alternatives.</span></h1><p>Original, practical guides for evaluating ClothOff AI-style services and choosing consent-first fashion workflows.</p></section>
+  <section class="blog-list section"><div class="post-grid">{posts.map((post, index) => <PostCard post={post} index={index} />)}</div></section>
+  <section class="newsletter-note section"><div><Icon name="lock" /></div><div><h2>No uploads. No account. No sensitive data.</h2><p>This blog is a static educational resource. Reading it does not send us your photos, prompts, or personal profile.</p></div></section>
+</BaseLayout>

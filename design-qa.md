@@ -65,3 +65,15 @@ The combined comparison in `qa/comparison-desktop.jpg` shows that the implementa
 - [x] Static build and packaging tests passed.
 
 final result: passed
+
+## Astro migration regression — 2026-09-20
+
+- Desktop homepage visually verified at a 1440px-equivalent layout.
+- Mobile homepage and article verified at 390 × 844.
+- Mobile menu opens and updates `aria-expanded`.
+- Final article viewport is 390px wide with no horizontal document overflow; comparison tables scroll within the article.
+- Hero responsive image loaded successfully with descriptive alt text.
+- Static SEO audit passed for all 11 HTML pages.
+- Astro build and all 4 packaging tests passed.
+
+Migration result: passed

@@ -1,0 +1,16 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<header class="site-header" data-header>
+  <a class="brand" href="/" aria-label="ClothOff AI Safe Guide home">
+    <span class="brand-mark"><Icon name="shield" /></span>
+    <span class="brand-copy"><strong>CLOTHOFF<span>AI</span></strong><small>SAFE GUIDE</small></span>
+  </a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="/#about">What it is</a><a href="/#safe-use">Safe use</a><a href="/#comparison">Comparison</a><a href="/blog/">Blog</a>
+  </nav>
+  <a class="header-cta" href="/#alternatives">Explore safe options <Icon name="arrow" /></a>
+  <button class="menu-button" type="button" data-menu-button aria-label="Open menu" aria-expanded="false"><Icon name="menu" /></button>
+  <div class="mobile-nav" data-mobile-nav><a href="/#about">What it is</a><a href="/#safe-use">Safe use</a><a href="/#comparison">Comparison</a><a href="/blog/">Blog</a></div>
+</header>

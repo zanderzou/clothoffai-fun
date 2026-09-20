@@ -13,5 +13,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - `clothoffai.fun` is an independent, consent-first educational site. It must never provide image upload, nudification, face swapping, or clothing-removal functionality.
 - The visual direction is premium black, plum, violet, and electric cyan, inspired by contemporary AI creative tools without copying a third party's interface.
 - Search content should cover ClothOff AI safety, privacy, consent-first photo editing, AI virtual try-on, and outfit-changing alternatives in natural language.
-- The production output is fully static HTML in `dist/client`, suitable for Cloudflare Pages. Blog posts are generated from structured content in `src/site.mjs`.
+- The production output is fully static HTML in `dist/client`, suitable for Cloudflare Pages. The site uses Astro with Markdown content collections under `src/content/blog`.
+- SEO and generative-search optimization must remain people-first: answer-led sections, clear entities, primary sources, author/update signals, crawlable internal links, matching structured data, sitemap, RSS, and IndexNow support. Do not add invented AI-only markup or keyword stuffing.
 - All people in imagery must be clearly adult, fully clothed, non-explicit, and used in a fashion or education context.
