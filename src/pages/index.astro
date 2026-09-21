@@ -5,7 +5,7 @@ import Icon from "../components/Icon.astro";
 import PostCard from "../components/PostCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../data/site";
-import heroImage from "../assets/clothoff-ai-fashion-visualizer-hero.png";
+import heroImage from "../assets/clothoff-adult-swimwear-editorial.jpg";
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 const faqs = [
@@ -29,16 +29,17 @@ const jsonLd = {
 <BaseLayout title="ClothOff AI Safety Guide & Safe Alternatives" description={site.description} keywords={["ClothOff AI", "ClothOff AI safety", "AI clothing remover risks", "AI virtual try-on", "AI outfit changer"]} jsonLd={jsonLd}>
   <section class="hero">
     <div class="hero-glow"></div>
-    <Image class="hero-image" src={heroImage} alt="Adult fashion model using a consent-first AI virtual try-on wardrobe" widths={[640, 960, 1280, 1586]} sizes="100vw" loading="eager" fetchpriority="high" quality={84} />
+    <Image class="hero-image" src={heroImage} alt="Adult model in mint swimwear on a sunny beach" widths={[640, 960, 1280, 1586]} sizes="100vw" loading="eager" fetchpriority="high" quality={84} />
     <div class="hero-overlay"></div>
     <div class="hero-content reveal">
       <div class="eyebrow"><span></span> Independent consent-first guide</div>
       <h1>ClothOff AI,<br /><em>reimagined safely.</em></h1>
       <p>Understand ClothOff AI risks, protect image privacy, and discover AI virtual try-on and outfit-changing alternatives built around consent.</p>
       <div class="hero-actions"><a class="button primary" href="#alternatives">Explore safe alternatives <Icon name="arrow" /></a><a class="button ghost" href="/blog/clothoff-ai-safety-guide/">Read the safety guide</a></div>
-      <div class="trust-row"><span><Icon name="shield" /> Consent first</span><span><Icon name="lock" /> No uploads</span><span><Icon name="dress" /> Fully clothed</span><span>18+ education</span></div>
+      <div class="trust-row"><span><Icon name="shield" /> Consent first</span><span><Icon name="lock" /> No uploads</span><span><Icon name="dress" /> Adult swimwear</span><span>18+ education</span></div>
     </div>
     <div class="hero-float reveal"><div class="float-icon"><Icon name="spark" /></div><div><small>SAFE MODE</small><strong>Outfit → Outfit</strong></div><span class="status-dot"></span></div>
+    <div class="photo-credit">Editorial image: <a href="https://www.pexels.com/photo/11455873/" target="_blank" rel="noopener noreferrer">Fran Bertucci / Pexels</a> · no endorsement implied</div>
   </section>
 
   <section class="intro section" id="about">

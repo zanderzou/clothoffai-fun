@@ -15,4 +15,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Search content should cover ClothOff AI safety, privacy, consent-first photo editing, AI virtual try-on, and outfit-changing alternatives in natural language.
 - The production output is fully static HTML in `dist/client`, suitable for Cloudflare Pages. The site uses Astro with Markdown content collections under `src/content/blog`.
 - SEO and generative-search optimization must remain people-first: answer-led sections, clear entities, primary sources, author/update signals, crawlable internal links, matching structured data, sitemap, RSS, and IndexNow support. Do not add invented AI-only markup or keyword stuffing.
-- All people in imagery must be clearly adult, fully clothed, non-explicit, and used in a fashion or education context.
+- All people in imagery must be clearly adult and non-explicit. Mainstream swimwear and glamorous fashion imagery are allowed when licensed, context-appropriate, and accompanied by a no-endorsement disclosure; nudity, transparent garments, pornographic framing, and sexual acts are not.
