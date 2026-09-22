@@ -42,3 +42,4 @@
 /* Preserve the full portrait in the hero instead of using a wide crop. */
 .hero>.hero-image{object-fit:contain!important;object-position:right center!important}
 @media(max-width:640px){.hero>.hero-image{object-fit:contain!important;object-position:center top!important}}
+.compare-table{max-width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:20px;-webkit-overflow-scrolling:touch}
