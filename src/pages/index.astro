@@ -5,7 +5,8 @@ import Icon from "../components/Icon.astro";
 import PostCard from "../components/PostCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../data/site";
-import heroImage from "../assets/clothoff-adult-swimwear-editorial.jpg";
+import heroImage from "../assets/clothoff-user-fashion-editorial.jpg";
+import secondaryImage from "../assets/clothoff-user-athleisure-editorial.jpg";
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 const faqs = [
@@ -29,7 +30,7 @@ const jsonLd = {
 <BaseLayout title="ClothOff AI Safety Guide & Safe Alternatives" description={site.description} keywords={["ClothOff AI", "ClothOff AI safety", "AI clothing remover risks", "AI virtual try-on", "AI outfit changer"]} jsonLd={jsonLd}>
   <section class="hero">
     <div class="hero-glow"></div>
-    <Image class="hero-image" src={heroImage} alt="Adult model in mint swimwear on a sunny beach" widths={[640, 960, 1280, 1586]} sizes="100vw" loading="eager" fetchpriority="high" quality={84} />
+    <Image class="hero-image" src={heroImage} alt="Adult model wearing a white fashion set in an outdoor editorial" widths={[640, 960, 1280, 1586]} sizes="100vw" loading="eager" fetchpriority="high" quality={84} />
     <div class="hero-overlay"></div>
     <div class="hero-content reveal">
       <div class="eyebrow"><span></span> Independent consent-first guide</div>
@@ -39,7 +40,7 @@ const jsonLd = {
       <div class="trust-row"><span><Icon name="shield" /> Consent first</span><span><Icon name="lock" /> No uploads</span><span><Icon name="dress" /> Adult swimwear</span><span>18+ education</span></div>
     </div>
     <div class="hero-float reveal"><div class="float-icon"><Icon name="spark" /></div><div><small>SAFE MODE</small><strong>Outfit → Outfit</strong></div><span class="status-dot"></span></div>
-    <div class="photo-credit">Editorial image: <a href="https://www.pexels.com/photo/11455873/" target="_blank" rel="noopener noreferrer">Fran Bertucci / Pexels</a> · no endorsement implied</div>
+    <div class="photo-credit">User-provided adult editorial · no endorsement implied</div>
   </section>
 
   <section class="intro section" id="about">
@@ -67,6 +68,7 @@ const jsonLd = {
 
   <section class="section seo-copy" aria-labelledby="clothoffai-fun-research">
     <div class="section-head"><div><div class="section-label">06 / Detailed ClothOff AI research</div><h2 id="clothoffai-fun-research">A deeper ClothOff AI guide<br/><span>for careful comparison.</span></h2></div><p>This text-led section expands the practical questions people ask after the first product overview.</p></div>
+    <figure class="seo-visual"><Image src={secondaryImage} alt="Adult model in a black athleisure outfit for fashion visualization" widths={[640,960,1280]} sizes="(max-width: 640px) 100vw, 1200px" loading="lazy" quality={84}/><figcaption><span>Outfit visualization reference</span><strong>Compare visible garments, styling, and authorized fashion edits.</strong></figcaption></figure>
     <div class="seo-copy-grid">
       <article><h3>What to evaluate in a ClothOff AI review</h3><p>A useful ClothOff AI review should explain the actual job the product performs: AI clothing remover risk, consent-first photo editing, virtual try-on, and outfit replacement. Look past headline feature counts and test whether the main workflow stays clear from setup to a usable result.</p><p>Our recommended method is to start with an owned or licensed image and add or replace visible clothing instead of inferring a hidden body. Record setup time, consistency, failed attempts, feature limits, and the real cost of one repeatable session. That creates evidence you can compare instead of relying on marketing language.</p></article>
       <article><h3>ClothOff AI features, cost, and output quality</h3><p>Feature availability and plan limits can change. Before paying, identify which actions are included, which consume credits or tokens, whether retries are charged, and whether exports carry restrictions. A low subscription price can become expensive when the workflow needs repeated generations.</p><p>Quality should mean more than visual polish. Score control, repeatability, continuity, speed, and how often the result is actually usable. Verify current pricing and plan details on the official service at checkout.</p></article>
