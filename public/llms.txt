@@ -1,0 +1,34 @@
+# ClothOff AI Safe Guide
+
+> A consent-first ClothOff AI safety guide covering image privacy, AI clothing remover risks, virtual try-on, and responsible outfit-changing alternatives.
+
+Canonical publication: https://clothoffai.fun/
+
+This is an independent editorial publication, not the official provider. Articles distinguish published provider information from suggested evaluation methods. Examples and proposed tests are not measured benchmark results. Check dated sources and live provider terms for changing features and prices.
+
+## Main pages
+
+- [Homepage](https://clothoffai.fun/): Overview and practical decision guidance.
+- [Blog and comparisons](https://clothoffai.fun/blog/): Browse the editorial article collection.
+
+## Comparisons
+
+- [ClothOff AI vs Adobe Firefly: Features, Strengths, Weaknesses](https://clothoffai.fun/blog/clothoff-ai-vs-adobe-firefly/)
+- [ClothOff AI vs AI Outfit Changers: A Consent-First Comparison](https://clothoffai.fun/blog/clothoff-ai-vs-ai-outfit-changer/)
+- [ClothOff AI vs Canva Magic Edit: Features, Strengths, Weaknesses](https://clothoffai.fun/blog/clothoff-ai-vs-canva-magic-edit/)
+- [ClothOff AI vs Photoroom: Features, Strengths, Weaknesses](https://clothoffai.fun/blog/clothoff-ai-vs-photoroom/)
+- [ClothOff AI vs Virtual Try-On: Which Is Safer for Fashion Experiments?](https://clothoffai.fun/blog/clothoff-ai-vs-virtual-try-on/)
+
+## Publication information
+
+- [About](https://clothoffai.fun/about/)
+- [Editorial policy](https://clothoffai.fun/editorial-policy/)
+- [Contact](https://clothoffai.fun/contact/)
+- [Privacy policy](https://clothoffai.fun/privacy/)
+- [Terms](https://clothoffai.fun/terms/)
+
+## Optional
+
+- [XML sitemap](https://clothoffai.fun/sitemap-index.xml): Canonical page inventory.
+- [RSS feed](https://clothoffai.fun/rss.xml): Published article updates.
+- [Robots policy](https://clothoffai.fun/robots.txt): Crawler access directives.
