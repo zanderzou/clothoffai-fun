@@ -1,5 +1,5 @@
 export const site = {
-  name: "ClothOff AI Safe Guide",
+  name: "ClothOff AI",
   shortName: "ClothOff AI",
   domain: "clothoffai.fun",
   url: "https://clothoffai.fun",
