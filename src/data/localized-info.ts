@@ -166,4 +166,316 @@ export const localizedInfo: Partial<Record<Locale, Record<InfoPageKey, InfoCopy>
       ],
     },
   },
+  es: {
+    about: {
+      title: "Acerca de este sitio",
+      description: "Qué es esta publicación independiente sobre ClothOff AI, por qué exige consentimiento y cómo organiza sus cinco comparativas de edición de moda.",
+      lead: "No somos un editor de imágenes: ayudamos a distinguir una idea de moda legítima de una modificación que vulnera a la persona retratada.",
+      blocks: [
+        ["Una publicación independiente", "Tratamos las dudas que genera la búsqueda ClothOff AI sobre privacidad, consentimiento y manipulación de fotos. No somos la web oficial de ningún servicio de nombre parecido. No aceptamos imágenes, no eliminamos prendas, no generamos resultados ni ofrecemos cuentas o pagos."],
+        ["Cinco comparativas con propósitos distintos", "El cambio de ropa con IA y el probador virtual son tipos de proceso, no dos marcas. Analizamos Adobe Firefly por la edición de zonas seleccionadas, Canva Magic Edit por el diseño de piezas y Photoroom por imágenes de producto y modelos. El criterio incluye derechos sobre la foto, conservación de datos y costes, no solo apariencia."],
+        ["Lo que no podemos prometer", "Una vista previa no demuestra la talla real de una prenda; tampoco garantizamos que un tercero sea seguro o apropiado para cada imagen. No presentamos pruebas que no hemos realizado como experiencias propias. Revisa la documentación actual del proveedor y solicita asesoramiento profesional para cuestiones jurídicas particulares."],
+      ],
+    },
+    contact: {
+      title: "Contacto",
+      description: "Cómo comunicar una corrección, un cambio en fuentes oficiales o un problema de imagen y privacidad relacionado con ClothOff AI.",
+      lead: "Para pedir una corrección, indica la URL, el fragmento concreto y una fuente original que permita comprobarlo.",
+      blocks: [
+        ["Dirección prevista", "support@clothoffai.fun es el correo editorial previsto, pero todavía no se ha confirmado que pueda recibir mensajes. No lo consideres un canal operativo para asuntos urgentes y no envíes información confidencial."],
+        ["No envíes fotos sensibles", "Para revisar un artículo no hacen falta documentos de identidad, fotos personales, imágenes íntimas ni instrucciones de IA. Si denuncias una imagen alterada sin permiso, evita volver a difundirla; describe por escrito la página y el problema con el mínimo de datos necesario."],
+        ["Soporte de otras empresas", "Las cuentas, facturas y solicitudes de borrado de Adobe, Canva, Photoroom u otro editor deben dirigirse al proveedor correspondiente. No podemos consultar ni eliminar archivos guardados por terceros."],
+      ],
+    },
+    "editorial-policy": {
+      title: "Política editorial",
+      description: "Criterios de ClothOff AI para fuentes originales, comparativas diferenciadas, consentimiento, seguridad, correcciones y actualización de artículos.",
+      lead: "Publicamos para ayudar a decidir antes de subir una foto, no para multiplicar páginas que repiten una palabra clave.",
+      blocks: [
+        ["Una pregunta diferente por artículo", "El cambio de ropa se centra en sustituir prendas visibles; el probador virtual, en visualizar compras; Firefly, en la edición por selección; Canva, en el trabajo de diseño; Photoroom, en fotos de producto y condiciones de carga. Las dos primeras son categorías, no empresas con una tarifa o política uniforme."],
+        ["Fuentes y límites de las afirmaciones", "Priorizamos páginas y políticas del proveedor para características, derechos y tratamiento de datos. Distinguimos la aplicación de Photoroom de su API empresarial y no afirmamos que toda edición en Firefly lleve automáticamente credenciales de contenido. Una prueba sugerida al lector no se presenta como resultado medido por nosotros."],
+        ["Seguridad y correcciones", "No damos métodos para crear imágenes íntimas de personas reales sin consentimiento, sexualizar menores o eludir protecciones. Si una afirmación es incorrecta, revisamos el fragmento y su fuente primaria; una corrección que cambie la conclusión debe reflejarse en la actualización del artículo. Los borradores asistidos por IA pasan revisión de utilidad, fuentes y duplicación."],
+      ],
+    },
+    privacy: {
+      title: "Privacidad",
+      description: "Datos técnicos de la web estática clothoffai.fun, ausencia de subida de fotos, Google Analytics por consentimiento y enlaces externos.",
+      lead: "Esta web no tiene cuentas, generador de imágenes, chat, pagos ni formulario para subir fotografías.",
+      blocks: [
+        ["Entrega y protección de páginas", "El proveedor de alojamiento y seguridad puede tratar datos técnicos como dirección IP, URL solicitada, hora y navegador para entregar el sitio y prevenir abusos. Nosotros no recibimos ni almacenamos imágenes o instrucciones de edición de los visitantes."],
+        ["Medición solo si das permiso", "Google Analytics 4 se carga después de aceptar. Puede medir páginas vistas, desplazamiento, clics salientes, dispositivo y procedencia; no activamos personalización publicitaria ni Google signals. La preferencia se guarda en el navegador hasta 180 días y puede retirarse desde el pie de cualquier página. Respetamos Global Privacy Control y Do Not Track."],
+        ["Cookies y webs externas", "Al retirar el consentimiento borramos las cookies de analítica accesibles desde este dominio, pero no los datos que Google ya haya tratado. El tratamiento puede ocurrir fuera de tu país. Antes de subir una imagen en un editor externo, consulta la política de privacidad de ese operador."],
+      ],
+    },
+    terms: {
+      title: "Condiciones de uso",
+      description: "Uso educativo de la publicación independiente ClothOff AI, límites de manipulación de imágenes, contenido original y servicios externos.",
+      lead: "Estos artículos sirven para informarse y comparar; no sustituyen las condiciones oficiales de ningún editor externo.",
+      blocks: [
+        ["Alcance de la información", "El contenido no es asesoramiento jurídico o médico individual ni garantiza la seguridad o disponibilidad de un tercero. Funciones, precios, licencias y políticas cambian. Contrasta los documentos vigentes del proveedor antes de contratar o subir una foto."],
+        ["Uso responsable", "No utilices este sitio para facilitar imágenes íntimas sin consentimiento, contenido sexual de menores o personas de edad dudosa, acoso, suplantación, extorsión o vulneración de derechos de imagen. Incluso una edición de moda ordinaria requiere permiso de la persona retratada y derechos sobre la foto original."],
+        ["Derechos y enlaces", "No reproduzcas en bloque nuestros textos, criterios comparativos, diseño o recursos visuales sin autorización ni los presentes como propios. Las citas breves deben respetar la ley aplicable y atribuir la fuente. Los servicios enlazados se rigen por sus propias reglas de uso, cobro, conservación y borrado."],
+      ],
+    },
+  },
+  "pt-br": {
+    about: {
+      title: "Sobre este site",
+      description: "Conheça a publicação independente sobre ClothOff AI, seu foco em consentimento e o propósito de cada uma das cinco comparações de moda.",
+      lead: "Não somos um editor de imagens; explicamos como avaliar uma ideia de moda sem violar a autonomia da pessoa fotografada.",
+      blocks: [
+        ["Publicação independente", "Tratamos das dúvidas ligadas à busca ClothOff AI sobre privacidade, consentimento e manipulação de fotos. Não somos o site oficial de nenhum serviço com nome parecido. Não recebemos imagens, não removemos roupas, não geramos resultados nem oferecemos contas ou pagamento."],
+        ["Cinco comparações diferentes", "Troca de roupa com IA e provador virtual são tipos de processo, não marcas. Adobe Firefly é avaliado pela edição de áreas selecionadas, Canva Magic Edit pelo design de peças, e Photoroom pelas imagens de produtos e modelos. Direitos da foto, retenção de dados e despesas fazem parte da análise."],
+        ["Limites das conclusões", "Uma simulação não confirma o caimento de uma peça; também não garantimos que um serviço de terceiros seja seguro para qualquer imagem. Não apresentamos testes que não realizamos como experiência própria. Confira a documentação atual do fornecedor e procure orientação adequada para questões jurídicas específicas."],
+      ],
+    },
+    contact: {
+      title: "Contato",
+      description: "Como sugerir correções, apontar mudanças em fontes oficiais ou relatar uma preocupação com imagem e privacidade em ClothOff AI.",
+      lead: "Para sugerir uma correção, informe a URL, a frase exata e uma fonte original que permita conferir o ponto.",
+      blocks: [
+        ["Endereço planejado", "support@clothoffai.fun é o endereço editorial planejado, mas o recebimento de mensagens ainda não foi configurado ou confirmado. Não conte com ele para casos urgentes e não envie dados confidenciais."],
+        ["Não compartilhe fotos sensíveis", "Uma revisão editorial não exige documentos de identidade, retratos pessoais, imagens íntimas nem comandos de IA. Se a questão envolve uma imagem alterada sem permissão, evite divulgá-la de novo; descreva por escrito a página e o problema com o mínimo de dados necessário."],
+        ["Suporte dos produtos", "Contas, cobrança e pedidos de exclusão em Adobe, Canva, Photoroom ou outro editor devem ser enviados ao suporte da própria empresa. Não conseguimos acessar nem apagar arquivos mantidos por serviços externos."],
+      ],
+    },
+    "editorial-policy": {
+      title: "Política editorial",
+      description: "Padrões de ClothOff AI para fontes primárias, comparações diferentes, consentimento, segurança, correções e atualização.",
+      lead: "O objetivo é ajudar o leitor antes de enviar uma foto, não publicar páginas repetidas para ocupar resultados de busca.",
+      blocks: [
+        ["Uma questão para cada texto", "Troca de roupa considera peças que continuam visíveis; provador virtual trata de visualização para compras; Firefly, de edição por seleção; Canva, de design; Photoroom, de imagens de produto e regras para uploads. As duas primeiras opções são categorias, não empresas com preços ou políticas uniformes."],
+        ["Evidência e incerteza", "Quando falamos de recursos, direitos ou tratamento de dados, priorizamos a documentação de cada fornecedor. Distinguimos o aplicativo do Photoroom de sua API empresarial e não dizemos que toda edição no Firefly recebe automaticamente Content Credentials. Um teste sugerido ao leitor não é apresentado como resultado que medimos."],
+        ["Segurança e correções", "Não fornecemos instruções para imagens íntimas de pessoas reais sem consentimento, sexualização de menores ou desvio de proteções. Ao receber uma correção, conferimos o trecho e a fonte original; uma mudança relevante de conclusão deve aparecer na atualização do artigo. Rascunhos auxiliados por IA também são revisados quanto a utilidade, fontes e duplicação."],
+      ],
+    },
+    privacy: {
+      title: "Privacidade",
+      description: "Dados técnicos do site estático clothoffai.fun, ausência de envio de fotos, Google Analytics com consentimento e links externos.",
+      lead: "Este site não tem conta de usuário, gerador de imagens, bate-papo, pagamento nem envio de fotografias.",
+      blocks: [
+        ["Entrega e proteção", "O serviço de hospedagem e segurança pode processar IP, URL solicitada, horário e informações do navegador para entregar as páginas e combater abusos. Nós não recebemos nem armazenamos fotos ou comandos de edição dos visitantes."],
+        ["Análise somente após autorização", "Google Analytics 4 é carregado depois de você permitir. Pode medir páginas, rolagem, cliques externos, dispositivo e origem da visita; não ativamos personalização de anúncios nem Google signals. A preferência fica no navegador por até 180 dias e pode ser retirada no rodapé de qualquer página. Respeitamos Global Privacy Control e Do Not Track."],
+        ["Cookies e sites externos", "Ao retirar a permissão, apagamos os cookies de análise acessíveis neste domínio, não os dados que o Google já processou. Esse processamento pode ocorrer fora do seu país. Antes de enviar uma imagem para um editor externo, leia a política de privacidade dele."],
+      ],
+    },
+    terms: {
+      title: "Termos de uso",
+      description: "Uso educacional da publicação ClothOff AI, limites de edição de imagens, direitos do conteúdo original e condições de terceiros.",
+      lead: "Os artigos informam e comparam; não substituem os termos oficiais de nenhum serviço externo.",
+      blocks: [
+        ["Limites da informação", "O conteúdo não é orientação jurídica ou médica individual e não garante a segurança ou disponibilidade de uma ferramenta. Recursos, preços, licenças e políticas podem mudar. Consulte os documentos atuais do fornecedor antes de contratar ou enviar fotos."],
+        ["Uso responsável", "Não use o site para facilitar imagens íntimas sem consentimento, conteúdo sexual de menores ou pessoas de idade incerta, assédio, falsa identidade, extorsão ou violação do direito de imagem. Mesmo a edição de moda comum exige autorização da pessoa e direitos sobre a fotografia."],
+        ["Conteúdo e links", "Não copie em massa nossos textos, critérios, layout ou imagens sem permissão nem os apresente como seus. Citações curtas devem respeitar a lei aplicável e indicar a fonte. Serviços externos têm suas próprias regras de uso, cobrança, retenção e exclusão."],
+      ],
+    },
+  },
+  ru: {
+    about: {
+      title: "О проекте",
+      description: "Независимый сайт о ClothOff AI: зачем нужно согласие на изменение фото и чем отличаются пять сравнений модных редакторов.",
+      lead: "Мы не редактируем изображения. Наша задача — помочь выбрать допустимый модный сценарий, не нарушая права человека на фотографии.",
+      blocks: [
+        ["Независимое издание", "Мы разбираем вопросы приватности, согласия и обработки снимков, связанные с запросом ClothOff AI. Это не официальный сайт одноимённого либо похожего сервиса. Здесь нельзя загрузить фото, удалить одежду, создать изображение, завести аккаунт или оплатить подписку."],
+        ["Разные предметы сравнения", "Замена одежды и виртуальная примерка — способы работы, а не конкретные бренды. Adobe Firefly изучается как редактор выделенной области, Canva Magic Edit — как часть дизайнерского процесса, Photoroom — как инструмент товарных изображений и моделей. Помимо внешнего вида важны права на фото, хранение данных и расходы."],
+        ["Чего мы не гарантируем", "Примерка на экране не подтверждает реальный размер вещи. Мы не можем гарантировать безопасность стороннего продукта и не выдаём непроведённые испытания за личный опыт. Перед использованием проверьте текущие документы поставщика; за индивидуальным юридическим советом обратитесь к специалисту."],
+      ],
+    },
+    contact: {
+      title: "Контакты",
+      description: "Как сообщить об ошибке, изменении первоисточника или проблеме с правами на изображение и приватностью в материалах ClothOff AI.",
+      lead: "Для исправления укажите адрес страницы, спорный фрагмент и первоисточник, по которому его можно проверить.",
+      blocks: [
+        ["Планируемый адрес", "support@clothoffai.fun указан как будущая редакционная почта, но приём сообщений пока не подтверждён. Не считайте его действующим срочным каналом и не отправляйте конфиденциальные сведения."],
+        ["Не присылайте личные фото", "Для проверки статьи не нужны документы, частные снимки, интимные изображения или запросы к ИИ. Если вас беспокоит изображение, изменённое без разрешения, не распространяйте его повторно: опишите проблему текстом и оставьте только необходимые сведения."],
+        ["Поддержка внешних продуктов", "Вопросы аккаунта, оплаты и удаления файлов в Adobe, Canva, Photoroom или другом редакторе направляйте соответствующему поставщику. У нас нет доступа к его пользовательским данным и возможности их удалить."],
+      ],
+    },
+    "editorial-policy": {
+      title: "Редакционная политика",
+      description: "Первоисточники, разные критерии сравнений ClothOff AI, согласие на обработку фото, безопасность и порядок исправлений.",
+      lead: "Материалы должны помогать принять решение до загрузки снимка, а не механически повторять поисковую фразу.",
+      blocks: [
+        ["Разные вопросы для пяти статей", "Замена одежды касается видимых предметов гардероба; примерка — покупки; Firefly — выделения и редактирования областей; Canva — дизайнерского процесса; Photoroom — товарных кадров и загруженных файлов. Первые два пункта — категории, а не вымышленные поставщики с единой ценой."],
+        ["Подтверждаемые утверждения", "О функциях, правилах и данных пишем со ссылкой на документы поставщика. Различаем приложение и корпоративный API Photoroom, не утверждаем, что каждый отредактированный файл Firefly автоматически получает Content Credentials. Рекомендованный тест не называем собственным измерением."],
+        ["Границы и исправления", "Мы не даём инструкций по созданию интимных подделок без согласия, сексуализации несовершеннолетних или обходу защит. Обнаруженные ошибки сверяем с первоисточником; существенное изменение вывода отражаем в информации об обновлении статьи. Черновики с участием ИИ проходят проверку на полезность, доказательства и повторы."],
+      ],
+    },
+    privacy: {
+      title: "Конфиденциальность",
+      description: "Технические данные статического сайта clothoffai.fun, отсутствие загрузки фото, Google Analytics по согласию и переходы на внешние сайты.",
+      lead: "Здесь нет загрузки изображений, генератора, пользовательского кабинета, чата или оплаты.",
+      blocks: [
+        ["Доставка и защита страниц", "Хостинг и служба безопасности могут обрабатывать IP-адрес, запрошенный URL, время и сведения о браузере, чтобы показать страницу и противодействовать злоупотреблениям. Мы не получаем и не храним фотографии посетителей или запросы для редактирования."],
+        ["Аналитика только после разрешения", "Google Analytics 4 загружается лишь после согласия. Он может учитывать посещённые страницы, прокрутку, переходы по внешним ссылкам, устройство и источник визита. Рекламную персонализацию и Google signals мы не включаем. Выбор хранится в браузере до 180 дней и отзывается внизу любой страницы; сигналы Global Privacy Control и Do Not Track учитываются."],
+        ["Cookie и внешние сайты", "После отказа мы удаляем доступные этому домену аналитические cookie, но не можем удалить данные, уже обработанные Google. Обработка возможна за пределами вашей страны. Перед загрузкой файла на сторонний сервис изучите его собственную политику."],
+      ],
+    },
+    terms: {
+      title: "Условия использования",
+      description: "Образовательное назначение ClothOff AI, ограничения на изменение изображений, права на материалы и правила внешних сервисов.",
+      lead: "Эти сравнения носят информационный характер и не заменяют официальные условия сторонних редакторов.",
+      blocks: [
+        ["Пределы информации", "Материалы не являются индивидуальной юридической или медицинской консультацией и не гарантируют безопасность либо доступность какого-либо сервиса. Функции, цены, лицензии и правила меняются; перед оплатой или загрузкой фото проверьте документы поставщика."],
+        ["Ответственное использование", "Не используйте содержание для интимных подделок без согласия, сексуальных изображений детей или лиц неопределённого возраста, травли, выдачи себя за другого, вымогательства и нарушения прав на изображение. Даже обычное модное редактирование требует разрешения человека и прав на исходное фото."],
+        ["Оригинальные материалы и ссылки", "Не воспроизводите массово наши тексты, методики сравнения, дизайн и изображения без согласия и не выдавайте их за свои. Краткие цитаты допускаются в рамках применимого права с указанием источника. Оплата, хранение и удаление файлов во внешних сервисах регулируются их собственными условиями."],
+      ],
+    },
+  },
+  de: {
+    about: {
+      title: "Über diese Website",
+      description: "Wofür die unabhängige ClothOff AI-Publikation steht, warum Einwilligung zählt und wie sich die fünf Modebild-Vergleiche unterscheiden.",
+      lead: "Wir bearbeiten keine Bilder, sondern helfen dabei, erlaubte Modeanwendungen von Eingriffen in die Rechte abgebildeter Personen zu unterscheiden.",
+      blocks: [
+        ["Unabhängige Einordnung", "Wir behandeln Fragen zu Privatsphäre, Einwilligung und Bildmanipulation rund um die Suche nach ClothOff AI. Dies ist nicht die offizielle Website eines gleich oder ähnlich benannten Dienstes. Es gibt weder Bild-Upload noch Kleiderentfernung, Bildgenerierung, Nutzerkonten oder Zahlungen."],
+        ["Fünf verschiedene Vergleiche", "KI-Outfit-Wechsel und virtuelle Anprobe sind Arbeitsweisen, keine konkreten Anbieter. Adobe Firefly betrachten wir beim Bearbeiten ausgewählter Bereiche, Canva Magic Edit im Designablauf und Photoroom bei Produktbildern und Mode-Models. Bildrechte, Datenverarbeitung und Kosten zählen neben der Optik."],
+        ["Grenzen unserer Aussagen", "Eine Vorschau belegt keine tatsächliche Passform; wir garantieren auch nicht, dass ein Drittanbieter für jedes Foto sicher ist. Nicht durchgeführte Tests werden nicht als eigene Erfahrung dargestellt. Prüfen Sie die aktuellen Anbieterunterlagen und holen Sie für individuelle Rechtsfragen fachlichen Rat ein."],
+      ],
+    },
+    contact: {
+      title: "Kontakt",
+      description: "Hinweise auf Fehler, geänderte Originalquellen sowie Bildrechts- oder Datenschutzprobleme in ClothOff AI-Artikeln.",
+      lead: "Nennen Sie für eine Korrektur die Seiten-URL, die betreffende Aussage und eine überprüfbare Primärquelle.",
+      blocks: [
+        ["Geplante E-Mail-Adresse", "support@clothoffai.fun ist als redaktionelle Adresse vorgesehen, doch der Empfang wurde noch nicht eingerichtet beziehungsweise bestätigt. Verlassen Sie sich bei dringenden Anliegen nicht darauf und senden Sie keine vertraulichen Daten."],
+        ["Keine sensiblen Bilder schicken", "Für die Prüfung eines Artikels benötigen wir weder Ausweise noch private Fotos, intime Bilder oder KI-Prompts. Bei unbefugter Bildmanipulation sollten Sie das Bild nicht erneut verbreiten, sondern den betroffenen Text und das Problem mit möglichst wenigen personenbezogenen Angaben beschreiben."],
+        ["Produktsupport anderer Unternehmen", "Fragen zu Konten, Rechnungen oder dem Löschen von Bildern bei Adobe, Canva, Photoroom oder anderen Editoren gehören an deren jeweilige Supportstellen. Wir können Dateien bei externen Diensten weder einsehen noch löschen."],
+      ],
+    },
+    "editorial-policy": {
+      title: "Redaktionsgrundsätze",
+      description: "Primärquellen, unterschiedliche Vergleichsmaßstäbe, Einwilligung, Sicherheit und Korrekturen bei ClothOff AI.",
+      lead: "Ein Beitrag soll vor einem Bild-Upload zu einer informierten Entscheidung verhelfen, statt Suchbegriffe lediglich zu vervielfachen.",
+      blocks: [
+        ["Je Artikel eine eigene Frage", "Outfit-Wechsel behandelt sichtbare Kleidungsstücke, virtuelle Anprobe eine Kaufvorschau, Firefly Auswahlbearbeitung, Canva den Designprozess und Photoroom Produktbilder samt Upload-Regeln. Die ersten beiden Begriffe sind Kategorien und keine fiktiven Firmen mit einheitlichem Preis."],
+        ["Belege und Unsicherheit", "Bei Funktionen, Nutzungsregeln und Bilddaten ziehen wir die Dokumentation des Anbieters heran. Photoroom-App und Unternehmens-API unterscheiden sich; außerdem behaupten wir nicht, dass jede Firefly-Bearbeitung automatisch Content Credentials erhält. Ein vorgeschlagener Test wird nicht als eigene Messung ausgegeben."],
+        ["Sicherheit und Berichtigungen", "Wir liefern keine Anleitung für intime Bildfälschungen ohne Einwilligung, sexualisierte Darstellungen Minderjähriger oder die Umgehung von Schutzmaßnahmen. Fehler prüfen wir anhand der Primärquelle; ändert eine Korrektur das Fazit, wird die Aktualisierung des Artikels angepasst. KI-unterstützte Entwürfe werden auf Nutzen, Quellen und Doppelungen geprüft."],
+      ],
+    },
+    privacy: {
+      title: "Datenschutz",
+      description: "Technische Daten der statischen Website clothoffai.fun, keine Foto-Uploads, einwilligungsabhängiges Google Analytics und externe Links.",
+      lead: "Diese Website bietet weder Bild-Upload oder Generierung noch Konten, Chat oder eine Bezahlfunktion.",
+      blocks: [
+        ["Auslieferung und Schutz", "Hosting- und Sicherheitsdienstleister können IP-Adresse, angeforderte URL, Zeitpunkt und Browserdaten verarbeiten, um Seiten auszuliefern und Missbrauch zu verhindern. Wir nehmen keine Fotos oder Bearbeitungs-Prompts von Besucherinnen und Besuchern entgegen."],
+        ["Analyse erst nach Zustimmung", "Google Analytics 4 wird erst nach einer positiven Auswahl geladen und kann Seitenaufrufe, Scrollen, externe Links, Geräte und Herkunft erfassen. Werbepersonalisierung und Google signals sind nicht aktiviert. Die Einstellung bleibt bis zu 180 Tage im Browser und lässt sich unten auf jeder Seite widerrufen. Global Privacy Control und Do Not Track werden beachtet."],
+        ["Cookies und fremde Websites", "Nach Widerruf entfernen wir die von dieser Domain erreichbaren Analyse-Cookies, nicht jedoch Daten, die Google schon verarbeitet hat. Eine Verarbeitung außerhalb Ihres Landes ist möglich. Vor dem Hochladen eines Bildes bei einem externen Anbieter lesen Sie dessen eigene Datenschutzhinweise."],
+      ],
+    },
+    terms: {
+      title: "Nutzungsbedingungen",
+      description: "Bildungszweck der ClothOff AI-Publikation, Grenzen bei Bildmanipulation, Rechte an Inhalten und Bedingungen externer Dienste.",
+      lead: "Die Vergleiche dienen der Information und sind nicht die offiziellen Bedingungen eines verlinkten Bilddienstes.",
+      blocks: [
+        ["Informationsgrenzen", "Die Beiträge sind keine individuelle Rechts- oder medizinische Beratung und garantieren weder Sicherheit noch Verfügbarkeit eines Drittanbieters. Funktionen, Preise, Lizenzen und Regeln können sich ändern. Prüfen Sie die aktuellen Unterlagen vor einer Zahlung oder dem Hochladen eines Fotos."],
+        ["Verantwortliche Nutzung", "Nutzen Sie diese Informationen nicht für intime Fälschungen ohne Zustimmung, sexualisierte Bilder Minderjähriger oder altersunklarer Personen, Belästigung, Identitätsmissbrauch, Erpressung oder die Verletzung von Bildrechten. Auch bei gewöhnlicher Modebearbeitung sind Einwilligung und Rechte am Ausgangsfoto nötig."],
+        ["Eigene Inhalte und Links", "Texte, Vergleichsmethoden, Gestaltung und Bilder dieser Website dürfen ohne Erlaubnis nicht massenhaft übernommen oder als eigene Arbeit ausgegeben werden. Kurze Zitate richten sich nach geltendem Recht und Quellenangabe. Bei externen Diensten gelten deren Regeln für Nutzung, Zahlung, Speicherung und Löschung."],
+      ],
+    },
+  },
+  fr: {
+    about: {
+      title: "À propos de ce site",
+      description: "La mission de cette publication indépendante sur ClothOff AI, le consentement et les cinq angles de comparaison des outils de mode.",
+      lead: "Nous ne retouchons pas de photos : nous aidons à distinguer un projet de mode autorisé d'une modification qui porte atteinte à la personne représentée.",
+      blocks: [
+        ["Publication indépendante", "Nous examinons les questions de vie privée, de consentement et de manipulation d'images liées à la recherche ClothOff AI. Il ne s'agit du site officiel d'aucun service au nom identique ou voisin. Aucun dépôt de photo, retrait de vêtement, génération, compte utilisateur ou paiement n'est proposé ici."],
+        ["Cinq comparatifs aux objectifs distincts", "Le changement de tenue et l'essayage virtuel sont des types de processus, pas des marques précises. Adobe Firefly est étudié pour l'édition d'une zone sélectionnée, Canva Magic Edit pour le travail graphique et Photoroom pour les images de produits et de mannequins. Les droits sur la photo, la conservation des données et les coûts comptent autant que le rendu."],
+        ["Ce que nous ne garantissons pas", "Une prévisualisation ne prouve pas la taille réelle d'un vêtement, et nous ne garantissons pas la sécurité d'un prestataire pour chaque photo. Aucun test non effectué n'est présenté comme une expérience vécue. Consultez les documents actuels du fournisseur et sollicitez un conseil adapté aux questions juridiques individuelles."],
+      ],
+    },
+    contact: {
+      title: "Contact",
+      description: "Signaler une erreur, une évolution des sources officielles ou un problème de droit à l'image et de confidentialité dans ClothOff AI.",
+      lead: "Pour demander une correction, précisez l'adresse de la page, la phrase concernée et une source primaire vérifiable.",
+      blocks: [
+        ["Adresse envisagée", "support@clothoffai.fun est l'adresse prévue pour la rédaction, mais la réception des messages n'a pas encore été configurée ni confirmée. Ne l'utilisez pas pour une urgence et n'y envoyez pas d'informations confidentielles."],
+        ["Pas de photos sensibles", "La vérification d'un article ne nécessite ni pièce d'identité, ni portrait privé, ni image intime, ni consigne pour une IA. Si le problème touche une image modifiée sans autorisation, évitez de la rediffuser ; décrivez plutôt la page et le préjudice avec le minimum de données personnelles."],
+        ["Assistance des fournisseurs", "Pour un compte, une facture ou la suppression d'un fichier chez Adobe, Canva, Photoroom ou un autre éditeur, contactez le fournisseur concerné. Nous ne pouvons ni consulter ni supprimer les données stockées par un service tiers."],
+      ],
+    },
+    "editorial-policy": {
+      title: "Politique éditoriale",
+      description: "Sources primaires, critères de comparaison distincts, consentement, sécurité et rectifications des contenus ClothOff AI.",
+      lead: "Chaque article doit éclairer un choix avant l'envoi d'une photo, pas reproduire une page en changeant seulement des mots-clés.",
+      blocks: [
+        ["Une question par comparatif", "Le changement de tenue concerne les vêtements visibles, l'essayage la prévisualisation d'achat, Firefly l'édition d'une sélection, Canva la création graphique et Photoroom les visuels produits ainsi que les fichiers importés. Les deux premières entrées sont des catégories, non des entreprises fictives avec un tarif commun."],
+        ["Preuves et nuances", "Les fonctions, règles et pratiques de traitement sont reliées aux documents du fournisseur. Nous distinguons l'application Photoroom de son API d'entreprise et n'affirmons pas que toute retouche Firefly reçoit automatiquement des Content Credentials. Un protocole suggéré au lecteur n'est pas un test que nous aurions réalisé."],
+        ["Sécurité et corrections", "Nous n'indiquons pas comment fabriquer des images intimes sans consentement, sexualiser des mineurs ou contourner une protection. Une erreur est contrôlée avec sa source ; si la conclusion change, la mise à jour de l'article doit le refléter. Les brouillons aidés par IA sont relus pour leur utilité, leurs preuves et leurs répétitions."],
+      ],
+    },
+    privacy: {
+      title: "Confidentialité",
+      description: "Données techniques du site statique clothoffai.fun, absence de dépôt d'images, Google Analytics soumis au consentement et liens tiers.",
+      lead: "Ce site ne propose ni téléversement de photo, ni générateur, ni compte, ni conversation, ni paiement.",
+      blocks: [
+        ["Diffusion et sécurité", "L'hébergeur et le prestataire de sécurité peuvent traiter adresse IP, URL demandée, heure et informations du navigateur afin de diffuser les pages et prévenir les abus. Nous ne recevons ni ne stockons les photos et consignes d'édition des visiteurs."],
+        ["Mesure d'audience après accord", "Google Analytics 4 ne se charge qu'après votre autorisation. Il peut mesurer pages consultées, défilement, clics externes, appareil et provenance. Nous n'activons ni personnalisation publicitaire ni Google signals. Votre choix reste dans le navigateur jusqu'à 180 jours et peut être retiré en bas de chaque page. Global Privacy Control et Do Not Track sont respectés."],
+        ["Cookies et autres sites", "Le retrait supprime les cookies d'analyse accessibles à ce domaine, pas les données déjà traitées par Google. Un traitement hors de votre pays est possible. Avant de transmettre une photo à un éditeur externe, consultez ses propres règles de confidentialité."],
+      ],
+    },
+    terms: {
+      title: "Conditions d'utilisation",
+      description: "Portée éducative de ClothOff AI, limites des retouches d'images, droits sur les contenus et conditions des sites tiers.",
+      lead: "Ces comparaisons sont informatives et ne remplacent pas les conditions officielles d'un service externe.",
+      blocks: [
+        ["Limites de l'information", "Le contenu n'est pas un conseil juridique ou médical personnalisé et ne garantit ni la sécurité ni la disponibilité d'un fournisseur. Fonctions, prix, licences et règles peuvent changer. Vérifiez ses documents actuels avant un abonnement ou l'envoi d'une photo."],
+        ["Utilisation responsable", "N'utilisez pas ces articles pour faciliter des images intimes sans accord, des représentations sexualisées de mineurs ou de personnes d'âge incertain, le harcèlement, l'usurpation d'identité, le chantage ou la violation du droit à l'image. Même une retouche de mode suppose l'accord de la personne et des droits sur le cliché."],
+        ["Créations et liens", "Ne reproduisez pas massivement nos textes, grilles de comparaison, mise en page ou visuels sans permission et ne les présentez pas comme les vôtres. Une courte citation doit respecter la loi applicable et mentionner sa source. Les services externes appliquent leurs propres règles d'usage, de paiement, de conservation et de suppression."],
+      ],
+    },
+  },
+  ar: {
+    about: {
+      title: "حول هذا الموقع",
+      description: "ما الذي تقدمه نشرة ClothOff AI المستقلة، ولماذا تضع موافقة صاحب الصورة أولاً، وكيف تختلف المقارنات الخمس.",
+      lead: "لسنا خدمة تعديل صور؛ نشرح كيف تختار استخداماً مشروعاً في الموضة دون المساس بحقوق الشخص الظاهر في الصورة.",
+      blocks: [
+        ["منشور مستقل", "نوضح مسائل الخصوصية والموافقة وتعديل الصور التي ترتبط بالبحث عن ClothOff AI. لسنا الموقع الرسمي لأي خدمة تحمل الاسم نفسه أو اسماً مشابهاً. لا نوفر رفع الصور أو إزالة الملابس أو توليد النتائج أو الحسابات أو الدفع."],
+        ["خمس مقارنات بأغراض مختلفة", "تبديل الملابس والقياس الافتراضي مساران عامان وليسا علامتين تجاريتين. ندرس Adobe Firefly في تعديل مناطق محددة، وCanva Magic Edit في التصميم، وPhotoroom في صور المنتجات والنماذج. وننظر إلى حقوق الصورة والاحتفاظ بالبيانات والتكلفة، لا إلى المظهر فقط."],
+        ["حدود ما نقوله", "المعاينة لا تثبت المقاس الحقيقي للملابس، ولا نضمن أن أداة خارجية آمنة لكل صورة. لا نصف اختباراً لم نجْرِه بأنه تجربة شخصية. راجع وثائق المزود الحالية، واطلب استشارة مختصة للمسائل القانونية الفردية."],
+      ],
+    },
+    contact: {
+      title: "التواصل",
+      description: "طريقة الإبلاغ عن خطأ أو تغير في مصدر رسمي أو قلق بشأن حقوق الصورة والخصوصية في محتوى ClothOff AI.",
+      lead: "لطلب تصحيح، حدد رابط الصفحة والعبارة موضع الاعتراض ومصدراً أصلياً يمكن الرجوع إليه.",
+      blocks: [
+        ["عنوان مخطط له", "العنوان support@clothoffai.fun مخصص للتواصل التحريري مستقبلاً، لكن استقبال الرسائل لم يُضبط أو يُؤكد بعد. لا تعتمد عليه في أمر عاجل ولا ترسل إليه بيانات سرية."],
+        ["لا ترسل صوراً حساسة", "لا نحتاج وثائق هوية أو صوراً شخصية أو صوراً حميمة أو أوامر ذكاء اصطناعي لمراجعة مقال. إذا تعلقت المشكلة بصورة معدلة دون إذن، فلا تعِد نشرها؛ صف الصفحة والضرر كتابة بأقل قدر من البيانات الشخصية."],
+        ["دعم المنتجات الخارجية", "مشكلات الحساب أو الفواتير أو طلبات حذف الصور لدى Adobe وCanva وPhotoroom وغيرها تخص قنوات دعم تلك الشركات. لا نستطيع الاطلاع على ملفاتها أو حذفها."],
+      ],
+    },
+    "editorial-policy": {
+      title: "السياسة التحريرية",
+      description: "المصادر الأصلية ومعايير المقارنة المختلفة والموافقة والسلامة وتصحيح مقالات ClothOff AI.",
+      lead: "نكتب لمساعدة القارئ قبل رفع صورة، لا لنكرر عبارة بحث في صفحات متشابهة.",
+      blocks: [
+        ["سؤال مستقل في كل مقال", "تبديل الملابس يتناول القطع الظاهرة، والقياس الافتراضي يعين على معاينة الشراء، وFirefly يركز على تعديل التحديد، وCanva على التصميم، وPhotoroom على صور المنتجات وسياسات الرفع. أول موضوعين فئتان لا شركتان بسعر أو سياسة واحدة."],
+        ["الدليل وحدود الادعاء", "نرجع إلى وثائق المزود في ما يخص الوظائف والقواعد والتعامل مع البيانات. نفرق بين تطبيق Photoroom وواجهته المؤسسية، ولا نزعم أن كل تعديل في Firefly يحمل بيانات اعتماد المحتوى تلقائياً. الاختبار المقترح للقارئ ليس نتيجة نقول إننا قسناها."],
+        ["السلامة والتصحيح", "لا نقدم طريقة لصنع صور حميمة دون موافقة، أو لإظهار قاصرين بصورة جنسية، أو لتجاوز وسائل الحماية. نراجع الخطأ مع مصدره؛ وإذا تغير الاستنتاج نوضح التعديل في معلومات تحديث المقال. وتُفحص المسودات المدعومة بالذكاء الاصطناعي من حيث الفائدة والمصدر والتكرار."],
+      ],
+    },
+    privacy: {
+      title: "الخصوصية",
+      description: "البيانات التقنية في موقع clothoffai.fun الثابت، وعدم استقبال الصور، وتحليلات Google بعد الموافقة، والروابط الخارجية.",
+      lead: "لا يضم هذا الموقع رفع صور أو مولداً أو حسابات أو محادثة أو عملية دفع.",
+      blocks: [
+        ["تقديم الصفحات وحمايتها", "قد يعالج مزود الاستضافة والأمن عنوان IP والرابط المطلوب والوقت وبيانات المتصفح لتقديم الصفحات والحد من إساءة الاستخدام. لا نتلقى صور الزوار أو أوامر تعديل الصور ولا نخزنها."],
+        ["التحليل بعد الإذن فقط", "لا يُحمّل Google Analytics 4 إلا بعد الموافقة، وقد يقيس الزيارات والتمرير والروابط الخارجية ونوع الجهاز ومصدر الوصول. لا نفعّل تخصيص الإعلانات أو Google signals. يبقى الاختيار في المتصفح حتى 180 يوماً ويمكن سحبه من أسفل أي صفحة. نحترم Global Privacy Control وDo Not Track."],
+        ["ملفات الارتباط والمواقع الأخرى", "عند سحب الإذن نحذف ملفات التحليل التي يمكن لهذا النطاق الوصول إليها، لا البيانات التي سبق أن عالجتها Google. قد تجري المعالجة خارج بلدك. قبل رفع صورة إلى محرر خارجي، اقرأ سياسة الخصوصية الخاصة بمشغّله."],
+      ],
+    },
+    terms: {
+      title: "شروط الاستخدام",
+      description: "نطاق الاستخدام التعليمي لمحتوى ClothOff AI وحدود تعديل الصور وحقوق المواد الأصلية وشروط الخدمات الخارجية.",
+      lead: "هذه المقالات معلومات للمقارنة وليست الشروط الرسمية لأي خدمة صور خارجية.",
+      blocks: [
+        ["حدود المعلومات", "المحتوى ليس استشارة قانونية أو طبية فردية ولا يضمن سلامة أي طرف آخر أو توافره. قد تتغير الميزات والأسعار والتراخيص والقواعد؛ راجع وثائق المزود الحالية قبل الدفع أو رفع صورة."],
+        ["الاستخدام المسؤول", "لا تستخدم هذه المعلومات لإنتاج صور حميمة دون موافقة، أو صور جنسية لقاصرين أو أشخاص غير واضحين في العمر، أو للتحرش وانتحال الهوية والابتزاز وانتهاك حقوق الصورة. حتى تعديل الأزياء العادي يحتاج إذن الشخص وحقوق الصورة الأصلية."],
+        ["المحتوى الأصلي والروابط", "لا تعِد نشر نصوصنا ومنهج المقارنة والتصميم والصور على نطاق واسع دون إذن، ولا تنسبها لنفسك. يخضع الاقتباس القصير للقانون المعمول به وذكر المصدر. للخدمات المرتبطة قواعدها الخاصة بشأن الاستخدام والدفع والحفظ والحذف."],
+      ],
+    },
+  },
 };
