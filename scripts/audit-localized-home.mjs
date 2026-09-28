@@ -1,6 +1,7 @@
 import { localizedHome } from "../src/data/localized-home.ts";
 import { localizedBlog } from "../src/data/localized-blog.ts";
 import { localizedInfo } from "../src/data/localized-info.ts";
+import { comparisonSources, localizedArticles } from "../src/data/localized-articles.ts";
 import { comparisonSlugs, infoPageKeys, locales } from "../src/data/locales.ts";
 
 const assert = (condition, message) => { if (!condition) throw new Error(message); };
@@ -66,4 +67,28 @@ for (const [slug, pages] of Object.entries(localizedInfo)) {
   assert(JSON.stringify(pages.contact).includes("support@clothoffai.fun"), `${slug}: missing honest contact disclosure`);
   assert(JSON.stringify(pages.privacy).includes("Google Analytics"), `${slug}: missing analytics disclosure`);
 }
-console.log(`ClothOff AI: 9/9 home, 9/9 blog and ${infoLocales.length}/9 complete five-page information sets pass source-only checks. No locale routes are published.`);
+for (const key of comparisonSlugs) {
+  const links = comparisonSources[key];
+  assert(links?.length >= 2 && links.every(source => /^https:\/\//.test(source.url)), `${key}: missing primary sources`);
+}
+const articleLocales = Object.keys(localizedArticles);
+for (const [slug, articles] of Object.entries(localizedArticles)) {
+  assert(locales.some(locale => locale.slug === slug), `${slug}: unknown article locale`);
+  assert(comparisonSlugs.every(key => articles[key]), `${slug}: missing VS article`);
+  const articleTitles = new Set();
+  const articleDescriptions = new Set();
+  const compactScript = ["ja", "ko", "zh-hant"].includes(slug);
+  for (const key of comparisonSlugs) {
+    const article = articles[key];
+    assert(article.title.includes("ClothOff AI") && article.title.length >= 25, `${slug}/${key}: weak title`);
+    assert(article.description.length >= 60 && article.description.length <= 180, `${slug}/${key}: weak meta description`);
+    assert(article.intro.length >= (compactScript ? 110 : 190), `${slug}/${key}: thin intro`);
+    assert(article.dimensions.length === 4 && article.dimensions.every(row => row.length === 3 && row[0].length >= 2 && row.slice(1).every(cell => cell.length >= 8)), `${slug}/${key}: weak comparison matrix`);
+    assert(article.sections.length === 4 && article.sections.every(([heading, body]) => heading.length >= 4 && body.length >= (compactScript ? 120 : 250)), `${slug}/${key}: thin analysis`);
+    assert(article.verdict.length >= (compactScript ? 110 : 180), `${slug}/${key}: thin verdict`);
+    articleTitles.add(article.title);
+    articleDescriptions.add(article.description);
+  }
+  assert(articleTitles.size === comparisonSlugs.length && articleDescriptions.size === comparisonSlugs.length, `${slug}: duplicate article metadata`);
+}
+console.log(`ClothOff AI: 9/9 home, 9/9 blog, ${infoLocales.length}/9 five-page info sets and ${articleLocales.length * 5}/45 distinct VS articles pass source-only checks. No locale routes are published.`);
