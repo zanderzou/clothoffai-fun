@@ -1,6 +1,7 @@
 import { localizedHome } from "../src/data/localized-home.ts";
 import { localizedBlog } from "../src/data/localized-blog.ts";
-import { comparisonSlugs, locales } from "../src/data/locales.ts";
+import { localizedInfo } from "../src/data/localized-info.ts";
+import { comparisonSlugs, infoPageKeys, locales } from "../src/data/locales.ts";
 
 const assert = (condition, message) => { if (!condition) throw new Error(message); };
 const phrases = {
@@ -49,4 +50,20 @@ for (const { slug } of locales) {
 }
 assert(titles.size === locales.length && snippets.size === locales.length, "Duplicate localized title or description");
 assert(blogHeadings.size === locales.length && blogSnippets.size === locales.length, "Duplicate localized blog heading or description");
-console.log("ClothOff AI: 9/9 source-only homepage and blog-index drafts passed depth, structure, keyword and distinct-metadata checks.");
+const infoLocales = Object.keys(localizedInfo);
+assert(infoLocales.length >= 3 && infoLocales.length <= locales.length, "Unexpected information-page draft count");
+for (const [slug, pages] of Object.entries(localizedInfo)) {
+  assert(locales.some(locale => locale.slug === slug), `${slug}: unknown information-page locale`);
+  assert(infoPageKeys.every(key => pages[key]), `${slug}: missing information page`);
+  const descriptions = new Set();
+  for (const key of infoPageKeys) {
+    const page = pages[key];
+    assert(page.title && page.description.length >= 35 && page.lead.length >= 25, `${slug}/${key}: thin metadata/lead`);
+    assert(page.blocks.length >= 3 && page.blocks.every(([heading, body]) => heading.length >= 3 && body.length >= 65), `${slug}/${key}: thin information blocks`);
+    descriptions.add(page.description);
+  }
+  assert(descriptions.size === infoPageKeys.length, `${slug}: duplicate information-page descriptions`);
+  assert(JSON.stringify(pages.contact).includes("support@clothoffai.fun"), `${slug}: missing honest contact disclosure`);
+  assert(JSON.stringify(pages.privacy).includes("Google Analytics"), `${slug}: missing analytics disclosure`);
+}
+console.log(`ClothOff AI: 9/9 home, 9/9 blog and ${infoLocales.length}/9 complete five-page information sets pass source-only checks. No locale routes are published.`);
