@@ -52,12 +52,11 @@ const jsonLd = {
       <a class="back-link" href="/blog/">← All ClothOff AI guides</a>
       <div class="post-meta"><span>{post.data.category}</span><time datetime={toIsoDate(post.data.publishDate)}>{formatDate(post.data.publishDate)}</time><span>{post.data.readTime}</span></div>
       <h1>{post.data.title}</h1><p>{post.data.description}</p>
-      <div class="article-author"><span class="brand-mark"><Icon name="shield" /></span><div><strong>{site.author}</strong><small>Independent safety research · Updated {formatDate(post.data.updatedDate)}</small></div></div>
+      <div class="article-author"><span class="brand-mark"><Icon name="shield" /></span><div><strong>{site.author}</strong><small>Independent, consent-first editorial comparison</small></div></div>
     </header>
     <div class="article-layout">
-      <aside><div class="toc"><span>IN THIS GUIDE</span><a href="#answer">Direct answer</a><a href="#article-content">Full comparison</a><a href="#sources">Sources</a><a href="#related">Related guides</a></div></aside>
+      <aside><div class="toc"><span>IN THIS GUIDE</span><a href="#article-content">Full comparison</a><a href="#sources">Sources</a><a href="#related">Related guides</a></div></aside>
       <div>
-        <section class="answer-box" id="answer" aria-labelledby="answer-title"><span>DIRECT ANSWER</span><h2 id="answer-title">What should you know?</h2><p>{post.data.answer}</p></section>
         <div class="article-content" id="article-content"><Content /></div>
         <div class="key-rule"><div><Icon name="shield" /></div><div><strong>The rule that covers every tool</strong><p>Do not create, request, or share an intimate or misleading edit of a real person without their explicit, informed consent. When in doubt, use a mannequin or a fully synthetic fashion subject.</p></div></div>
         <section class="source-list" id="sources"><h2>Sources and further reading</h2><p>These primary references inform the privacy, provenance, and risk-management principles used in this guide.</p><ul>{post.data.sources.map((source) => <li><a href={source.url} rel="noopener" target="_blank">{source.name}</a></li>)}</ul></section>
