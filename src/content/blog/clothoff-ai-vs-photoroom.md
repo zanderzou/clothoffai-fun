@@ -41,7 +41,7 @@ This does not make every Photoroom output automatically accurate. A visual previ
 
 ## The privacy trade-off is real
 
-Photoroom's published privacy policy says uploaded images may be used to improve, train and develop its services and models. Its help center says that is the default for uploaded images. Therefore, do not describe the consumer app as categorically “private” or promise that a real portrait is never used for training. Read the live privacy controls, deletion process and any account-level choices before uploading. Enterprise API terms may differ; confirm them in the actual agreement instead of inferring them from a marketing page.
+Photoroom's published privacy policy says images uploaded to its app may be used to improve, train and develop its services and models; users can opt out in account settings, but that choice is not retroactive. Its help center also describes training on uploads as the default. The same privacy policy explicitly says that this model-improvement use does **not** apply to images processed through its API. Do not describe the consumer app as categorically “private” or assume the API exemption answers every retention and deletion question. Check the live controls and, for an enterprise integration, the actual processing agreement.
 
 For early concepts, a flat-lay garment, mannequin or licensed synthetic model avoids exposing a customer's identity. If a shopper-facing try-on truly requires a real photo, explain the processing and obtain specific, informed permission. A public social profile is not permission to upload someone else's image into a retail tool.
 
