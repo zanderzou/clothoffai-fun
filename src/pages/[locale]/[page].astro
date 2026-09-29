@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { localizedInfo } from "../../data/localized-info";
+import { infoPageKeys, locales, ui, type InfoPageKey, type Locale } from "../../data/locales";
+import { site } from "../../data/site";
+export function getStaticPaths() {
+  return locales.flatMap(({ slug: locale }) => infoPageKeys.map((page) => ({ params: { locale, page } })));
+}
+const locale = Astro.params.locale as Locale;
+const page = Astro.params.page as InfoPageKey;
+const copy = localizedInfo[locale]![page];
+const label = ui[locale];
+const lang = locales.find(({ slug }) => slug === locale)!.lang;
+const url = `${site.url}/${locale}/${page}/`;
+const jsonLd = { "@context": "https://schema.org", "@type": "WebPage", name: copy.title, description: copy.description, url, inLanguage: lang, isPartOf: { "@type": "WebSite", name: site.name, url: site.url } };
+---
+<BaseLayout locale={locale} title={`${copy.title} | ClothOff AI`} description={copy.description} jsonLd={jsonLd}>
+  <div class="localized-info"><section class="info-hero"><div class="page-orb"></div><div class="section-kicker">ClothOff AI · {page === "editorial-policy" ? label.editorial : label[page]}</div><h1>{copy.title}</h1><p>{copy.lead}</p></section><article class="info-content"><p class="localized-info-description">{copy.description}</p>{copy.blocks.map(([heading, body]) => <section><h2>{heading}</h2><p>{body}</p></section>)}</article></div>
+</BaseLayout>

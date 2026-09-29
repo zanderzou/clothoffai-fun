@@ -62,7 +62,7 @@
   decline.addEventListener("click", () => choose("denied"));
   settings.addEventListener("click", () => {
     notice.hidden = false;
-    status.textContent = privacySignal ? "Your browser privacy signal is respected. Analytics is off." : consent === "granted" ? "Analytics is on. Choose No thanks to withdraw your consent." : "Analytics is off. Your choice applies only to this website.";
+    status.textContent = privacySignal ? root.dataset.statusPrivate : consent === "granted" ? root.dataset.statusOn : root.dataset.statusOff;
     accept.disabled = privacySignal;
     decline.focus({ preventScroll: true });
   });

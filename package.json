@@ -16,11 +16,19 @@
     "generate:llms": "node scripts/generate-llms.mjs",
     "test:llms": "node scripts/generate-llms.mjs --check",
     "test:locale-drafts": "node --experimental-strip-types scripts/audit-localized-home.mjs",
+    "test:locales": "node scripts/audit-locales.mjs",
+    "test:render": "node scripts/check-localized-render.mjs",
+    "test:interactions": "node scripts/check-localized-interactions.mjs",
     "prebuild": "npm run generate:llms"
   },
   "dependencies": {
-    "@shikijs/vscode-textmate": "^10.0.2",
     "@astrojs/sitemap": "^3.7.4",
+    "@shikijs/vscode-textmate": "^10.0.2",
     "astro": "^7.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "playwright": "^1.63.0",
+    "typescript": "^6.0.3"
   }
 }

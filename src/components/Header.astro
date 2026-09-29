@@ -1,16 +1,26 @@
 ---
 import Icon from "./Icon.astro";
+import { languageAlternates, locales, routeFor, ui, type Locale } from "../data/locales";
+interface Props { locale?: Locale; }
+const { locale } = Astro.props;
+const copy = locale ? ui[locale] : null;
+const home = routeFor(locale ?? "");
+const blog = routeFor(locale ?? "", "blog");
+const alternateRoutes = languageAlternates(/^\/404\/?$/.test(Astro.url.pathname) ? "/" : Astro.url.pathname);
+const options = [{ lang: "en", label: "English", href: alternateRoutes[0].href }, ...locales.map((item, index) => ({ lang: item.lang, label: item.label, href: alternateRoutes[index + 1].href }))];
+const current = locale ? locales.find((item) => item.slug === locale)!.lang : "en";
 ---
 
 <header class="site-header" data-header>
-  <a class="brand" href="/" aria-label="ClothOff AI home">
+  <a class="brand" href={home} aria-label="ClothOff AI home">
     <span class="brand-mark"><Icon name="shield" /></span>
     <span class="brand-copy"><strong>CLOTHOFF<span>AI</span></strong></span>
   </a>
-  <nav class="desktop-nav" aria-label="Main navigation">
-    <a href="/#about">What it is</a><a href="/#safe-use">Safe use</a><a href="/#compare">Comparison</a><a href="/blog/">Blog</a>
+  <nav class="desktop-nav" aria-label={copy?.navigation ?? "Main navigation"}>
+    <a href={`${home}#about`}>{copy?.about ?? "What it is"}</a><a href={`${home}#safe-use`}>{copy?.safety ?? "Safe use"}</a><a href={`${home}#compare`}>{copy?.compare ?? "Comparison"}</a><a href={blog}>{copy?.blog ?? "Blog"}</a>
   </nav>
-  <a class="header-cta" href="/#alternatives">Explore safe options <Icon name="arrow" /></a>
-  <button class="menu-button" type="button" data-menu-button aria-label="Open menu" aria-expanded="false"><Icon name="menu" /></button>
-  <div class="mobile-nav" data-mobile-nav><a href="/#about">What it is</a><a href="/#safe-use">Safe use</a><a href="/#compare">Comparison</a><a href="/blog/">Blog</a></div>
+  <a class="header-cta" href={`${home}#alternatives`}>{copy?.alternatives ?? "Explore safe options"} <Icon name="arrow" /></a>
+  <details class="language-menu"><summary aria-label={copy?.language ?? "Language"}>{current.toUpperCase()}</summary><div>{options.map((item) => <a href={item.href} lang={item.lang} aria-current={item.lang === current ? "page" : undefined}>{item.label}</a>)}</div></details>
+  <button class="menu-button" type="button" data-menu-button aria-label={copy?.menu ?? "Open menu"} aria-expanded="false"><Icon name="menu" /></button>
+  <div class="mobile-nav" data-mobile-nav><a href={`${home}#about`}>{copy?.about ?? "What it is"}</a><a href={`${home}#safe-use`}>{copy?.safety ?? "Safe use"}</a><a href={`${home}#compare`}>{copy?.compare ?? "Comparison"}</a><a href={blog}>{copy?.blog ?? "Blog"}</a></div>
 </header>

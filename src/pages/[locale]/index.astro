@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import Icon from "../../components/Icon.astro";
+import LocalizedPostCard from "../../components/LocalizedPostCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { localizedHome } from "../../data/localized-home";
+import { comparisonSlugs, locales, ui, type Locale } from "../../data/locales";
+import { site } from "../../data/site";
+import heroImage from "../../assets/clothoff-user-fashion-editorial.jpg";
+import secondaryImage from "../../assets/clothoff-user-athleisure-editorial.jpg";
+
+export function getStaticPaths() { return locales.map(({ slug }) => ({ params: { locale: slug } })); }
+const locale = Astro.params.locale as Locale;
+const copy = localizedHome[locale]!;
+const label = ui[locale];
+const lang = locales.find(({ slug }) => slug === locale)!.lang;
+const imageAlts: Record<Locale, [string, string]> = {
+  ja: ["屋外で白い服を着た成人モデルのファッション写真", "黒いスポーツウェアを着た成人モデルのファッション写真"],
+  ko: ["야외에서 흰색 의상을 입은 성인 모델의 패션 사진", "검은색 운동복을 입은 성인 모델의 패션 사진"],
+  "zh-hant": ["成年模特兒穿著白色服裝的戶外時尚照片", "成年模特兒穿著黑色運動服的時尚照片"],
+  es: ["Modelo adulta con ropa blanca en una fotografía editorial al aire libre", "Modelo adulta con ropa deportiva negra en una fotografía de moda"],
+  "pt-br": ["Modelo adulta com roupa branca em fotografia editorial ao ar livre", "Modelo adulta com roupa esportiva preta em fotografia de moda"],
+  ru: ["Взрослая модель в белой одежде на уличном модном снимке", "Взрослая модель в чёрной спортивной одежде на модном снимке"],
+  de: ["Erwachsenes Model in weißer Kleidung auf einem Modefoto im Freien", "Erwachsenes Model in schwarzer Sportkleidung auf einem Modefoto"],
+  fr: ["Mannequin adulte en tenue blanche sur une photo de mode en extérieur", "Mannequin adulte en tenue de sport noire sur une photo de mode"],
+  ar: ["عارضة أزياء بالغة ترتدي ملابس بيضاء في صورة خارجية", "عارضة أزياء بالغة ترتدي ملابس رياضية سوداء في صورة أزياء"],
+};
+const url = `${site.url}/${locale}/`;
+const jsonLd = { "@context": "https://schema.org", "@graph": [
+  { "@type": "WebPage", "@id": `${url}#webpage`, name: "ClothOff AI", url, description: copy.metaDescription, inLanguage: lang, isPartOf: { "@type": "WebSite", name: site.name, url: site.url } },
+  { "@type": "FAQPage", inLanguage: lang, mainEntity: copy.faq.items.map(({ question, answer }) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) }
+] };
+---
+<BaseLayout locale={locale} title="ClothOff AI" description={copy.metaDescription} jsonLd={jsonLd}>
+  <div class="localized-home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <Image class="hero-image" src={heroImage} alt={imageAlts[locale][0]} widths={[640, 960, 1280, 1586]} sizes="100vw" loading="eager" fetchpriority="high" quality={84} />
+      <div class="hero-overlay"></div>
+      <div class="hero-content"><div class="eyebrow"><span></span>{copy.hero.eyebrow}</div><h1>ClothOff AI</h1><p class="hero-tagline">{copy.hero.tagline}</p><p>{copy.hero.description}</p><div class="hero-actions"><a class="button primary" href="#alternatives">{copy.hero.primary} <Icon name="arrow" /></a><a class="button ghost" href={`/${locale}/blog/`}>{copy.hero.secondary}</a></div><div class="trust-row"><span><Icon name="shield" /> {label.consentFirst}</span><span><Icon name="lock" /> {label.noUploads}</span><span>{label.adultsOnly}</span></div></div>
+    </section>
+    <section class="intro section" id="about"><div class="section-kicker">{copy.intro.kicker}</div><div class="intro-grid"><h2>{copy.intro.heading}</h2><div><p class="lead">{copy.intro.lead}</p><p>{copy.intro.body}</p></div></div></section>
+    <section class="safe-grid section" id="alternatives"><div class="section-heading"><div><div class="section-kicker">{copy.alternatives.kicker}</div><h2>{copy.alternatives.heading}</h2></div><p>{copy.alternatives.description}</p></div><div class="feature-grid">{copy.alternatives.cards.map((card, index) => <article class:list={["feature-card", ["cyan", "violet", "pink"][index]]}><span class="feature-number">0{index + 1}</span><div class="feature-icon"><Icon name={index === 0 ? "dress" : index === 1 ? "spark" : "lock"} /></div><h3>{card.title}</h3><p>{card.description}</p><ul>{card.uses.map((use) => <li>{use}</li>)}</ul></article>)}</div></section>
+    <section class="check-section section" id="safe-use"><div class="check-visual"><div class="scan-line"></div><div class="mini-card"><span class="mini-label">{label.consentFirst}</span><strong>{copy.checklist.heading}</strong><div class="mini-progress"><i></i></div><ul>{copy.checklist.items.map((item) => <li><b>✓</b> {item.title}</li>)}</ul></div></div><div class="check-copy"><div class="section-kicker">{copy.checklist.kicker}</div><h2>{copy.checklist.heading}</h2><p>{copy.checklist.description}</p><ol>{copy.checklist.items.map((item, index) => <li><span>0{index + 1}</span><div><strong>{item.title}</strong><p>{item.body}</p></div></li>)}</ol></div></section>
+    <section class="section" id="compare"><div class="section-head"><div><div class="section-label">{copy.comparison.kicker}</div><h2>{copy.comparison.heading}</h2></div><p>{copy.comparison.description}</p></div><div class="comparison-scroll"><table><thead><tr><th scope="col">{copy.comparison.columns.option}</th><th scope="col">{copy.comparison.columns.fit}</th><th scope="col">{copy.comparison.columns.distinction}</th><th scope="col">{copy.comparison.columns.article}</th></tr></thead><tbody><tr><th scope="row">{copy.comparison.baseline.label}</th><td>{copy.comparison.baseline.fit}</td><td>{copy.comparison.baseline.distinction}</td><td>—</td></tr>{comparisonSlugs.map((slug) => <tr><th scope="row">{copy.comparison.options[slug].label}</th><td>{copy.comparison.options[slug].fit}</td><td>{copy.comparison.options[slug].distinction}</td><td><a href={`/${locale}/blog/${slug}/`}>{copy.comparison.options[slug].cta} →</a></td></tr>)}</tbody></table></div></section>
+    <section class="section seo-copy"><div class="section-head"><div><div class="section-label">{copy.research.kicker}</div><h2>{copy.research.heading}</h2></div><p>{copy.research.description}</p></div><figure class="seo-visual"><Image src={secondaryImage} alt={imageAlts[locale][1]} widths={[640, 960, 1280]} sizes="(max-width: 640px) 100vw, 1200px" loading="lazy" quality={84} /></figure><div class="localized-research">{copy.research.blocks.map((block) => <article><h3>{block.heading}</h3>{block.paragraphs.map((paragraph) => <p>{paragraph}</p>)}</article>)}</div></section>
+    <section class="blog-preview section"><div class="section-heading"><div><div class="section-kicker">{copy.blog.kicker}</div><h2>{copy.blog.heading}</h2></div><a class="button ghost" href={`/${locale}/blog/`}>{copy.blog.cta} <Icon name="arrow" /></a></div><div class="post-grid">{comparisonSlugs.map((slug, index) => <LocalizedPostCard locale={locale} slug={slug} index={index} />)}</div></section>
+    <section class="faq section"><div><div class="section-kicker">{copy.faq.kicker}</div><h2>{copy.faq.heading}</h2></div><div class="faq-list">{copy.faq.items.map(({ question, answer }) => <details><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
+    <section class="final-cta section"><div class="final-glow"></div><div><span>{label.consentFirst}</span><h2>{copy.final.heading}</h2><p>{copy.final.description}</p></div><a class="button light" href={`/${locale}/blog/`}>{copy.final.cta} <Icon name="arrow" /></a></section>
+  </div>
+</BaseLayout>

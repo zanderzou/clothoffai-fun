@@ -52,7 +52,7 @@ for (const { slug } of locales) {
 assert(titles.size === locales.length && snippets.size === locales.length, "Duplicate localized title or description");
 assert(blogHeadings.size === locales.length && blogSnippets.size === locales.length, "Duplicate localized blog heading or description");
 const infoLocales = Object.keys(localizedInfo);
-assert(infoLocales.length >= 3 && infoLocales.length <= locales.length, "Unexpected information-page draft count");
+assert(infoLocales.length === locales.length, "Expected all nine complete information-page editions");
 for (const [slug, pages] of Object.entries(localizedInfo)) {
   assert(locales.some(locale => locale.slug === slug), `${slug}: unknown information-page locale`);
   assert(infoPageKeys.every(key => pages[key]), `${slug}: missing information page`);
@@ -72,6 +72,7 @@ for (const key of comparisonSlugs) {
   assert(links?.length >= 2 && links.every(source => /^https:\/\//.test(source.url)), `${key}: missing primary sources`);
 }
 const articleLocales = Object.keys(localizedArticles);
+assert(articleLocales.length === locales.length, "Expected all nine complete five-article editions");
 for (const [slug, articles] of Object.entries(localizedArticles)) {
   assert(locales.some(locale => locale.slug === slug), `${slug}: unknown article locale`);
   assert(comparisonSlugs.every(key => articles[key]), `${slug}: missing VS article`);
@@ -91,4 +92,4 @@ for (const [slug, articles] of Object.entries(localizedArticles)) {
   }
   assert(articleTitles.size === comparisonSlugs.length && articleDescriptions.size === comparisonSlugs.length, `${slug}: duplicate article metadata`);
 }
-console.log(`ClothOff AI: 9/9 home, 9/9 blog, ${infoLocales.length}/9 five-page info sets and ${articleLocales.length * 5}/45 distinct VS articles pass source-only checks. No locale routes are published.`);
+console.log(`ClothOff AI: 9/9 home, 9/9 blog, ${infoLocales.length}/9 five-page info sets and ${articleLocales.length * 5}/45 distinct VS articles pass content checks.`);

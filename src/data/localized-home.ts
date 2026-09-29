@@ -27,8 +27,7 @@ export interface HomeCopy {
   final: { heading: string; description: string; cta: string };
 }
 
-// Publication gate: populate all nine language bodies before linking routes or hreflang.
-export const localizedHome: Partial<Record<Locale, HomeCopy>> = {
+export const localizedHome: Record<Locale, HomeCopy> = {
   ja: {
     metaDescription: "ClothOff AI の検索意図と画像改変の同意・プライバシー上のリスクを整理。写真をアップロードせずに、AI着せ替え、バーチャル試着、Adobe・Canva・Photoroomの安全な用途を比較します。",
     hero: {

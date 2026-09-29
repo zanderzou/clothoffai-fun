@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import LocalizedPostCard from "../../../components/LocalizedPostCard.astro";
+import { localizedBlog } from "../../../data/localized-blog";
+import { localizedArticles } from "../../../data/localized-articles";
+import { comparisonSlugs, locales, type Locale } from "../../../data/locales";
+import { site } from "../../../data/site";
+export function getStaticPaths() { return locales.map(({ slug }) => ({ params: { locale: slug } })); }
+const locale = Astro.params.locale as Locale;
+const copy = localizedBlog[locale];
+const lang = locales.find(({ slug }) => slug === locale)!.lang;
+const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: copy.heading, url: `${site.url}/${locale}/blog/`, description: copy.metaDescription, inLanguage: lang, hasPart: comparisonSlugs.map((slug) => ({ "@type": "Article", headline: localizedArticles[locale]![slug].title, url: `${site.url}/${locale}/blog/${slug}/` })) };
+---
+<BaseLayout locale={locale} title={`${copy.heading} | ClothOff AI`} description={copy.metaDescription} jsonLd={jsonLd}>
+  <div class="localized-blog">
+    <section class="page-hero"><div class="ambient-orb"></div><span>{copy.eyebrow}</span><h1>{copy.heading}</h1><p>{copy.intro}</p></section>
+    <section class="section"><h2>{copy.readerHeading}</h2>{copy.readerParagraphs.map((paragraph) => <p>{paragraph}</p>)}</section>
+    <section class="blog-list section"><div class="post-grid">{comparisonSlugs.map((slug, index) => <LocalizedPostCard locale={locale} slug={slug} index={index} />)}</div></section>
+    <section class="section localized-blog-notes"><article><h2>{copy.categoryHeading}</h2><p>{copy.categoryParagraph}</p></article><article><h2>{copy.productHeading}</h2><p>{copy.productParagraph}</p></article><p>{copy.closing}</p></section>
+  </div>
+</BaseLayout>

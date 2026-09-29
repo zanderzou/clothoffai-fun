@@ -14,8 +14,7 @@ export interface BlogCopy {
   closing: string;
 }
 
-// Draft-only copy. Do not link any locale route until all five localized VS
-// articles and the corresponding information pages have passed publication QA.
+// Full localized blog-index copy for all published language editions.
 export const localizedBlog: Record<Locale, BlogCopy> = {
   ja: {
     metaDescription: "ClothOff AI の検索から、安全なファッション画像編集へ。AI着せ替え、バーチャル試着、Adobe Firefly、Canva Magic Edit、Photoroomを目的と同意・プライバシーで比較。",

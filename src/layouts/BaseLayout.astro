@@ -4,7 +4,9 @@ import { getCollection } from "astro:content";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { site } from "../data/site";
+import { languageAlternates, locales, ui, type Locale } from "../data/locales";
 import "../site.css";
+import "../localized.css";
 
 interface Props {
   title: string;
@@ -16,6 +18,7 @@ interface Props {
   keywords?: string[];
   noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  locale?: Locale;
 }
 
 const {
@@ -28,7 +31,11 @@ const {
   keywords = [],
   noindex = false,
   jsonLd,
+  locale,
 } = Astro.props;
+const language = locale ? locales.find((item) => item.slug === locale)! : { lang: "en", dir: "ltr" };
+const ogLocales: Record<string, string> = { en: "en_US", ja: "ja_JP", ko: "ko_KR", "zh-hant": "zh_TW", es: "es_ES", "pt-br": "pt_BR", ru: "ru_RU", de: "de_DE", fr: "fr_FR", ar: "ar_SA" };
+const label = locale ? ui[locale] : null;
 const canonical = new URL(Astro.url.pathname, site.url).toString();
 const imageUrl = new URL(image, site.url).toString();
 const posts = (await getCollection("blog")).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
@@ -36,7 +43,7 @@ const robots = noindex ? "noindex,follow" : "index,follow,max-image-preview:larg
 ---
 
 <!doctype html>
-<html lang={site.language}>
+<html lang={language.lang} dir={language.dir}>
   <head><meta name="msvalidate.01" content="56B74B6B9E884918F4F18C05D7E2A1F4" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,6 +54,8 @@ const robots = noindex ? "noindex,follow" : "index,follow,max-image-preview:larg
     <meta name="robots" content={robots} />
     <meta name="googlebot" content={robots} />
     <link rel="canonical" href={canonical} />
+    {!noindex && languageAlternates(Astro.url.pathname).map((entry) => <link rel="alternate" hreflang={entry.lang} href={new URL(entry.href, site.url).toString()} />)}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={new URL(languageAlternates(Astro.url.pathname)[0].href, site.url).toString()} />}
     <link rel="alternate" type="application/rss+xml" title={`${site.name} RSS`} href="/rss.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,7 +63,7 @@ const robots = noindex ? "noindex,follow" : "index,follow,max-image-preview:larg
     <meta name="theme-color" content="#0a0710" />
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={site.name} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={ogLocales[locale ?? "en"]} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -69,10 +78,10 @@ const robots = noindex ? "noindex,follow" : "index,follow,max-image-preview:larg
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>}
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <Header />
+    <a class="skip-link" href="#main-content">{label?.skip ?? "Skip to content"}</a>
+    <Header locale={locale} />
     <main id="main-content"><slot /></main>
-    <Footer posts={posts} />
+    <Footer posts={posts} locale={locale} />
     <script is:inline src="/assets/main.js"></script>
-  <Analytics /></body>
+  <Analytics locale={locale} /></body>
 </html>

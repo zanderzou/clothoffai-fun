@@ -38,9 +38,7 @@ export const comparisonSources: Record<ComparisonSlug, { name: string; url: stri
   ],
 };
 
-// Editorial drafts only. The whole 9 × 5 set must be complete and validated
-// before creating locale routes or reciprocal hreflang.
-export const localizedArticles: Partial<Record<Locale, Record<ComparisonSlug, LocalizedArticle>>> = {
+export const localizedArticles: Record<Locale, Record<ComparisonSlug, LocalizedArticle>> = {
   ja: {
     "clothoff-ai-vs-ai-outfit-changer": {
       title: "ClothOff AI と AI着せ替え：服を消さずに着替える方法",

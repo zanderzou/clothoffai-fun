@@ -1,0 +1,33 @@
+---
+import Icon from "../../../components/Icon.astro";
+import LocalizedPostCard from "../../../components/LocalizedPostCard.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { comparisonSources, localizedArticles } from "../../../data/localized-articles";
+import { comparisonSlugs, locales, ui, type ComparisonSlug, type Locale } from "../../../data/locales";
+import { site } from "../../../data/site";
+export function getStaticPaths() {
+  return locales.flatMap(({ slug: locale }) => comparisonSlugs.map((slug) => ({ params: { locale, slug } })));
+}
+const locale = Astro.params.locale as Locale;
+const slug = Astro.params.slug as ComparisonSlug;
+const article = localizedArticles[locale]![slug];
+const copy = ui[locale];
+const lang = locales.find((item) => item.slug === locale)!.lang;
+const url = `${site.url}/${locale}/blog/${slug}/`;
+const related = comparisonSlugs.filter((item) => item !== slug).slice(0, 2);
+const jsonLd = { "@context": "https://schema.org", "@graph": [
+  { "@type": "Article", headline: article.title, description: article.description, url, mainEntityOfPage: url, inLanguage: lang, image: `${site.url}/assets/clothoff-adult-swimwear-editorial.jpg`, author: { "@type": "Organization", name: site.author, url: `${site.url}/about/` }, publisher: { "@type": "Organization", name: site.name, url: site.url }, citation: comparisonSources[slug].map(({ url }) => url) },
+  { "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: site.name, item: `${site.url}/${locale}/` },
+    { "@type": "ListItem", position: 2, name: copy.blog, item: `${site.url}/${locale}/blog/` },
+    { "@type": "ListItem", position: 3, name: article.title, item: url }
+  ] }
+] };
+---
+<BaseLayout locale={locale} title={article.title} description={article.description} type="article" jsonLd={jsonLd}>
+  <article class="article-shell localized-article">
+    <header class="article-header"><nav class="breadcrumbs" aria-label={copy.breadcrumb}><a href={`/${locale}/`}>{copy.home}</a><span>/</span><a href={`/${locale}/blog/`}>{copy.blog}</a></nav><a class="back-link" href={`/${locale}/blog/`}>← {copy.allArticles}</a><h1>{article.title}</h1><p>{article.description}</p><div class="article-author"><span class="brand-mark"><Icon name="shield" /></span><div><strong>ClothOff AI</strong><small>{copy.independent}</small></div></div></header>
+    <div class="article-layout"><aside><div class="toc"><span>{copy.blog}</span><a href="#article-content">{copy.compare}</a><a href="#sources">{copy.sources}</a><a href="#related">{copy.allArticles}</a></div></aside><div><div class="article-content" id="article-content"><p class="article-lede">{article.intro}</p><div class="localized-matrix"><table><thead><tr><th scope="col">{copy.compare}</th><th scope="col">ClothOff AI</th><th scope="col">{slug === "clothoff-ai-vs-ai-outfit-changer" ? "AI Outfit Changer" : slug === "clothoff-ai-vs-virtual-try-on" ? "AI Virtual Try-On" : slug === "clothoff-ai-vs-adobe-firefly" ? "Adobe Firefly" : slug === "clothoff-ai-vs-canva-magic-edit" ? "Canva Magic Edit" : "Photoroom"}</th></tr></thead><tbody>{article.dimensions.map(([dimension, baseline, alternative]) => <tr><th scope="row">{dimension}</th><td>{baseline}</td><td>{alternative}</td></tr>)}</tbody></table></div>{article.sections.map(([heading, body]) => <section><h2>{heading}</h2><p>{body}</p></section>)}<section class="key-rule"><div><Icon name="shield" /></div><div><strong>{copy.consentFirst}</strong><p>{article.verdict}</p></div></section></div><section class="source-list" id="sources"><h2>{copy.sources}</h2><ul>{comparisonSources[slug].map((source) => <li><a href={source.url} rel="noopener" target="_blank">{source.name} ↗</a></li>)}</ul></section></div></div>
+  </article>
+  <section class="related section" id="related"><div class="section-heading"><div><div class="section-kicker">{copy.allArticles}</div><h2>{copy.blog}</h2></div></div><div class="post-grid compact">{related.map((item) => <LocalizedPostCard locale={locale} slug={item} index={comparisonSlugs.indexOf(item)} />)}</div></section>
+</BaseLayout>

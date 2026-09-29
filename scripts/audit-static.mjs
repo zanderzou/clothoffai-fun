@@ -36,11 +36,13 @@ for (const file of htmlFiles) {
   const html = readFileSync(file, "utf8");
   const title = html.match(/<title>(.*?)<\/title>/i)?.[1]?.trim();
   const description = html.match(/<meta name="description" content="([^"]+)"/i)?.[1]?.trim();
+  const lang = html.match(/<html[^>]*\blang="([^"]+)"/i)?.[1] || "en";
+  const minimumDescriptionLength = /^(ja|ko|zh-Hant)$/i.test(lang) ? 35 : 70;
   const canonical = html.match(/<link rel="canonical" href="([^"]+)"/i)?.[1];
   const h1Count = (html.match(/<h1(?:\s|>)/gi) ?? []).length;
 
   check(Boolean(title), `${relative}: missing title`);
-  check(Boolean(description) && description.length >= 70 && description.length <= 180, `${relative}: meta description should be 70-180 characters`);
+  check(Boolean(description) && description.length >= minimumDescriptionLength && description.length <= 180, `${relative}: meta description should be ${minimumDescriptionLength}-180 characters for ${lang}`);
   check(Boolean(canonical?.startsWith("https://clothoffai.fun/")), `${relative}: invalid canonical`);
   check(h1Count === 1, `${relative}: expected exactly one h1, found ${h1Count}`);
   check(/<meta name="robots" content="[^"]+"/i.test(html), `${relative}: missing robots directive`);

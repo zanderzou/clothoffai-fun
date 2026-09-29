@@ -7,9 +7,7 @@ export interface InfoCopy {
   blocks: [string, string][];
 }
 
-// Source-only drafts. The full set of 45 information pages must be complete
-// and checked before any locale route or alternate-language link is published.
-export const localizedInfo: Partial<Record<Locale, Record<InfoPageKey, InfoCopy>>> = {
+export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
   ja: {
     about: {
       title: "このサイトについて",

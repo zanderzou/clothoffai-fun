@@ -1,16 +1,21 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import Icon from "./Icon.astro";
-interface Props { posts: CollectionEntry<"blog">[]; }
-const { posts } = Astro.props;
+import { comparisonSlugs, infoPageKeys, routeFor, ui, type Locale } from "../data/locales";
+import { localizedArticles } from "../data/localized-articles";
+interface Props { posts: CollectionEntry<"blog">[]; locale?: Locale; }
+const { posts, locale } = Astro.props;
+const copy = locale ? ui[locale] : null;
+const home = routeFor(locale ?? "");
+const root = locale ? `/${locale}` : "";
 ---
 
 <footer class="site-footer">
   <div class="footer-top">
-    <div><a class="brand" href="/"><span class="brand-mark"><Icon name="shield" /></span><span class="brand-copy"><strong>CLOTHOFF<span>AI</span></strong></span></a><p>An independent ClothOff AI safety and education resource for consent-first photo editing, virtual try-on, and responsible AI fashion visualization.</p></div>
-    <div><h3>Explore</h3><a href="/#about">What is ClothOff AI?</a><a href="/#safe-use">Safety checklist</a><a href="/#alternatives">Safe alternatives</a><a href="/about/">About this guide</a></div>
-    <div><h3>ClothOff AI blog</h3>{posts.slice(0, 3).map((post) => <a href={`/blog/${post.id}/`}>{post.data.title}</a>)}</div>
-    <div class="footer-legal"><h3>Information</h3><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/editorial-policy/">Editorial policy</a><a href="/contact/">Contact</a></div>
+    <div><a class="brand" href={home}><span class="brand-mark"><Icon name="shield" /></span><span class="brand-copy"><strong>CLOTHOFF<span>AI</span></strong></span></a><p>{copy?.independent ?? "An independent ClothOff AI safety and education resource for consent-first photo editing, virtual try-on, and responsible AI fashion visualization."}</p></div>
+    <div><h3>{copy?.alternatives ?? "Explore"}</h3><a href={`${home}#about`}>{copy?.about ?? "What is ClothOff AI?"}</a><a href={`${home}#safe-use`}>{copy?.safety ?? "Safety checklist"}</a><a href={`${home}#alternatives`}>{copy?.alternatives ?? "Safe alternatives"}</a><a href={`${root}/about/`}>{copy?.about ?? "About this guide"}</a></div>
+    <div><h3>{copy?.blog ?? "ClothOff AI blog"}</h3>{locale ? comparisonSlugs.slice(0,3).map((slug) => <a href={`${root}/blog/${slug}/`}>{localizedArticles[locale]![slug].title}</a>) : posts.slice(0, 3).map((post) => <a href={`/blog/${post.id}/`}>{post.data.title}</a>)}</div>
+    <div class="footer-legal"><h3>{copy?.editorial ?? "Information"}</h3>{infoPageKeys.filter((key) => key !== "about").map((key) => <a href={`${root}/${key}/`}>{key === "editorial-policy" ? (copy?.editorial ?? "Editorial policy") : (copy?.[key] ?? key)}</a>)}</div>
   </div>
-  <div class="footer-bottom"><span>© <span data-year>2026</span> ClothOff AI</span><span>Adults only • Consent first • No image uploads</span><span>Independent educational resource</span></div>
+  <div class="footer-bottom"><span>© <span data-year>2026</span> ClothOff AI</span><span>{copy ? `${copy.adultsOnly} • ${copy.consentFirst} • ${copy.noUploads}` : "Adults only • Consent first • No image uploads"}</span><span>{copy?.independent ?? "Independent educational resource"}</span></div>
 </footer>

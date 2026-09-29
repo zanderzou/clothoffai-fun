@@ -1,4 +1,4 @@
-// Draft data only: do not expose locale routes until all translated pages pass QA.
+// Published locale codes and route mappings; keep every cluster reciprocal.
 export const locales = [
   { slug: "ja", lang: "ja", label: "日本語", dir: "ltr" },
   { slug: "ko", lang: "ko", label: "한국어", dir: "ltr" },
