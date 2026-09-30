@@ -4,8 +4,8 @@ export const site = {
   domain: "clothoffai.fun",
   url: "https://clothoffai.fun",
   description:
-    "A consent-first ClothOff AI safety guide covering image privacy, AI clothing remover risks, virtual try-on, and responsible outfit-changing alternatives.",
-  author: "ClothOff AI Safe Guide editorial team",
+    "An independent, consent-first ClothOff AI publication covering image privacy, AI clothing remover risks, virtual try-on, and responsible outfit-changing alternatives.",
+  author: "ClothOff AI independent editorial team",
   language: "en",
 };
 

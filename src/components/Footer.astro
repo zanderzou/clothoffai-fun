@@ -13,7 +13,7 @@ const root = locale ? `/${locale}` : "";
 <footer class="site-footer">
   <div class="footer-top">
     <div><a class="brand" href={home}><span class="brand-mark"><Icon name="shield" /></span><span class="brand-copy"><strong>CLOTHOFF<span>AI</span></strong></span></a><p>{copy?.independent ?? "An independent ClothOff AI safety and education resource for consent-first photo editing, virtual try-on, and responsible AI fashion visualization."}</p></div>
-    <div><h3>{copy?.alternatives ?? "Explore"}</h3><a href={`${home}#about`}>{copy?.about ?? "What is ClothOff AI?"}</a><a href={`${home}#safe-use`}>{copy?.safety ?? "Safety checklist"}</a><a href={`${home}#alternatives`}>{copy?.alternatives ?? "Safe alternatives"}</a><a href={`${root}/about/`}>{copy?.about ?? "About this guide"}</a></div>
+    <div><h3>{copy?.alternatives ?? "Explore"}</h3><a href={`${home}#about`}>{copy?.about ?? "What is ClothOff AI?"}</a><a href={`${home}#safe-use`}>{copy?.safety ?? "Safety checklist"}</a><a href={`${home}#alternatives`}>{copy?.alternatives ?? "Safe alternatives"}</a><a href={`${root}/about/`}>{copy?.about ?? "About ClothOff AI"}</a></div>
     <div><h3>{copy?.blog ?? "ClothOff AI blog"}</h3>{locale ? comparisonSlugs.slice(0,3).map((slug) => <a href={`${root}/blog/${slug}/`}>{localizedArticles[locale]![slug].title}</a>) : posts.slice(0, 3).map((post) => <a href={`/blog/${post.id}/`}>{post.data.title}</a>)}</div>
     <div class="footer-legal"><h3>{copy?.editorial ?? "Information"}</h3>{infoPageKeys.filter((key) => key !== "about").map((key) => <a href={`${root}/${key}/`}>{key === "editorial-policy" ? (copy?.editorial ?? "Editorial policy") : (copy?.[key] ?? key)}</a>)}</div>
   </div>

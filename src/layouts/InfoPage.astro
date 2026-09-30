@@ -4,7 +4,7 @@ interface Props { title: string; description: string; kicker: string; }
 const { title, description, kicker } = Astro.props;
 ---
 
-<BaseLayout title={`${title} | ClothOff AI Safe Guide`} description={description}>
+<BaseLayout title={`${title} | ClothOff AI`} description={description}>
   <section class="info-hero"><div class="page-orb"></div><div class="section-kicker">{kicker}</div><h1>{title}</h1><p>{description}</p></section>
   <article class="info-content"><slot /></article>
 </BaseLayout>
