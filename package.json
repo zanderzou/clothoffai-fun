@@ -19,6 +19,8 @@
     "test:locales": "node scripts/audit-locales.mjs",
     "test:render": "node scripts/check-localized-render.mjs",
     "test:interactions": "node scripts/check-localized-interactions.mjs",
+    "test:public": "node scripts/check-public-locales.mjs",
+    "test:public-analytics": "node scripts/check-public-analytics.mjs",
     "prebuild": "npm run generate:llms"
   },
   "dependencies": {
