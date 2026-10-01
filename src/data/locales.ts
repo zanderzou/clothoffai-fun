@@ -1,14 +1,6 @@
 // Published locale codes and route mappings; keep every cluster reciprocal.
 export const locales = [
-  { slug: "ja", lang: "ja", label: "日本語", dir: "ltr" },
-  { slug: "ko", lang: "ko", label: "한국어", dir: "ltr" },
-  { slug: "zh-hant", lang: "zh-Hant", label: "繁體中文", dir: "ltr" },
   { slug: "es", lang: "es", label: "Español", dir: "ltr" },
-  { slug: "pt-br", lang: "pt-BR", label: "Português (Brasil)", dir: "ltr" },
-  { slug: "ru", lang: "ru", label: "Русский", dir: "ltr" },
-  { slug: "de", lang: "de", label: "Deutsch", dir: "ltr" },
-  { slug: "fr", lang: "fr", label: "Français", dir: "ltr" },
-  { slug: "ar", lang: "ar", label: "العربية", dir: "rtl" },
 ] as const;
 
 export type Locale = typeof locales[number]["slug"];

@@ -18,7 +18,7 @@ const articles=readdirSync(blog).filter(f=>f.endsWith('.md')).sort().map(f=>{
 const label=s=>s.replace(/[\[\]]/g,'');
 const links=[['Homepage','/','Overview and practical decision guidance.'],['Blog and comparisons','/blog/','Browse the editorial article collection.']];
 const optional=[['About','about'],['Editorial policy','editorial-policy'],['Contact','contact'],['Privacy policy','privacy'],['Terms','terms']].filter(([,slug])=>existsSync(path.join(pages,slug+'.astro'))||existsSync(path.join(pages,slug,'index.astro')));
-const languages=[['Japanese','ja'],['Korean','ko'],['Traditional Chinese','zh-hant'],['Spanish','es'],['Brazilian Portuguese','pt-br'],['Russian','ru'],['German','de'],['French','fr'],['Arabic','ar']];
+const languages=[['Spanish','es']];
 const localized=languages.flatMap(([language,code])=>[
  `### ${language} (${code})`, '',
  `- [${language} homepage](${origin}/${code}/): Consent-first ClothOff AI overview and safer workflows.`,
