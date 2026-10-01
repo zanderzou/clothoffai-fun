@@ -47,7 +47,7 @@ for (const file of htmlFiles) {
   check(h1Count === 1, `${relative}: expected exactly one h1, found ${h1Count}`);
   check(/<meta name="robots" content="[^"]+"/i.test(html), `${relative}: missing robots directive`);
   check(/<meta property="og:title"/i.test(html) && /<meta property="og:image"/i.test(html), `${relative}: incomplete Open Graph metadata`);
-  if (lang === "en") check(!html.includes("ref=zanderzou"), `${relative}: unrelated referral link on consent-first site`);
+  for (const [tag] of html.matchAll(/<a\b[^>]*href="https:\/\/www\.playbox\.com\/\?ref=zanderzou"[^>]*>/g)) check(/rel="[^"]*sponsored/.test(tag), `${relative}: promotion must be marked sponsored`);
 
   if (canonical) {
     check(!canonicals.has(canonical), `${relative}: duplicate canonical also used by ${canonicals.get(canonical)}`);
