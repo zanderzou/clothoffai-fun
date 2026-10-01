@@ -19,7 +19,7 @@ const current = locale ? locales.find((item) => item.slug === locale)!.lang : "e
   <nav class="desktop-nav" aria-label={copy?.navigation ?? "Main navigation"}>
     <a href={`${home}#about`}>{copy?.about ?? "What it is"}</a><a href={`${home}#safe-use`}>{copy?.safety ?? "Safe use"}</a><a href={`${home}#compare`}>{copy?.compare ?? "Comparison"}</a><a href={blog}>{copy?.blog ?? "Blog"}</a>
   </nav>
-  <a class="header-cta" href={`${home}#alternatives`}>{copy?.alternatives ?? "Explore safe options"} <Icon name="arrow" /></a>
+  <a class="header-cta" href={/^\/(?:es|ja|ko|zh-hant|pt-br|ru|de|fr|ar)(?:\/|$)/.test(Astro.url.pathname) ? `${home}#alternatives` : "https://www.playbox.com/?ref=zanderzou"}>{copy?.alternatives ?? "Explore safe options"} <Icon name="arrow" /></a>
   <details class="language-menu"><summary aria-label={copy?.language ?? "Language"}>{current.toUpperCase()}</summary><div>{options.map((item) => <a href={item.href} lang={item.lang} aria-current={item.lang === current ? "page" : undefined}>{item.label}</a>)}</div></details>
   <button class="menu-button" type="button" data-menu-button aria-label={copy?.menu ?? "Open menu"} aria-expanded="false"><Icon name="menu" /></button>
   <div class="mobile-nav" data-mobile-nav><a href={`${home}#about`}>{copy?.about ?? "What it is"}</a><a href={`${home}#safe-use`}>{copy?.safety ?? "Safe use"}</a><a href={`${home}#compare`}>{copy?.compare ?? "Comparison"}</a><a href={blog}>{copy?.blog ?? "Blog"}</a></div>
