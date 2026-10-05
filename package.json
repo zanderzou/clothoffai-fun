@@ -21,7 +21,8 @@
     "test:interactions": "node scripts/check-localized-interactions.mjs",
     "test:public": "node scripts/check-public-locales.mjs",
     "test:public-analytics": "node scripts/check-public-analytics.mjs",
-    "prebuild": "npm run generate:llms"
+    "prebuild": "npm run generate:llms",
+    "postbuild": "node scripts/finalize-localized-release.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
