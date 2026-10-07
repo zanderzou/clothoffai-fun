@@ -41,13 +41,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "プライバシー",
-      description: "静的な clothoffai.fun の配信データ、画像を受け取らない仕組み、同意制 Google Analytics と外部リンクについて。",
+      description: "自動Google Analytics、Cookie、識別可能なボットの除外とブラウザーのプライバシー設定について。",
       lead: "当サイトには画像アップロード、生成、ユーザーアカウント、チャット、決済の機能がありません。",
-      blocks: [
-        ["ページ配信", "ホスティングとセキュリティの提供元は、ページ配信や不正アクセス対策のため IP アドレス、アクセス時刻、要求 URL、ブラウザー情報などを処理することがあります。当サイトは訪問者の写真やプロンプトを収集・保存しません。"],
-        ["許可後の解析", "Google Analytics 4 は許可を選んだ後にのみ読み込み、閲覧、スクロール、外部リンク、端末や参照元を測定します。広告パーソナライズと Google シグナルは使いません。選択はブラウザー内に最長180日保存され、各ページ下部から撤回できます。Global Privacy Control と Do Not Track を尊重します。"],
-        ["Cookie、国外処理、外部サイト", "撤回時にはこのドメインから削除できる解析 Cookie を消しますが、Google が過去に処理したデータは消せません。データは国外で処理される可能性があります。外部の編集製品へ移動した後は、その運営元のプライバシー文書を確認してください。"],
-      ],
+      blocks: [["ページ配信","ホスティングとセキュリティの提供元は、ページ配信や不正アクセス対策のため IP アドレス、アクセス時刻、要求 URL、ブラウザー情報などを処理することがあります。当サイトは訪問者の写真やプロンプトを収集・保存しません。"],["Cookie・プライバシー・自動アクセス","GA4は既知のボットを自動的に除外します。当サイトも識別可能なクローラーと自動化を明示するブラウザーの測定を省略しますが、人間を装うすべてのボットを検出できるわけではありません。Global Privacy Control、Do Not Track、Google Analyticsのブラウザー用オプトアウトを尊重します。設定するページURLからクエリーとフラグメントを除き、参照元はオリジンだけにします。会話、プロンプト、ファイル、フォームの内容は送信しません。Cookieを削除してもGoogleが処理済みのデータは消えません。"],["Google Analyticsによる自動アクセス解析","通常のブラウザーでページを開くと、Google Analytics 4が自動的に開始されます。ページ閲覧、スクロール、外部リンクのクリック、端末情報、流入元を測定します。解析Cookieの有効期間は180日間で、使用時に更新される場合があります。Googleが国外でデータを処理する場合があります。Googleシグナル、広告のパーソナライズ、広告用ストレージは無効です。"]],
     },
     terms: {
       title: "利用条件",
@@ -93,13 +89,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "개인정보",
-      description: "정적 사이트 clothoffai.fun의 접속 데이터, 사진을 받지 않는 구조, 동의 후 Google Analytics와 외부 링크 안내입니다.",
+      description: "자동 Google Analytics, 쿠키, 식별 가능한 봇 제외 및 브라우저 개인정보 설정 안내.",
       lead: "이 사이트에는 사진 업로드, 이미지 생성, 계정, 대화창 또는 결제 기능이 없습니다.",
-      blocks: [
-        ["페이지 제공", "호스팅·보안 업체는 사이트 제공과 보호를 위해 IP 주소, 요청 주소, 시각, 브라우저 정보 같은 기술 데이터를 처리할 수 있습니다. 이 사이트는 방문자의 사진이나 AI 프롬프트를 받거나 저장하지 않습니다."],
-        ["동의한 경우의 방문 분석", "Google Analytics 4는 허용을 선택한 뒤에만 로드하며 페이지 방문, 스크롤, 외부 링크, 기기와 유입 경로를 측정합니다. 광고 개인화와 Google 신호는 사용하지 않습니다. 선택은 브라우저에 최대 180일 저장되며 페이지 아래 설정에서 철회할 수 있습니다. Global Privacy Control과 Do Not Track 신호를 존중합니다."],
-        ["쿠키와 외부 사이트", "철회하면 이 도메인에서 지울 수 있는 분석 쿠키를 삭제하지만 Google이 이미 처리한 과거 데이터까지 지우는 것은 아닙니다. 국외 처리가 있을 수 있습니다. 외부 편집 서비스로 이동하면 그 업체의 개인정보 안내를 따로 확인하세요."],
-      ],
+      blocks: [["페이지 제공","호스팅·보안 업체는 사이트 제공과 보호를 위해 IP 주소, 요청 주소, 시각, 브라우저 정보 같은 기술 데이터를 처리할 수 있습니다. 이 사이트는 방문자의 사진이나 AI 프롬프트를 받거나 저장하지 않습니다."],["쿠키, 개인정보 및 자동화된 방문","GA4는 알려진 봇을 자동으로 제외합니다. 이 사이트도 식별 가능한 크롤러와 자동화임을 명시하는 브라우저를 측정하지 않지만 사람을 흉내 내는 모든 봇을 찾아낼 수는 없습니다. Global Privacy Control, Do Not Track 및 Google Analytics 브라우저 차단 설정을 존중합니다. 설정된 페이지 URL에서 검색 매개변수와 프래그먼트를 제외하고 참조 URL은 출처만 남깁니다. 대화, 프롬프트, 파일 또는 양식 내용을 전송하지 않습니다. 쿠키 삭제로 Google이 이미 처리한 데이터가 지워지지는 않습니다."],["Google Analytics 자동 방문 분석","일반 브라우저에서 페이지를 열면 Google Analytics 4가 자동으로 시작됩니다. 페이지 방문, 스크롤, 외부 링크 클릭, 기기 및 유입 경로를 측정합니다. 분석 쿠키는 180일 후 만료되도록 설정되며 사용 시 갱신될 수 있습니다. Google이 국외에서 데이터를 처리할 수 있습니다. Google Signals, 광고 개인화 및 광고 저장소는 사용하지 않습니다."]],
     },
     terms: {
       title: "이용 조건",
@@ -145,13 +137,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "隱私",
-      description: "靜態網站 clothoffai.fun 的技術連線資料、不收照片的設計、須先同意的 Google Analytics 與外部連結。",
+      description: "自動 Google Analytics、Cookie、可識別機器人排除與瀏覽器隱私設定。",
       lead: "本站沒有圖片上傳、生成、會員帳號、聊天或付款功能。",
-      blocks: [
-        ["網站傳送與防護", "主機和安全服務可能為了傳送頁面、防範濫用而處理 IP 位址、瀏覽器資料、請求網址和時間。本站不接收、處理或保存訪客照片與 AI 提示詞。"],
-        ["同意後才啟用分析", "只有選擇允許後，才會載入 Google Analytics 4，記錄造訪、捲動、外連點擊、裝置及來源資訊。不啟用廣告個人化或 Google 信號。選擇最多在瀏覽器保存 180 天，可從各頁底部撤回；本站尊重 Global Privacy Control 與 Do Not Track 訊號。"],
-        ["Cookie 與外部網站", "撤回同意後會清除本站可控制的分析 Cookie，但無法因此刪除 Google 過去已處理的資料。資料可能在境外處理。離開本站前往影像工具時，請另讀該服務自己的隱私政策。"],
-      ],
+      blocks: [["網站傳送與防護","主機和安全服務可能為了傳送頁面、防範濫用而處理 IP 位址、瀏覽器資料、請求網址和時間。本站不接收、處理或保存訪客照片與 AI 提示詞。"],["Cookie、隱私與自動化流量","GA4 會自動排除已知機器人；本站也會略過可識別爬蟲及明確標示自動化的瀏覽器，但無法保證辨識所有偽裝成人類的機器人。我們尊重 Global Privacy Control、Do Not Track 與 Google Analytics 瀏覽器停用設定。設定的頁面網址不含查詢參數與片段，來源網址只保留來源網域及協定。不傳送對話、提示詞、檔案或表單內容。清除 Cookie 不會刪除 Google 已處理的資料。"],["Google Analytics 自動流量分析","一般瀏覽器開啟頁面時，Google Analytics 4 會自動開始統計頁面瀏覽、捲動、外部連結點擊、裝置資訊與流量來源。分析 Cookie 設定於 180 天後到期，使用時可能更新。Google 可能在境外處理資料。我們不啟用 Google signals、廣告個人化或廣告儲存。"]],
     },
     terms: {
       title: "使用條款",
@@ -197,13 +185,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "Privacidad",
-      description: "Datos técnicos de la web estática clothoffai.fun, ausencia de subida de fotos, Google Analytics por consentimiento y enlaces externos.",
+      description: "Google Analytics automático, cookies, filtros de robots y preferencias del navegador.",
       lead: "Esta web no tiene cuentas, generador de imágenes, chat, pagos ni formulario para subir fotografías.",
-      blocks: [
-        ["Entrega y protección de páginas", "El proveedor de alojamiento y seguridad puede tratar datos técnicos como dirección IP, URL solicitada, hora y navegador para entregar el sitio y prevenir abusos. Nosotros no recibimos ni almacenamos imágenes o instrucciones de edición de los visitantes."],
-        ["Medición solo si das permiso", "Google Analytics 4 se carga después de aceptar. Puede medir páginas vistas, desplazamiento, clics salientes, dispositivo y procedencia; no activamos personalización publicitaria ni Google signals. La preferencia se guarda en el navegador hasta 180 días y puede retirarse desde el pie de cualquier página. Respetamos Global Privacy Control y Do Not Track."],
-        ["Cookies y webs externas", "Al retirar el consentimiento borramos las cookies de analítica accesibles desde este dominio, pero no los datos que Google ya haya tratado. El tratamiento puede ocurrir fuera de tu país. Antes de subir una imagen en un editor externo, consulta la política de privacidad de ese operador."],
-      ],
+      blocks: [["Entrega y protección de páginas","El proveedor de alojamiento y seguridad puede tratar datos técnicos como dirección IP, URL solicitada, hora y navegador para entregar el sitio y prevenir abusos. Nosotros no recibimos ni almacenamos imágenes o instrucciones de edición de los visitantes."],["Cookies, privacidad y tráfico automatizado","GA4 excluye automáticamente los robots conocidos. También omitimos la medición para rastreadores identificables y navegadores que se declaran automatizados; no podemos detectar todos los robots que imitan a personas. Respetamos Global Privacy Control, Do Not Track y la inhabilitación de Google Analytics del navegador. No enviamos parámetros de búsqueda ni fragmentos en la URL configurada; reducimos las referencias al origen. No enviamos conversaciones, prompts, archivos ni contenidos de formularios. Borrar cookies no elimina datos ya tratados por Google."],["Medición automática con Google Analytics","Google Analytics 4 se inicia automáticamente al abrir una página en un navegador normal. Mide visitas, desplazamientos, clics en enlaces externos, dispositivo y procedencia del tráfico. Las cookies analíticas caducan a los 180 días y pueden renovarse al usarse. Google puede tratar datos fuera de tu país. No activamos Google signals, personalización publicitaria ni almacenamiento publicitario."]],
     },
     terms: {
       title: "Condiciones de uso",
@@ -249,13 +233,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "Privacidade",
-      description: "Dados técnicos do site estático clothoffai.fun, ausência de envio de fotos, Google Analytics com consentimento e links externos.",
+      description: "Google Analytics automático, cookies, filtros de robôs e preferências do navegador.",
       lead: "Este site não tem conta de usuário, gerador de imagens, bate-papo, pagamento nem envio de fotografias.",
-      blocks: [
-        ["Entrega e proteção", "O serviço de hospedagem e segurança pode processar IP, URL solicitada, horário e informações do navegador para entregar as páginas e combater abusos. Nós não recebemos nem armazenamos fotos ou comandos de edição dos visitantes."],
-        ["Análise somente após autorização", "Google Analytics 4 é carregado depois de você permitir. Pode medir páginas, rolagem, cliques externos, dispositivo e origem da visita; não ativamos personalização de anúncios nem Google signals. A preferência fica no navegador por até 180 dias e pode ser retirada no rodapé de qualquer página. Respeitamos Global Privacy Control e Do Not Track."],
-        ["Cookies e sites externos", "Ao retirar a permissão, apagamos os cookies de análise acessíveis neste domínio, não os dados que o Google já processou. Esse processamento pode ocorrer fora do seu país. Antes de enviar uma imagem para um editor externo, leia a política de privacidade dele."],
-      ],
+      blocks: [["Entrega e proteção","O serviço de hospedagem e segurança pode processar IP, URL solicitada, horário e informações do navegador para entregar as páginas e combater abusos. Nós não recebemos nem armazenamos fotos ou comandos de edição dos visitantes."],["Cookies, privacidade e tráfego automatizado","O GA4 exclui automaticamente robôs conhecidos. Também ignoramos rastreadores identificáveis e navegadores que se declaram automatizados, mas não podemos detectar todos os robôs que imitam pessoas. Respeitamos Global Privacy Control, Do Not Track e a desativação do Google Analytics no navegador. A URL configurada não contém parâmetros de consulta nem fragmentos; referências são reduzidas à origem. Não enviamos conversas, prompts, arquivos ou conteúdo de formulários. Apagar cookies não remove dados já processados pelo Google."],["Medição automática com Google Analytics","O Google Analytics 4 começa automaticamente quando uma página é aberta em um navegador comum. Mede visitas, rolagem, cliques em links externos, dispositivo e origem do tráfego. Os cookies analíticos expiram em 180 dias e podem ser renovados durante o uso. O Google pode processar dados fora do seu país. Google signals, personalização de anúncios e armazenamento publicitário ficam desativados."]],
     },
     terms: {
       title: "Termos de uso",
@@ -301,13 +281,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "Конфиденциальность",
-      description: "Технические данные статического сайта clothoffai.fun, отсутствие загрузки фото, Google Analytics по согласию и переходы на внешние сайты.",
+      description: "Автоматический Google Analytics, cookie, исключение распознаваемых ботов и настройки браузера.",
       lead: "Здесь нет загрузки изображений, генератора, пользовательского кабинета, чата или оплаты.",
-      blocks: [
-        ["Доставка и защита страниц", "Хостинг и служба безопасности могут обрабатывать IP-адрес, запрошенный URL, время и сведения о браузере, чтобы показать страницу и противодействовать злоупотреблениям. Мы не получаем и не храним фотографии посетителей или запросы для редактирования."],
-        ["Аналитика только после разрешения", "Google Analytics 4 загружается лишь после согласия. Он может учитывать посещённые страницы, прокрутку, переходы по внешним ссылкам, устройство и источник визита. Рекламную персонализацию и Google signals мы не включаем. Выбор хранится в браузере до 180 дней и отзывается внизу любой страницы; сигналы Global Privacy Control и Do Not Track учитываются."],
-        ["Cookie и внешние сайты", "После отказа мы удаляем доступные этому домену аналитические cookie, но не можем удалить данные, уже обработанные Google. Обработка возможна за пределами вашей страны. Перед загрузкой файла на сторонний сервис изучите его собственную политику."],
-      ],
+      blocks: [["Доставка и защита страниц","Хостинг и служба безопасности могут обрабатывать IP-адрес, запрошенный URL, время и сведения о браузере, чтобы показать страницу и противодействовать злоупотреблениям. Мы не получаем и не храним фотографии посетителей или запросы для редактирования."],["Cookie, приватность и автоматизированные посещения","GA4 автоматически исключает известных ботов. Сайт также пропускает распознаваемые поисковые роботы и браузеры, явно сообщающие об автоматизации, но не может обнаружить всех ботов, имитирующих человека. Мы учитываем Global Privacy Control, Do Not Track и отключение Google Analytics в браузере. Настроенный URL страницы не содержит параметров запроса и фрагментов; адрес источника сокращается до origin. Переписки, промпты, файлы и содержимое форм не передаются. Удаление cookie не стирает данные, уже обработанные Google."],["Автоматическая статистика Google Analytics","Google Analytics 4 запускается автоматически при открытии страницы в обычном браузере. Измеряются просмотры, прокрутка, переходы по внешним ссылкам, устройство и источники трафика. Аналитические cookie настроены на срок 180 дней и могут продлеваться при использовании. Google может обрабатывать данные за пределами вашей страны. Google signals, персонализация рекламы и рекламное хранилище отключены."]],
     },
     terms: {
       title: "Условия использования",
@@ -353,13 +329,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "Datenschutz",
-      description: "Technische Daten der statischen Website clothoffai.fun, keine Foto-Uploads, einwilligungsabhängiges Google Analytics und externe Links.",
+      description: "Automatisches Google Analytics, Cookies, erkennbare Bots und Datenschutzeinstellungen des Browsers.",
       lead: "Diese Website bietet weder Bild-Upload oder Generierung noch Konten, Chat oder eine Bezahlfunktion.",
-      blocks: [
-        ["Auslieferung und Schutz", "Hosting- und Sicherheitsdienstleister können IP-Adresse, angeforderte URL, Zeitpunkt und Browserdaten verarbeiten, um Seiten auszuliefern und Missbrauch zu verhindern. Wir nehmen keine Fotos oder Bearbeitungs-Prompts von Besucherinnen und Besuchern entgegen."],
-        ["Analyse erst nach Zustimmung", "Google Analytics 4 wird erst nach einer positiven Auswahl geladen und kann Seitenaufrufe, Scrollen, externe Links, Geräte und Herkunft erfassen. Werbepersonalisierung und Google signals sind nicht aktiviert. Die Einstellung bleibt bis zu 180 Tage im Browser und lässt sich unten auf jeder Seite widerrufen. Global Privacy Control und Do Not Track werden beachtet."],
-        ["Cookies und fremde Websites", "Nach Widerruf entfernen wir die von dieser Domain erreichbaren Analyse-Cookies, nicht jedoch Daten, die Google schon verarbeitet hat. Eine Verarbeitung außerhalb Ihres Landes ist möglich. Vor dem Hochladen eines Bildes bei einem externen Anbieter lesen Sie dessen eigene Datenschutzhinweise."],
-      ],
+      blocks: [["Auslieferung und Schutz","Hosting- und Sicherheitsdienstleister können IP-Adresse, angeforderte URL, Zeitpunkt und Browserdaten verarbeiten, um Seiten auszuliefern und Missbrauch zu verhindern. Wir nehmen keine Fotos oder Bearbeitungs-Prompts von Besucherinnen und Besuchern entgegen."],["Cookies, Datenschutz und automatisierte Zugriffe","GA4 schließt bekannte Bots automatisch aus. Auch diese Website überspringt erkennbare Crawler und Browser, die sich ausdrücklich als automatisiert melden. Nicht alle Bots, die Menschen imitieren, können erkannt werden. Wir beachten Global Privacy Control, Do Not Track und die Google-Analytics-Deaktivierung im Browser. Die konfigurierte Seitenadresse enthält keine Abfrageparameter oder Fragmente; Verweisadressen werden auf ihren Ursprung reduziert. Chats, Prompts, Dateien und Formularinhalte werden nicht gesendet. Das Löschen von Cookies entfernt keine bereits von Google verarbeiteten Daten."],["Automatische Messung mit Google Analytics","Google Analytics 4 startet automatisch, wenn eine Seite in einem normalen Browser geöffnet wird. Erfasst werden Seitenaufrufe, Scrollen, Klicks auf externe Links, Geräteinformationen und Zugriffsquellen. Analyse-Cookies laufen nach 180 Tagen ab und können bei Nutzung erneuert werden. Google kann Daten außerhalb deines Landes verarbeiten. Google signals, personalisierte Werbung und Werbespeicherung sind deaktiviert."]],
     },
     terms: {
       title: "Nutzungsbedingungen",
@@ -405,13 +377,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "Confidentialité",
-      description: "Données techniques du site statique clothoffai.fun, absence de dépôt d'images, Google Analytics soumis au consentement et liens tiers.",
+      description: "Google Analytics automatique, cookies, exclusion des robots identifiables et préférences du navigateur.",
       lead: "Ce site ne propose ni téléversement de photo, ni générateur, ni compte, ni conversation, ni paiement.",
-      blocks: [
-        ["Diffusion et sécurité", "L'hébergeur et le prestataire de sécurité peuvent traiter adresse IP, URL demandée, heure et informations du navigateur afin de diffuser les pages et prévenir les abus. Nous ne recevons ni ne stockons les photos et consignes d'édition des visiteurs."],
-        ["Mesure d'audience après accord", "Google Analytics 4 ne se charge qu'après votre autorisation. Il peut mesurer pages consultées, défilement, clics externes, appareil et provenance. Nous n'activons ni personnalisation publicitaire ni Google signals. Votre choix reste dans le navigateur jusqu'à 180 jours et peut être retiré en bas de chaque page. Global Privacy Control et Do Not Track sont respectés."],
-        ["Cookies et autres sites", "Le retrait supprime les cookies d'analyse accessibles à ce domaine, pas les données déjà traitées par Google. Un traitement hors de votre pays est possible. Avant de transmettre une photo à un éditeur externe, consultez ses propres règles de confidentialité."],
-      ],
+      blocks: [["Diffusion et sécurité","L'hébergeur et le prestataire de sécurité peuvent traiter adresse IP, URL demandée, heure et informations du navigateur afin de diffuser les pages et prévenir les abus. Nous ne recevons ni ne stockons les photos et consignes d'édition des visiteurs."],["Cookies, confidentialité et trafic automatisé","GA4 exclut automatiquement les robots connus. Ce site ignore aussi les robots identifiables et les navigateurs qui déclarent être automatisés, sans pouvoir détecter tous les robots imitant des personnes. Nous respectons Global Privacy Control, Do Not Track et la désactivation de Google Analytics dans le navigateur. L’URL configurée ne contient ni paramètres de recherche ni fragments ; les références sont réduites à leur origine. Nous n’envoyons pas de conversations, prompts, fichiers ou contenus de formulaires. Effacer les cookies ne supprime pas les données déjà traitées par Google."],["Mesure automatique avec Google Analytics","Google Analytics 4 démarre automatiquement à l’ouverture d’une page dans un navigateur ordinaire. Il mesure les visites, le défilement, les clics sur les liens externes, l’appareil et les sources de trafic. Les cookies analytiques expirent après 180 jours et peuvent être renouvelés lors de leur utilisation. Google peut traiter les données hors de votre pays. Google signals, la personnalisation publicitaire et le stockage publicitaire sont désactivés."]],
     },
     terms: {
       title: "Conditions d'utilisation",
@@ -457,13 +425,9 @@ export const localizedInfo: Record<Locale, Record<InfoPageKey, InfoCopy>> = {
     },
     privacy: {
       title: "الخصوصية",
-      description: "البيانات التقنية في موقع clothoffai.fun الثابت، وعدم استقبال الصور، وتحليلات Google بعد الموافقة، والروابط الخارجية.",
+      description: "Google Analytics التلقائي وملفات الارتباط واستبعاد الروبوتات المعروفة وتفضيلات المتصفح.",
       lead: "لا يضم هذا الموقع رفع صور أو مولداً أو حسابات أو محادثة أو عملية دفع.",
-      blocks: [
-        ["تقديم الصفحات وحمايتها", "قد يعالج مزود الاستضافة والأمن عنوان IP والرابط المطلوب والوقت وبيانات المتصفح لتقديم الصفحات والحد من إساءة الاستخدام. لا نتلقى صور الزوار أو أوامر تعديل الصور ولا نخزنها."],
-        ["التحليل بعد الإذن فقط", "لا يُحمّل Google Analytics 4 إلا بعد الموافقة، وقد يقيس الزيارات والتمرير والروابط الخارجية ونوع الجهاز ومصدر الوصول. لا نفعّل تخصيص الإعلانات أو Google signals. يبقى الاختيار في المتصفح حتى 180 يوماً ويمكن سحبه من أسفل أي صفحة. نحترم Global Privacy Control وDo Not Track."],
-        ["ملفات الارتباط والمواقع الأخرى", "عند سحب الإذن نحذف ملفات التحليل التي يمكن لهذا النطاق الوصول إليها، لا البيانات التي سبق أن عالجتها Google. قد تجري المعالجة خارج بلدك. قبل رفع صورة إلى محرر خارجي، اقرأ سياسة الخصوصية الخاصة بمشغّله."],
-      ],
+      blocks: [["تقديم الصفحات وحمايتها","قد يعالج مزود الاستضافة والأمن عنوان IP والرابط المطلوب والوقت وبيانات المتصفح لتقديم الصفحات والحد من إساءة الاستخدام. لا نتلقى صور الزوار أو أوامر تعديل الصور ولا نخزنها."],["ملفات الارتباط والخصوصية والزيارات الآلية","يستبعد GA4 الروبوتات المعروفة تلقائياً. ويتجاوز الموقع أيضاً برامج الزحف القابلة للتعرّف والمتصفحات التي تصرّح بأنها آلية، لكن لا يمكن اكتشاف كل الروبوتات التي تقلّد البشر. نحترم Global Privacy Control وDo Not Track وإعداد تعطيل Google Analytics في المتصفح. لا يتضمن عنوان الصفحة المهيّأ معاملات البحث أو الأجزاء، وتقتصر عناوين الإحالة على أصلها. لا نرسل المحادثات أو المطالبات أو الملفات أو محتويات النماذج. حذف ملفات الارتباط لا يمحو بيانات عالجتها Google بالفعل."],["القياس التلقائي باستخدام Google Analytics","يبدأ Google Analytics 4 تلقائياً عند فتح الصفحة في متصفح عادي. يقيس الزيارات والتمرير والنقرات على الروابط الخارجية ومعلومات الجهاز ومصادر الزيارات. تنتهي ملفات الارتباط التحليلية بعد 180 يوماً وقد تتجدد عند استخدامها. قد تعالج Google البيانات خارج بلدك. لا نفعّل Google signals أو تخصيص الإعلانات أو التخزين الإعلاني."]],
     },
     terms: {
       title: "شروط الاستخدام",
