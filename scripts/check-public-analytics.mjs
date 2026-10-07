@@ -1,43 +1,30 @@
 import { chromium } from "playwright";
-const browser = await chromium.launch({ channel: "chrome", headless: true });
+const browser = await chromium.launch({ channel: "chrome", headless: true, ...(process.env.QA_PROXY ? { proxy: { server: process.env.QA_PROXY } } : {}) });
 const assert = (condition, message) => { if (!condition) throw Error(message); };
-try {
-  const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
-  const page = await context.newPage();
-  const googleRequests = [];
-  page.on("request", (request) => {
-    if (/googletagmanager\.com|google-analytics\.com/.test(request.url())) googleRequests.push(request.url());
-  });
-  await page.goto("https://clothoffai.fun/ja/", { waitUntil: "domcontentloaded" });
-  const root = page.locator("#site-analytics");
-  const id = await root.getAttribute("data-measurement-id");
-  assert(/^G-[A-Z0-9]+$/.test(id ?? ""), "Missing GA4 property identifier");
-  assert(await page.locator("#analytics-notice").isVisible(), "Japanese opt-in notice absent");
-  assert(googleRequests.length === 0, "Google tracking requested before consent");
-  assert(await page.locator('#analytics-notice a[href="/ja/privacy/"]').count() === 1, "Japanese privacy link missing");
-  await page.locator("#analytics-accept").click();
-  await page.waitForTimeout(500);
-  assert(googleRequests.some((url) => url.includes("googletagmanager.com/gtag/js")), "GA did not load after explicit consent");
-  assert((await page.evaluate(() => localStorage.getItem("site-analytics-consent-v1")))?.includes("granted"), "Consent choice not saved");
-  await page.locator("#analytics-settings").click();
-  await page.locator("#analytics-decline").click();
-  assert((await page.evaluate(() => localStorage.getItem("site-analytics-consent-v1")))?.includes("denied"), "Consent withdrawal not saved");
-  assert(await page.evaluate((measurementId) => window["ga-disable-" + measurementId] === true, id), "GA was not disabled after withdrawal");
-  await context.close();
-  const privateContext = await browser.newContext({ viewport: { width: 390, height: 844 } });
-  await privateContext.addInitScript(() => { Object.defineProperty(navigator, "globalPrivacyControl", { value: true, configurable: true }); });
-  const privatePage = await privateContext.newPage();
-  const privateRequests = [];
-  privatePage.on("request", (request) => { if (/googletagmanager\.com|google-analytics\.com/.test(request.url())) privateRequests.push(request.url()); });
-  await privatePage.goto("https://clothoffai.fun/ar/", { waitUntil: "domcontentloaded" });
-  assert(await privatePage.locator("html").getAttribute("dir") === "rtl", "Arabic RTL missing");
-  assert(!(await privatePage.locator("#analytics-notice").isVisible()), "Privacy signal should suppress opt-in prompt");
-  await privatePage.locator("#analytics-settings").click();
-  assert(await privatePage.locator("#analytics-accept").isDisabled(), "Privacy signal did not disable consent");
-  assert(await privatePage.locator('#analytics-notice a[href="/ar/privacy/"]').count() === 1, "Arabic privacy link missing");
-  assert(privateRequests.length === 0, "Google request made under privacy signal");
-  await privateContext.close();
-  console.log("Live Japanese GA opt-in/withdrawal and Arabic GPC/RTL/consent checks passed.");
-} finally {
-  await browser.close();
+const humanAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36";
+async function visit(route, options = {}) {
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, userAgent: options.bot ? "Mozilla/5.0 (compatible; Googlebot/2.1)" : humanAgent });
+  try {
+    await context.addInitScript(({ gpc }) => {
+      Object.defineProperty(navigator, "webdriver", { get: () => false });
+      if (gpc) Object.defineProperty(navigator, "globalPrivacyControl", { get: () => true });
+    }, { gpc: options.gpc === true });
+    const requests = [];
+    await context.route(/googletagmanager\.com|google-analytics\.com/, async route => {
+      requests.push(route.request().url());
+      await route.fulfill({ status: 200, contentType: "text/javascript", body: "/* Intercepted test; no analytics data sent. */" });
+    });
+    const page = await context.newPage();
+    await page.goto("https://clothoffai.fun" + route, { waitUntil: "load" });
+    assert(/^G-[A-Z0-9]+$/.test(await page.locator("#site-analytics").getAttribute("data-measurement-id") ?? ""), "Missing GA4 identifier");
+    assert(await page.locator("#analytics-notice,#analytics-accept,#analytics-settings").count() === 0, "Consent UI remains");
+    assert(requests.length === (options.bot || options.gpc ? 0 : 1), "Unexpected analytics loading");
+    if (route.startsWith("/ar/")) assert(await page.locator("html").getAttribute("dir") === "rtl", "Arabic RTL missing");
+  } finally { await context.close(); }
 }
+try {
+  await visit("/ja/");
+  await visit("/ar/", { gpc: true });
+  await visit("/ja/", { bot: true });
+  console.log("Automatic Japanese analytics, Arabic GPC/RTL and crawler exclusion passed; test requests intercepted.");
+} finally { await browser.close(); }
