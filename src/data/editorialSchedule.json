@@ -1,0 +1,82 @@
+{
+  "domain": "clothoffai.fun",
+  "timeZone": "Asia/Shanghai",
+  "policy": "New articles are English-only. Quality review is required before a date can enable a release. Existing publications are preserved.",
+  "articles": [
+    {
+      "order": 1,
+      "slug": "clothoff-vs-photoshop-visible-garment-edit",
+      "title": "ClothOff AI vs Photoshop: A Visible-Garment Edit",
+      "opponent": "Photoshop",
+      "readerQuestion": "a consent-first visible-garment edit using ordinary masking tools",
+      "releaseAt": "2026-10-08T05:33:24.684Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-10-08",
+      "reviewedSha256": "bd762a01c55ac15bb8a28976550969715224fa3854068bcf32868c5c8a1286c8",
+      "wordCount": 525,
+      "editorialIntent": "Resolve a garment-editing search into a permitted, visible-clothing task with concrete acceptance criteria.",
+      "sources": [
+        [
+          "Photoshop Selections for Generative Editing",
+          "https://helpx.adobe.com/photoshop/desktop/make-selections/refine-modify-selections/use-selections-for-generative-editing.html"
+        ],
+        [
+          "FTC Image-Based Abuse Guidance",
+          "https://consumer.ftc.gov/articles/image-based-abuse-what-know-and-do"
+        ]
+      ]
+    },
+    {
+      "order": 2,
+      "slug": "clothoff-vs-fotor-outfit-replacement",
+      "title": "ClothOff AI vs Fotor: Keep the Outfit Visible",
+      "opponent": "Fotor",
+      "readerQuestion": "keeping a garment visible while comparing outfit replacement",
+      "releaseAt": "2026-10-15T09:57:21.178Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-10-08",
+      "reviewedSha256": "870c4216c00636dbe47e077d8eeaf868bf48d51cf0ea31b4e66fc11377c3b4ab",
+      "wordCount": 488,
+      "editorialIntent": "Evaluate a fully clothed outfit preview against a precise garment specification.",
+      "sources": [
+        [
+          "Fotor Clothes Changer",
+          "https://www.fotor.com/features/ai-change-clothes/"
+        ],
+        [
+          "FTC Image-Based Abuse Guidance",
+          "https://consumer.ftc.gov/articles/image-based-abuse-what-know-and-do"
+        ]
+      ]
+    },
+    {
+      "order": 3,
+      "slug": "clothoff-vs-google-try-on-shopping-fit",
+      "title": "ClothOff AI vs Google Try-On: Appearance and Fit",
+      "opponent": "Google Virtual Try-On",
+      "readerQuestion": "a shopping visualization versus unsupported body or fit conclusions",
+      "releaseAt": "2026-10-23T07:41:37.709Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-10-08",
+      "reviewedSha256": "7c145df427bbb47acae8c322609f15a37c47704664b0261382bb807e150052a7",
+      "wordCount": 511,
+      "editorialIntent": "Use a garment-visible shopping preview without turning generated appearance into fit or body evidence.",
+      "sources": [
+        [
+          "Google Try-On Guide",
+          "https://support.google.com/googleshopping/answer/16253678?hl=en"
+        ],
+        [
+          "FTC Image-Based Abuse Guidance",
+          "https://consumer.ftc.gov/articles/image-based-abuse-what-know-and-do"
+        ]
+      ]
+    }
+  ]
+}

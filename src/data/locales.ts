@@ -1,3 +1,5 @@
+import editorialSchedule from './editorialSchedule.json';
+const englishEditorialSlugs = new Set(editorialSchedule.articles.map((item) => item.slug));
 // Published locale codes and route mappings; keep every cluster reciprocal.
 export const locales = [
   {"slug":"ja","lang":"ja","label":"日本語","dir":"ltr"},
@@ -27,6 +29,7 @@ export const routeFor = (locale: Locale | "", page = "") =>
   `${locale ? `/${locale}` : ""}/${page ? `${page.replace(/^\/+|\/+$/g, "")}/` : ""}`;
 export const languageAlternates = (pathname: string) => {
   const englishPath = pathname.replace(/^\/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)(?=\/)/, "") || "/";
+  if (englishEditorialSlugs.has(englishPath.replace(/^\/blog\//, "").replace(/\/$/, ""))) return [{ lang: "en", href: englishPath }];
   return [{ lang: "en", href: englishPath }, ...locales.map(({ slug, lang }) => ({ lang, href: `/${slug}${englishPath}` }))];
 };
 
