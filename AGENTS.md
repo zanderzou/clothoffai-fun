@@ -19,5 +19,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Durable layout preference (September 2026): keep headings within their containers, use compact section spacing, and avoid visibly empty grid cells in lower-page editorial content.
 - Durable layout preference (September 2026): homepage section headings should use the full content width without manual line breaks; place the intro sentence directly below each heading and keep adjacent numbered sections close together.
 
-- Multilingual scope (October 11, 2026): publish native language editions for the homepage and blog only. About, Contact, Editorial Policy, Privacy and Terms remain in English; retired translated information URLs redirect to their English counterparts.
+- Multilingual scope (October 11, 2026): retain every previously published language edition, including About, Contact, Editorial Policy, Privacy and Terms, at its existing URL. The home/blog-only localization rule applies to new sites; do not retire existing translated information pages.
 - Translated headings and CTA labels must fit desktop, tablet and mobile layouts. Keep one primary homepage CTA, preserve its configured destination, separate copy from portrait artwork, and check Arabic RTL and long German words.

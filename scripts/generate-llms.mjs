@@ -40,8 +40,6 @@ function filterEnglishEditorialLinks(line) {
   return !match || !englishEditorialSet.has(match[1]);
 }
 text = text.split('\n').filter(filterEnglishEditorialLinks).join('\n');
-// Retired language information pages are represented by their English canonical pages.
-text=text.split('\n').filter(line=>!new RegExp('https://[^/]+/(?:ja|ko|zh-hant|es|pt-br|ru|de|fr|ar)/(?:about|contact|editorial-policy|privacy|terms)/').test(line)).join('\n');
 const destination=path.join(root,'public/llms.txt');
 if(process.argv.includes('--check')){
  if(!existsSync(destination)||readFileSync(destination,'utf8')!==text)throw Error('llms.txt is missing or stale; run npm run generate:llms');
