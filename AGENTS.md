@@ -18,3 +18,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - All people in imagery must be clearly adult and non-explicit. Mainstream swimwear and glamorous fashion imagery are allowed when licensed, context-appropriate, and accompanied by a no-endorsement disclosure; nudity, transparent garments, pornographic framing, and sexual acts are not.
 - Durable layout preference (September 2026): keep headings within their containers, use compact section spacing, and avoid visibly empty grid cells in lower-page editorial content.
 - Durable layout preference (September 2026): homepage section headings should use the full content width without manual line breaks; place the intro sentence directly below each heading and keep adjacent numbered sections close together.
+
+- Multilingual scope (October 11, 2026): publish native language editions for the homepage and blog only. About, Contact, Editorial Policy, Privacy and Terms remain in English; retired translated information URLs redirect to their English counterparts.
+- Translated headings and CTA labels must fit desktop, tablet and mobile layouts. Keep one primary homepage CTA, preserve its configured destination, separate copy from portrait artwork, and check Arabic RTL and long German words.
