@@ -1,4 +1,8 @@
 ---
+import UtilityArticle from '../../layouts/UtilityArticle.astro';
+import utilityConfig from '../../data/utilityArticles.json';
+import {render as renderUtilityPost} from 'astro:content';
+
 import { getCollection, render, type CollectionEntry } from "astro:content";
 import Icon from "../../components/Icon.astro";
 import PostCard from "../../components/PostCard.astro";
@@ -43,7 +47,14 @@ const jsonLd = {
     },
   ],
 };
+
+const utilityPost:any=post;
+const utilityId=String(utilityPost?.data?.slug??utilityPost?.id??'').replace(/^en\//,'');
+const isUtility=(!utilityPost?.data?.locale||utilityPost.data.locale==='en')&&utilityConfig.slugs.includes(utilityId);
+const UtilityContent=isUtility?(await renderUtilityPost(utilityPost)).Content:null;
 ---
+{isUtility && UtilityContent ? <UtilityArticle post={utilityPost}><UtilityContent/></UtilityArticle> : (<>
+
 
 <BaseLayout title={`${post.data.title} | ClothOff AI`} description={post.data.description} type="article" publishedTime={published} modifiedTime={modified} keywords={post.data.keywords} jsonLd={jsonLd}>
   <article class="article-shell">
@@ -65,3 +76,5 @@ const jsonLd = {
   </article>
   <section class="related section" id="related"><div class="section-heading"><div><div class="section-kicker">Continue reading</div><h2>Related ClothOff AI comparisons</h2></div></div><div class="post-grid compact">{related.map((item, index) => <PostCard post={item} index={index} compact />)}</div></section>
 </BaseLayout>
+
+</>)}
