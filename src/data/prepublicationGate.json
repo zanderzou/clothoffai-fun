@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "domain": "clothoffai.fun",
+  "grandfathered": [
+    {
+      "order": 1,
+      "slug": "clothoff-vs-photoshop-visible-garment-edit",
+      "releaseAt": "2026-10-08T05:33:24.684Z",
+      "status": 200,
+      "liveVerifiedAt": "2026-10-23T05:17:35.214Z",
+      "canonical": "https://clothoffai.fun/blog/clothoff-vs-photoshop-visible-garment-edit/",
+      "language": "en",
+      "titleMatches": true,
+      "discoveryVerified": true,
+      "sourceCommit": "f658d8a8fa7f392942e2784591f0f3149b0e7648",
+      "deploymentId": "158dfe0c-ccd3-4caf-959a-7f0e0b0fa139",
+      "responseSha256": "7cffc8022c8872365da09f01442786bf9b8946579913472481aeecd37229be6a"
+    },
+    {
+      "order": 2,
+      "slug": "clothoff-vs-fotor-outfit-replacement",
+      "releaseAt": "2026-10-15T09:57:21.178Z",
+      "status": 200,
+      "liveVerifiedAt": "2026-10-23T05:17:35.220Z",
+      "canonical": "https://clothoffai.fun/blog/clothoff-vs-fotor-outfit-replacement/",
+      "language": "en",
+      "titleMatches": true,
+      "discoveryVerified": true,
+      "sourceCommit": "f658d8a8fa7f392942e2784591f0f3149b0e7648",
+      "deploymentId": "158dfe0c-ccd3-4caf-959a-7f0e0b0fa139",
+      "responseSha256": "d8c5e7de355ce489b2121a59fd9bccbed2cada0db1037b3b09022cfe5e5d3beb"
+    }
+  ],
+  "certificates": {}
+}
