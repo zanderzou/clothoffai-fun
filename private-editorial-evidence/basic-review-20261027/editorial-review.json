@@ -1,0 +1,20 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "clothoff-vs-google-try-on-shopping-fit",
+  "reviewedAt": "2026-10-27T04:37:10.772Z",
+  "standard": "portfolio-basic-quality-20261027",
+  "materialRevision": false,
+  "sources": [
+    "https://support.google.com/googleshopping/answer/16253678?hl=en",
+    "https://consumer.ftc.gov/articles/image-based-abuse-what-know-and-do"
+  ],
+  "quality": {
+    "readable": true,
+    "useful": true,
+    "factual": true,
+    "experienceClaims": "none",
+    "note": "Reviewed original final article and primary source scope; correct material outdated claims, preserve honest limits, no fabricated product experience."
+  },
+  "contentSha256": "b9742636e234967b8a65956b8f4aaecdc4345778d8343174924a7d3e270bd957",
+  "limits": "Informational guide and suggested fictional exercises; no product-account, transaction, backend or generation test claimed."
+}

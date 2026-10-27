@@ -31,5 +31,59 @@
       "responseSha256": "d8c5e7de355ce489b2121a59fd9bccbed2cada0db1037b3b09022cfe5e5d3beb"
     }
   ],
-  "certificates": {}
+  "certificates": {
+    "clothoff-vs-google-try-on-shopping-fit": {
+      "schemaVersion": 1,
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "domain": "clothoffai.fun",
+      "slug": "clothoff-vs-google-try-on-shopping-fit",
+      "order": 3,
+      "releaseAt": "2026-10-23T07:41:37.709Z",
+      "activationAt": "2026-10-27T04:37:10.772Z",
+      "reviewedAt": "2026-10-27T04:37:10.772Z",
+      "factsCheckedAt": "2026-10-27T04:37:10.772Z",
+      "reviewedBy": "Codex editorial review following the October27 human project override",
+      "contentSha256": "b9742636e234967b8a65956b8f4aaecdc4345778d8343174924a7d3e270bd957",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Reviewed original final article and primary source scope; correct material outdated claims, preserve honest limits, no fabricated product experience."
+      },
+      "observations": [],
+      "officialSources": [
+        {
+          "url": "https://support.google.com/googleshopping/answer/16253678?hl=en",
+          "checkedAt": "2026-10-27T04:28:36.138Z",
+          "status": 200,
+          "claim": "Relevant current published feature/policy wording reviewed; no account behavior or product testing implied.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261027/source-663bca002b74250c.json",
+              "sha256": "2c72bd0e015fcb957e5a91981dbabd618dd1d26af8a4803e1d0fd32b9eb987ec"
+            }
+          ]
+        },
+        {
+          "url": "https://consumer.ftc.gov/articles/image-based-abuse-what-know-and-do",
+          "checkedAt": "2026-10-27T04:28:36.931Z",
+          "status": 200,
+          "claim": "Relevant current published feature/policy wording reviewed; no account behavior or product testing implied.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261027/source-45fbd25b3563d103.json",
+              "sha256": "2edb70b88060a94235c6aa1f3387bc6db2c65e9bbfbf0b99c8d767d74f984c2c"
+            }
+          ]
+        }
+      ],
+      "certificateDigest": "d689a8fd6508e8b6bf4ceca3d8f743ee2c2742318a6fcba3529a5e5d499a1352"
+    }
+  }
 }
