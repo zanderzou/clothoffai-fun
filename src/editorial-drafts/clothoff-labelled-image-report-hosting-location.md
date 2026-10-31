@@ -1,7 +1,7 @@
 ---
 title: "An Image Is Labelled ClothOff: Where Should You Report It?"
 description: "Identify the hosting location of an unwanted image, separate a software accusation from an observed fact, and route a report without spreading the content."
-publishDate: "2026-10-31"
+publishDate: "2026-11-03"
 updatedDate: "2026-10-19"
 category: "Practical guide"
 readTime: "3 min read"

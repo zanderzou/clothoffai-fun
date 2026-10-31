@@ -1,0 +1,73 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "clothoff-labelled-image-report-hosting-location",
+  "reviewedAt": "2026-10-31T05:19:05.629Z",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "skill": {
+    "name": "write-tested-seo",
+    "version": "1.5",
+    "projectOverride": "October27 basic useful truthful sourced guide"
+  },
+  "sourceCommit": "a13541d3bd045f0bf190bc3ecea828c2dd98dd3d",
+  "production": {
+    "id": "9fb81d1a-4fc5-45a6-9f9a-2d93dd20ac3c",
+    "url": "https://9fb81d1a.clothoffai-fun.pages.dev",
+    "commit": "a13541d3bd045f0bf190bc3ecea828c2dd98dd3d",
+    "sourceShaRaw": "a13541d3bd045f0bf190bc3ecea828c2dd98dd3d",
+    "createdAt": "2026-10-29T13:19:55.989975Z"
+  },
+  "contentSha256": "b9559b642c05be6657ac5addcb8108c91949dfcf008a52de8c8e6dd1d84794df",
+  "terminalLfPreserved": true,
+  "sources": [
+    {
+      "url": "https://www.esafety.gov.au/report/how-to-collect-evidence",
+      "checkedAt": "2026-10-31T05:19:05.629Z",
+      "status": "content-retrieved",
+      "retrieval": "Actual official source searched/opened/read this heartbeat; direct HTTP recorded separately.",
+      "directHttpStatus": 200,
+      "directResponseSha256": "33ef17133f7cc8fe99a73cbcad76a4aa9a9355a9a4aa930d410f333f8dff55a5",
+      "claimSummary": "Current eSafety and Google original guides actually opened/read. Hosting location versus unproven caption attribution, URL/account/time note, no copying illegal minor imagery and independent search/source reporting scopes are correct. The illustrative report is explicitly fictional and makes no universal removal promise."
+    },
+    {
+      "url": "https://support.google.com/websearch/answer/16305143?hl=en",
+      "checkedAt": "2026-10-31T05:19:05.629Z",
+      "status": "content-retrieved",
+      "retrieval": "Actual official source searched/opened/read this heartbeat; direct HTTP recorded separately.",
+      "directHttpStatus": 200,
+      "directResponseSha256": "78dd44ba3d5ce8e1b47b0afb83348eb013ff3324ca5452d3dd24338664cf0074",
+      "claimSummary": "Current eSafety and Google original guides actually opened/read. Hosting location versus unproven caption attribution, URL/account/time note, no copying illegal minor imagery and independent search/source reporting scopes are correct. The illustrative report is explicitly fictional and makes no universal removal promise."
+    }
+  ],
+  "editorialReview": {
+    "readable": true,
+    "useful": true,
+    "factual": true,
+    "experienceClaims": "none",
+    "assessment": "Current eSafety and Google original guides actually opened/read. Hosting location versus unproven caption attribution, URL/account/time note, no copying illegal minor imagery and independent search/source reporting scopes are correct. The illustrative report is explicitly fictional and makes no universal removal promise."
+  },
+  "materialChangeFound": false,
+  "requiredContentChanges": [],
+  "recommendedEditorialDecision": "eligible-for-basic-editorial-approval-with-listed-corrections",
+  "limitations": [
+    "Source research only. No login, purchase, deletion, chat, report submission or payment/account changes performed."
+  ],
+  "currentMainBindingVerified": {
+    "passed": true,
+    "main": "a13541d3bd045f0bf190bc3ecea828c2dd98dd3d",
+    "production": {
+      "id": "9fb81d1a-4fc5-45a6-9f9a-2d93dd20ac3c",
+      "url": "https://9fb81d1a.clothoffai-fun.pages.dev",
+      "commit": "a13541d3bd045f0bf190bc3ecea828c2dd98dd3d",
+      "sourceShaRaw": "a13541d3bd045f0bf190bc3ecea828c2dd98dd3d",
+      "createdAt": "2026-10-29T13:19:55.989975Z"
+    }
+  },
+  "finalContentSha256": "c0bc57008ca2430251ecb2ea16a1bfa20b0823c9114bf4f34d5835f81d56996d",
+  "originalContentSha256": "b9559b642c05be6657ac5addcb8108c91949dfcf008a52de8c8e6dd1d84794df",
+  "finalMetadataReview": {
+    "publishDate": "2026-11-03",
+    "originalPublishDate": "2026-10-31",
+    "reason": "Actual effective activation date; original planned releaseAt retained",
+    "updatedDateChangedOnlyForBodyCorrection": false
+  }
+}

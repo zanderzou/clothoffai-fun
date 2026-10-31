@@ -84,6 +84,59 @@
         }
       ],
       "certificateDigest": "d689a8fd6508e8b6bf4ceca3d8f743ee2c2742318a6fcba3529a5e5d499a1352"
+    },
+    "clothoff-labelled-image-report-hosting-location": {
+      "schemaVersion": 1,
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "domain": "clothoffai.fun",
+      "slug": "clothoff-labelled-image-report-hosting-location",
+      "order": 4,
+      "releaseAt": "2026-10-31T06:20:00.709Z",
+      "activationAt": "2026-11-03T04:37:10.772Z",
+      "reviewedAt": "2026-10-31T05:20:02.906Z",
+      "factsCheckedAt": "2026-10-31T05:19:05.629Z",
+      "reviewedBy": "Codex article and current primary-source review under October27 human standard",
+      "contentSha256": "c0bc57008ca2430251ecb2ea16a1bfa20b0823c9114bf4f34d5835f81d56996d",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Current eSafety and Google original guides actually opened/read. Hosting location versus unproven caption attribution, URL/account/time note, no copying illegal minor imagery and independent search/source reporting scopes are correct. The illustrative report is explicitly fictional and makes no universal removal promise."
+      },
+      "observations": [],
+      "officialSources": [
+        {
+          "url": "https://www.esafety.gov.au/report/how-to-collect-evidence",
+          "checkedAt": "2026-10-31T05:19:05.629Z",
+          "status": "content-retrieved",
+          "claim": "Current eSafety and Google original guides actually opened/read. Hosting location versus unproven caption attribution, URL/account/time note, no copying illegal minor imagery and independent search/source reporting scopes are correct. The illustrative report is explicitly fictional and makes no universal removal promise.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261031-051246/editorial-review.json",
+              "sha256": "5c7f66110eff01cc655c44272da8cecc407c7fd827251816975164c974e71c88"
+            }
+          ]
+        },
+        {
+          "url": "https://support.google.com/websearch/answer/16305143?hl=en",
+          "checkedAt": "2026-10-31T05:19:05.629Z",
+          "status": "content-retrieved",
+          "claim": "Current eSafety and Google original guides actually opened/read. Hosting location versus unproven caption attribution, URL/account/time note, no copying illegal minor imagery and independent search/source reporting scopes are correct. The illustrative report is explicitly fictional and makes no universal removal promise.",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/basic-review-20261031-051246/editorial-review.json",
+              "sha256": "5c7f66110eff01cc655c44272da8cecc407c7fd827251816975164c974e71c88"
+            }
+          ]
+        }
+      ],
+      "certificateDigest": "1b3ea58cfff443b7378dc62dba2a7aceec65c0a9304619cbf0c8aa090989befc"
     }
   }
 }

@@ -87,8 +87,8 @@
       "language": "en",
       "approved": true,
       "status": "editorially-reviewed",
-      "sourcesCheckedAt": "2026-10-19",
-      "reviewedSha256": "b9559b642c05be6657ac5addcb8108c91949dfcf008a52de8c8e6dd1d84794df",
+      "sourcesCheckedAt": "2026-10-31",
+      "reviewedSha256": "c0bc57008ca2430251ecb2ea16a1bfa20b0823c9114bf4f34d5835f81d56996d",
       "wordCount": 478,
       "editorialIntent": "A control-versus-attribution decision table and a short report structure that avoid unsupported accusations.",
       "sources": [
