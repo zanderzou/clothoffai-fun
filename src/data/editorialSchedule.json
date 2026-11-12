@@ -113,8 +113,8 @@
       "language": "en",
       "approved": true,
       "status": "editorially-reviewed",
-      "sourcesCheckedAt": "2026-10-19",
-      "reviewedSha256": "1afea9569deef000cdeafd8122a4f0141bd10b7c20d54b0d49a43928f718d806",
+      "sourcesCheckedAt": "2026-11-12",
+      "reviewedSha256": "dc71e4460b35955a078771b6e8ccc1ee5f5c43ae695f8da0cf1984d77dbfe294",
       "wordCount": 438,
       "editorialIntent": "An eligibility-versus-coverage matrix and a support handoff for uncertain cases, without instructing users to obtain harmful files.",
       "sources": [

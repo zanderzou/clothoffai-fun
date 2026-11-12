@@ -1,0 +1,97 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "stopncii-synthetic-image-eligibility-clothoff-search",
+  "sourceCommit": "ae7329ff1dfca26e805c3d0f0e935506bba9661f",
+  "originalContentSha256": "1afea9569deef000cdeafd8122a4f0141bd10b7c20d54b0d49a43928f718d806",
+  "finalContentSha256": "dc71e4460b35955a078771b6e8ccc1ee5f5c43ae695f8da0cf1984d77dbfe294",
+  "reviewedAt": "2026-11-12T15:58:51.290Z",
+  "editorialNote": "Clear practical English guide. Important claims checked against official documents. Illustrations are hypothetical or documentary, without invented account or product testing.",
+  "officialSources": [
+    {
+      "url": "https://stopncii.org/faq/",
+      "claim": "The FAQ confirms synthetic intimate images of the submitting person may be eligible when the person has access to the image.",
+      "checkedAt": "2026-11-12T15:58:47.9434455Z"
+    },
+    {
+      "url": "https://stopncii.org/how-it-works/",
+      "claim": "Hashes are created locally and sent to participating platforms, which assess matching content under their policies. A case number and access secret support subsequent status checks.",
+      "checkedAt": "2026-11-07T04:41:06.282Z"
+    },
+    {
+      "url": "https://stopncii.org/create-your-case/",
+      "claim": "The case introduction excludes the original non-intimate source file used to generate a synthetic intimate depiction and excludes test images.",
+      "checkedAt": "2026-11-12T15:58:47.9434455Z"
+    }
+  ],
+  "earlierArticleReview": {
+    "domain": "clothoffai.fun",
+    "slug": "stopncii-synthetic-image-eligibility-clothoff-search",
+    "readerIntent": "Check whether an adult synthetic-self intimate image belongs in StopNCII and distinguish eligibility from platform coverage and removal outcomes.",
+    "editorialReview": "The draft accurately separates eligibility, coverage and outcome. It guides uncertain users toward support, avoids collecting more harmful material, avoids impersonating someone else and promises no universal removal. The ClothOff search context is clearly independent educational guidance.",
+    "sources": [
+      {
+        "url": "https://stopncii.org/faq/",
+        "title": "StopNCII FAQ",
+        "status": "opened-and-read",
+        "checkedAt": "2026-11-07T04:41:06.282Z",
+        "method": "Actual web search followed by primary-page open",
+        "facts": "Eligible synthetic imagery of the submitting person is within scope when intimate/adult/access criteria apply. People cannot submit on behalf of another person. The service is limited to participating platforms and cannot cover the entire internet."
+      },
+      {
+        "url": "https://stopncii.org/how-it-works/",
+        "title": "How StopNCII.org Works",
+        "status": "opened-and-read",
+        "checkedAt": "2026-11-07T04:41:06.282Z",
+        "method": "Actual web search followed by primary-page open",
+        "facts": "Hashes are created locally and sent to participating platforms, which assess matching content under their policies. A case number and access secret support subsequent status checks."
+      },
+      {
+        "url": "https://stopncii.org/create-your-case/",
+        "title": "Create Your Case - public introduction",
+        "status": "opened-and-read",
+        "checkedAt": "2026-11-07T04:41:06.282Z",
+        "method": "Actual web search followed by primary-page open",
+        "facts": "The public eligibility introduction accepts synthetic intimate depictions and excludes innocent original source images used to create a synthetic depiction, commercial/professional content and test images. Only the introduction was read. No form steps, file selection, upload or case submission were performed."
+      }
+    ],
+    "basicQuality": "sound-consent-first-information-guide",
+    "requiredCorrections": [],
+    "suggestedCorrections": [
+      {
+        "priority": "minor-eligibility-clarity",
+        "location": "Resolve uncertainty before collecting more material",
+        "suggestedEnglish": "The eligibility introduction also excludes the original source photo used to create a synthetic image and test images; check the criteria for the unwanted depiction itself.",
+        "reason": "This provides a narrow useful clarification from the current official case introduction without encouraging collection or transfer of private material."
+      }
+    ],
+    "limits": "No individual eligibility adjudication, case submission, hash creation, removal test or outcome is claimed. Source observations are general documentation findings.",
+    "checkedAt": "2026-11-07T04:41:06.282Z",
+    "sourceCommit": "ae7329ff1dfca26e805c3d0f0e935506bba9661f",
+    "sourceCommitStatus": "latest-known exact Git object from this run source-only queue; no fresh remote identity asserted by this review",
+    "workspace": "C:\\Users\\zande\\Documents\\ChatGPT\\Bing NSFW SEO\\deployment-staging\\outbound-citation-removal-20261105\\clothoffai.fun",
+    "contentPath": "src/editorial-drafts/stopncii-synthetic-image-eligibility-clothoff-search.md",
+    "rawContentSha256": "1afea9569deef000cdeafd8122a4f0141bd10b7c20d54b0d49a43928f718d806",
+    "normalizedContentSha256": "1afea9569deef000cdeafd8122a4f0141bd10b7c20d54b0d49a43928f718d806",
+    "fullExactDraftRead": true,
+    "targetAgents": {
+      "present": true,
+      "sha256": "80f1fd20a4b6630626bdf239fb4a9f7cf37f22b37dc2e98bc06d87745028b70a",
+      "read": true
+    },
+    "originalReleaseAt": "2026-11-07T20:14:10.709Z",
+    "notBefore": "2026-11-10T04:37:10.772Z",
+    "readerIntentVerified": true,
+    "unsupportedTestClaimsFound": [],
+    "realHandsOnClaims": 0,
+    "reviewStatus": "prepared-basic-editorial-review-not-approved",
+    "approvalGenerated": false,
+    "productionOrProviderIdentityVerified": false
+  },
+  "correctedBeforeRelease": true,
+  "priorProduction": {
+    "deploymentId": "069ddbfa-e57c-40c2-a014-dc729ecec64b",
+    "sourceCommit": "ae7329ff1dfca26e805c3d0f0e935506bba9661f",
+    "phase": 4
+  },
+  "intendedActivationAt": "2026-11-12T16:18:48.000Z"
+}

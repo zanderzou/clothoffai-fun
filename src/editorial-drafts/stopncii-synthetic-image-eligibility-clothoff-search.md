@@ -1,8 +1,8 @@
 ---
 title: "Can StopNCII Help With a Synthetic Image of You?"
 description: "Check the scope of StopNCII for an unwanted synthetic image, distinguish eligibility from a removal outcome, and avoid treating it as a whole-internet deletion service."
-publishDate: "2026-11-07"
-updatedDate: "2026-10-19"
+publishDate: "2026-11-12"
+updatedDate: "2026-11-12"
 category: "Practical guide"
 readTime: "3 min read"
 accent: "violet"
@@ -33,7 +33,7 @@ Do not use an outcome in one row as evidence for the next. A successfully create
 
 ## Resolve uncertainty before collecting more material
 
-Read the live eligibility questions on the official service. If the depicted age is unclear, or you do not have appropriate access to the material, seek recognized support rather than asking people to send copies. Different age-related circumstances can require a different service.
+Read the live eligibility questions on the official service. The case introduction excludes test images and the original non-intimate image used to create a synthetic depiction, so check eligibility for the unwanted depiction itself. If the depicted age is unclear, or you do not have appropriate access to the material, seek recognized support rather than asking people to send copies. Different age-related circumstances can require a different service.
 
 Do not submit another person's case as if you were the depicted person. You can help someone locate the official guidance without taking control of their private material or credentials. Let them decide how much assistance they want.
 

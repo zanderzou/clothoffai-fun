@@ -137,6 +137,71 @@
         }
       ],
       "certificateDigest": "1b3ea58cfff443b7378dc62dba2a7aceec65c0a9304619cbf0c8aa090989befc"
+    },
+    "stopncii-synthetic-image-eligibility-clothoff-search": {
+      "schemaVersion": 1,
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "domain": "clothoffai.fun",
+      "slug": "stopncii-synthetic-image-eligibility-clothoff-search",
+      "order": 5,
+      "releaseAt": "2026-11-07T20:14:10.709Z",
+      "activationAt": "2026-11-12T16:18:48.000Z",
+      "reviewedAt": "2026-11-12T15:58:51.290Z",
+      "factsCheckedAt": "2026-11-12T15:58:47.9434455Z",
+      "reviewedBy": "Codex editorial review",
+      "contentSha256": "dc71e4460b35955a078771b6e8ccc1ee5f5c43ae695f8da0cf1984d77dbfe294",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Clear practical English guide. Important claims checked against official documents. Illustrations are hypothetical or documentary, without invented account or product testing."
+      },
+      "observations": [],
+      "officialSources": [
+        {
+          "url": "https://stopncii.org/faq/",
+          "claim": "The FAQ confirms synthetic intimate images of the submitting person may be eligible when the person has access to the image.",
+          "checkedAt": "2026-11-12T15:58:47.9434455Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261112-blog-release-review.json",
+              "sha256": "cfbb1bc9245827205678e930c668528a5b1773d0d11ee2ddbb38e0f6a1e452c7"
+            }
+          ]
+        },
+        {
+          "url": "https://stopncii.org/how-it-works/",
+          "claim": "Hashes are created locally and sent to participating platforms, which assess matching content under their policies. A case number and access secret support subsequent status checks.",
+          "checkedAt": "2026-11-07T04:41:06.282Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261112-blog-release-review.json",
+              "sha256": "cfbb1bc9245827205678e930c668528a5b1773d0d11ee2ddbb38e0f6a1e452c7"
+            }
+          ]
+        },
+        {
+          "url": "https://stopncii.org/create-your-case/",
+          "claim": "The case introduction excludes the original non-intimate source file used to generate a synthetic intimate depiction and excludes test images.",
+          "checkedAt": "2026-11-12T15:58:47.9434455Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261112-blog-release-review.json",
+              "sha256": "cfbb1bc9245827205678e930c668528a5b1773d0d11ee2ddbb38e0f6a1e452c7"
+            }
+          ]
+        }
+      ],
+      "certificateDigest": "315cc0d39ae089cf95eebf08b6df18c39d465a24668466f3ec99c6268fc5610d"
     }
   }
 }
