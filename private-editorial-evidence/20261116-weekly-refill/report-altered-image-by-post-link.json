@@ -1,0 +1,38 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "report-altered-image-by-post-link",
+  "order": 6,
+  "reviewedAt": "2026-11-16T11:36:24.410Z",
+  "factsCheckedAt": "2026-11-16T11:36:06Z",
+  "contentSha256": "84360f00b5e53a529769693c498a38055df23a9966975725afd473e4f47d10f9",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-11-19T16:18:48.000Z",
+  "readerQuestion": "How can I describe an unauthorized altered image in a report without circulating it?",
+  "applicableClaims": [
+    {
+      "name": "eSafety Commissioner on collecting evidence",
+      "url": "https://www.esafety.gov.au/report/how-to-collect-evidence",
+      "note": "Explains documenting exact location, account, date and message evidence, with limits on saving restricted material."
+    },
+    {
+      "name": "FTC on image-based abuse",
+      "url": "https://consumer.ftc.gov/articles/image-based-abuse-what-know-and-do",
+      "note": "Discusses ways to report unauthorized imagery and gives steps that avoid spreading it."
+    }
+  ],
+  "exampleType": "Original illustrative workflow",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-16-weekly-refill/sites/clothoffai.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-report-altered-image-by-post-link.png",
+    "sha256": "1c7f2170ce0704d78522ffd3b04d4565a513f2af3a7024f283943cfcf15dbc29",
+    "type": "Original editorial diagram",
+    "alt": "Keep the original message context. Write the post URL and date. Save the report reference."
+  },
+  "editorialReview": {
+    "readerAction": "Capture the post location and report reference so someone can act without a forwarded copy.",
+    "wordCount": 148,
+    "factBasis": "Primary sources and an explicitly fictional example. No product operation is claimed.",
+    "sourceLinksKeptInPrivateEvidence": true,
+    "productionReview": "The compiled Worker, all release boundaries and formal site are checked separately."
+  }
+}

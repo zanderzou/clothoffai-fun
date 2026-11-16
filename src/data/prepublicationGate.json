@@ -202,6 +202,181 @@
         }
       ],
       "certificateDigest": "315cc0d39ae089cf95eebf08b6df18c39d465a24668466f3ec99c6268fc5610d"
+    },
+    "report-altered-image-by-post-link": {
+      "schemaVersion": 1,
+      "domain": "clothoffai.fun",
+      "slug": "report-altered-image-by-post-link",
+      "order": 6,
+      "releaseAt": "2026-11-19T16:18:48.000Z",
+      "activationAt": "2026-11-19T16:18:48.000Z",
+      "contentSha256": "84360f00b5e53a529769693c498a38055df23a9966975725afd473e4f47d10f9",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-16T11:36:24.410Z",
+      "factsCheckedAt": "2026-11-16T11:36:06Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Primary sources and an explicitly fictional example. No product operation is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "eSafety Commissioner on collecting evidence",
+          "url": "https://www.esafety.gov.au/report/how-to-collect-evidence",
+          "note": "Explains documenting exact location, account, date and message evidence, with limits on saving restricted material.",
+          "checkedAt": "2026-11-16T11:36:06Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/report-altered-image-by-post-link.json",
+              "sha256": "b9b5ab261154eb3039bf900a01ba146c98eeb6412f4204876a7a399218bcf36e"
+            }
+          ]
+        },
+        {
+          "name": "FTC on image-based abuse",
+          "url": "https://consumer.ftc.gov/articles/image-based-abuse-what-know-and-do",
+          "note": "Discusses ways to report unauthorized imagery and gives steps that avoid spreading it.",
+          "checkedAt": "2026-11-16T11:36:06Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/report-altered-image-by-post-link.json",
+              "sha256": "b9b5ab261154eb3039bf900a01ba146c98eeb6412f4204876a7a399218bcf36e"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "04632149b33761d8638c86229c79b749e48ccec63229f65e2d3e5da04ef3bf77"
+    },
+    "ask-permission-before-sharing-outfit-mockup": {
+      "schemaVersion": 1,
+      "domain": "clothoffai.fun",
+      "slug": "ask-permission-before-sharing-outfit-mockup",
+      "order": 7,
+      "releaseAt": "2026-11-26T16:18:48.000Z",
+      "activationAt": "2026-11-26T16:18:48.000Z",
+      "contentSha256": "d270789114e1f777a071914a53946798fc1d6d6dbab417aeedb22774620107df",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-16T11:36:24.410Z",
+      "factsCheckedAt": "2026-11-16T11:36:06Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Primary sources and an explicitly fictional example. No product operation is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "eSafety Commissioner on photo and video consent",
+          "url": "https://www.esafety.gov.au/young-people/consent-sharing-photos-videos",
+          "note": "Explains asking for consent before sharing and agreeing on how an image is used. Examples in the article are adults.",
+          "checkedAt": "2026-11-16T11:36:06Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/ask-permission-before-sharing-outfit-mockup.json",
+              "sha256": "f1e7570d4bc3380ec27793654bdd0d06e2d9cfa616f439e4a10cbd6064da6f6d"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Content Credentials overview",
+          "url": "https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/content-credentials-overview.html",
+          "note": "Describes an optional record of content origin and editing history.",
+          "checkedAt": "2026-11-16T11:36:06Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/ask-permission-before-sharing-outfit-mockup.json",
+              "sha256": "f1e7570d4bc3380ec27793654bdd0d06e2d9cfa616f439e4a10cbd6064da6f6d"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "30b8723d1c35e391cf0bc268ee0e8ccddb92ab858fa66d5e937923d486c2c19f"
+    },
+    "save-your-outfit-edit-master-and-share-copy": {
+      "schemaVersion": 1,
+      "domain": "clothoffai.fun",
+      "slug": "save-your-outfit-edit-master-and-share-copy",
+      "order": 8,
+      "releaseAt": "2026-12-03T16:18:48.000Z",
+      "activationAt": "2026-12-03T16:18:48.000Z",
+      "contentSha256": "6124ac320aa9ad1f35d6c099d5a6df6d63e5b570f8237480ca53c9688cbcd0d8",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-16T11:36:24.410Z",
+      "factsCheckedAt": "2026-11-16T11:36:06Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Primary sources and an explicitly fictional example. No product operation is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "Adobe non-destructive editing techniques",
+          "url": "https://helpx.adobe.com/photoshop/desktop/create-manage-layers/create-layer-compositions/non-destructive-editing-techniques.html",
+          "note": "Describes masks, separate adjustment layers and preserving cropped pixels.",
+          "checkedAt": "2026-11-16T11:36:06Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/save-your-outfit-edit-master-and-share-copy.json",
+              "sha256": "4774d097d0b57562830c9c481958a3e9b37c35f1bb5403d7ab6917cfd69429c4"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Photoshop saving work",
+          "url": "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-your-work.html?linkId=100000257236761",
+          "note": "Explains saving an original document and separate copies and preserving editable layers.",
+          "checkedAt": "2026-11-16T11:36:06Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/save-your-outfit-edit-master-and-share-copy.json",
+              "sha256": "4774d097d0b57562830c9c481958a3e9b37c35f1bb5403d7ab6917cfd69429c4"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Photoshop Hue/Saturation adjustment",
+          "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-a-hue-or-saturation-adjustment.html",
+          "note": "Describes adjustment layers and targeted hue, saturation and lightness controls.",
+          "checkedAt": "2026-11-16T11:36:06Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261116-weekly-refill/save-your-outfit-edit-master-and-share-copy.json",
+              "sha256": "4774d097d0b57562830c9c481958a3e9b37c35f1bb5403d7ab6917cfd69429c4"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "0493b7fa29081ed70aa70306b8bbc3ae65f3a50d57501bcd9f69c030133b97b0"
     }
   }
 }

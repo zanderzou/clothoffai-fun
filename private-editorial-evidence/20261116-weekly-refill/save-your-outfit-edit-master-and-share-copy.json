@@ -1,0 +1,43 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "save-your-outfit-edit-master-and-share-copy",
+  "order": 8,
+  "reviewedAt": "2026-11-16T11:36:24.410Z",
+  "factsCheckedAt": "2026-11-16T11:36:06Z",
+  "contentSha256": "6124ac320aa9ad1f35d6c099d5a6df6d63e5b570f8237480ca53c9688cbcd0d8",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-12-03T16:18:48.000Z",
+  "readerQuestion": "What should I save after making a fully clothed outfit edit on my own image?",
+  "applicableClaims": [
+    {
+      "name": "Adobe non-destructive editing techniques",
+      "url": "https://helpx.adobe.com/photoshop/desktop/create-manage-layers/create-layer-compositions/non-destructive-editing-techniques.html",
+      "note": "Describes masks, separate adjustment layers and preserving cropped pixels."
+    },
+    {
+      "name": "Adobe Photoshop saving work",
+      "url": "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-your-work.html?linkId=100000257236761",
+      "note": "Explains saving an original document and separate copies and preserving editable layers."
+    },
+    {
+      "name": "Adobe Photoshop Hue/Saturation adjustment",
+      "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-a-hue-or-saturation-adjustment.html",
+      "note": "Describes adjustment layers and targeted hue, saturation and lightness controls."
+    }
+  ],
+  "exampleType": "Original illustrative workflow",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-16-weekly-refill/sites/clothoffai.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-save-your-outfit-edit-master-and-share-copy.png",
+    "sha256": "13522aef9d2123e60e9b99518b4f18669c2d3e0003277872fa6539d4e731e78e",
+    "type": "Original editorial diagram",
+    "alt": "Keep the source unchanged. Name the garment adjustment. Save the approved share copy."
+  },
+  "editorialReview": {
+    "readerAction": "Preserve the authorized original and selected clothing edit so a revision can reuse the correct boundaries.",
+    "wordCount": 151,
+    "factBasis": "Primary sources and an explicitly fictional example. No product operation is claimed.",
+    "sourceLinksKeptInPrivateEvidence": true,
+    "productionReview": "The compiled Worker, all release boundaries and formal site are checked separately."
+  }
+}

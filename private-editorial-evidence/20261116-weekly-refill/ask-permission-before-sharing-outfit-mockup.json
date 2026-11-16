@@ -1,0 +1,38 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "ask-permission-before-sharing-outfit-mockup",
+  "order": 7,
+  "reviewedAt": "2026-11-16T11:36:24.410Z",
+  "factsCheckedAt": "2026-11-16T11:36:06Z",
+  "contentSha256": "d270789114e1f777a071914a53946798fc1d6d6dbab417aeedb22774620107df",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-11-26T16:18:48.000Z",
+  "readerQuestion": "How do I get clear permission for sharing a clothing mock-up with another adult in it?",
+  "applicableClaims": [
+    {
+      "name": "eSafety Commissioner on photo and video consent",
+      "url": "https://www.esafety.gov.au/young-people/consent-sharing-photos-videos",
+      "note": "Explains asking for consent before sharing and agreeing on how an image is used. Examples in the article are adults."
+    },
+    {
+      "name": "Adobe Content Credentials overview",
+      "url": "https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/content-credentials-overview.html",
+      "note": "Describes an optional record of content origin and editing history."
+    }
+  ],
+  "exampleType": "Original illustrative workflow",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-16-weekly-refill/sites/clothoffai.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-ask-permission-before-sharing-outfit-mockup.png",
+    "sha256": "de3e146bdddb1ba56c51ef4b09292e43aec951e6230aab84b2602860bcca9986",
+    "type": "Original editorial diagram",
+    "alt": "Identify the original photo. Describe the visible change. Confirm the audience in writing."
+  },
+  "editorialReview": {
+    "readerAction": "Confirm the exact image, edit and audience in a short request before publishing a preview.",
+    "wordCount": 155,
+    "factBasis": "Primary sources and an explicitly fictional example. No product operation is claimed.",
+    "sourceLinksKeptInPrivateEvidence": true,
+    "productionReview": "The compiled Worker, all release boundaries and formal site are checked separately."
+  }
+}
