@@ -1,0 +1,53 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "outfit-cutout-png-transparency-jpeg-matte",
+  "order": 10,
+  "reviewedAt": "2026-11-26T10:01:31.830Z",
+  "factsCheckedAt": "2026-11-26T10:01:31.830Z",
+  "contentSha256": "654063e46ae07edd200c427c6ab8aff1e565eff43129d54a8d24df0aeb3fdaec",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-12-17T16:18:48.000Z",
+  "readerQuestion": "Why does a cutout show a solid box after I save or place it on another background?",
+  "applicableClaims": [
+    {
+      "name": "Adobe Photoshop Help: save PNG and GIF",
+      "url": "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-in-png-and-gif-formats.html",
+      "note": "Read October 10 PNG transparency support and retained editable PSD recommendation. Format support alone does not prove a particular file has alpha.",
+      "observedOn": "2026-11-26",
+      "webRecord": "turn1138view5"
+    },
+    {
+      "name": "Adobe Photoshop Help: save JPEG",
+      "url": "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-in-jpeg-format.html",
+      "note": "Read October 10 JPEG matte/background behavior, compression and no preserved layers. No renaming-based format conversion suggested.",
+      "observedOn": "2026-11-26",
+      "webRecord": "turn1138view6"
+    }
+  ],
+  "exampleType": "Original illustrative guidance, not an unperformed product test",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-26-two-blogs-per-site/sites/clothoffai.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-outfit-cutout-png-transparency-jpeg-matte.webp",
+    "sha256": "c33543581b216441d955ecd732ecb3469d0d6d891c8fb19a934275287bfb861f",
+    "originalPngSha256": "67a1b5f90c81c8a5cf3fdbc31e18812b97964a15365004703413121bd7c146e2",
+    "width": 1672,
+    "height": 941,
+    "type": "Original imagegen editorial artwork",
+    "alt": "An original adult fictional woman in a fully covering emerald wrap dress and tan sandals, shown as a complete fashion cutout.",
+    "deliveryConversion": "WebP quality 92; original dimensions retained; no content alteration",
+    "visuallyReviewed": true
+  },
+  "editorialReview": {
+    "readerAction": "Separate a transparency-capable format from actual alpha pixels, and inspect hair, dress edges and shoes against light and dark backgrounds.",
+    "wordCount": 346,
+    "sourceLinksKeptInPrivateEvidence": true,
+    "factBasis": "Relevant primary documents and explicitly illustrative examples. No product operation, performance or actual print test is claimed.",
+    "reviewBasis": {
+      "intent": "Why does a cutout show a solid box after I save or place it on another background?",
+      "independentValue": "Separate a transparency-capable format from actual alpha pixels, and inspect hair, dress edges and shoes against light and dark backgrounds.",
+      "image": "An original adult fictional woman in a fully covering emerald wrap dress and tan sandals, shown as a complete fashion cutout.",
+      "readability": "Individually edited answer-led prose and a bounded worked example; no copied brand-swap template.",
+      "layout": "Pending complete-build desktop/mobile checks; separately required before deployment."
+    }
+  }
+}

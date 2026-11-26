@@ -377,6 +377,122 @@
       ],
       "observations": [],
       "certificateDigest": "0493b7fa29081ed70aa70306b8bbc3ae65f3a50d57501bcd9f69c030133b97b0"
+    },
+    "clothed-outfit-color-adjustment-mask-skin": {
+      "schemaVersion": 1,
+      "domain": "clothoffai.fun",
+      "slug": "clothed-outfit-color-adjustment-mask-skin",
+      "order": 9,
+      "releaseAt": "2026-12-10T16:18:48.000Z",
+      "activationAt": "2026-12-10T16:18:48.000Z",
+      "contentSha256": "345cf93094f8ecfc84e3ee52844c7889443042bbdd3334168c43f9c6c6540797",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-26T10:01:31.830Z",
+      "factsCheckedAt": "2026-11-26T10:01:31.830Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Relevant primary documents and explicitly illustrative examples. No product operation, performance or actual print test is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "Adobe Photoshop Help: replace object colors",
+          "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/selective-color-adjustments/replace-object-colors-by-applying-a-hue-or-saturation-adjustment.html",
+          "note": "Read current selection to Hue/Saturation adjustment mask, slider adjustment and black/white mask refinement. Not a generative undressing workflow; fully clothed independent artwork and no Photoshop operation claimed.",
+          "observedOn": "2026-11-26",
+          "webRecord": "turn1138view4",
+          "checkedAt": "2026-11-26T10:01:31.830Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261126-two-blogs/clothed-outfit-color-adjustment-mask-skin.json",
+              "sha256": "bbd8f94a598d312a8e0fc3ceeac01aa9659a83282833dd526b8fc619bda0ec0f"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Photoshop Help: adjustment layers",
+          "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-color-adjustments-with-adjustments-panel.html",
+          "note": "Read October 6 separate adjustment-layer method and area selection/mask, preserving original image data. Not a guarantee of physical garment color or print matching.",
+          "observedOn": "2026-11-26",
+          "webRecord": "turn1135search4",
+          "checkedAt": "2026-11-26T10:01:31.830Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261126-two-blogs/clothed-outfit-color-adjustment-mask-skin.json",
+              "sha256": "bbd8f94a598d312a8e0fc3ceeac01aa9659a83282833dd526b8fc619bda0ec0f"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "6e16f3416d9356400ee2149a62ec297bac8e75b6850d1353ed4921d5630495e8"
+    },
+    "outfit-cutout-png-transparency-jpeg-matte": {
+      "schemaVersion": 1,
+      "domain": "clothoffai.fun",
+      "slug": "outfit-cutout-png-transparency-jpeg-matte",
+      "order": 10,
+      "releaseAt": "2026-12-17T16:18:48.000Z",
+      "activationAt": "2026-12-17T16:18:48.000Z",
+      "contentSha256": "654063e46ae07edd200c427c6ab8aff1e565eff43129d54a8d24df0aeb3fdaec",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-26T10:01:31.830Z",
+      "factsCheckedAt": "2026-11-26T10:01:31.830Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Relevant primary documents and explicitly illustrative examples. No product operation, performance or actual print test is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "Adobe Photoshop Help: save PNG and GIF",
+          "url": "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-in-png-and-gif-formats.html",
+          "note": "Read October 10 PNG transparency support and retained editable PSD recommendation. Format support alone does not prove a particular file has alpha.",
+          "observedOn": "2026-11-26",
+          "webRecord": "turn1138view5",
+          "checkedAt": "2026-11-26T10:01:31.830Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261126-two-blogs/outfit-cutout-png-transparency-jpeg-matte.json",
+              "sha256": "93b5699ed5d48aa6b520528fc94c7d99c510c28d8dc48a897cf7e8a7fea8871d"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Photoshop Help: save JPEG",
+          "url": "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-in-jpeg-format.html",
+          "note": "Read October 10 JPEG matte/background behavior, compression and no preserved layers. No renaming-based format conversion suggested.",
+          "observedOn": "2026-11-26",
+          "webRecord": "turn1138view6",
+          "checkedAt": "2026-11-26T10:01:31.830Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261126-two-blogs/outfit-cutout-png-transparency-jpeg-matte.json",
+              "sha256": "93b5699ed5d48aa6b520528fc94c7d99c510c28d8dc48a897cf7e8a7fea8871d"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "2afc32be1d80a4c44ca3ad2c264c282be7f73cc72ec06041685ed10ba08a526d"
     }
   }
 }

@@ -1,0 +1,53 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "clothed-outfit-color-adjustment-mask-skin",
+  "order": 9,
+  "reviewedAt": "2026-11-26T10:01:31.830Z",
+  "factsCheckedAt": "2026-11-26T10:01:31.830Z",
+  "contentSha256": "345cf93094f8ecfc84e3ee52844c7889443042bbdd3334168c43f9c6c6540797",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-12-10T16:18:48.000Z",
+  "readerQuestion": "How can I recolor a visible dress while keeping skin, hair and the background outside the adjustment?",
+  "applicableClaims": [
+    {
+      "name": "Adobe Photoshop Help: replace object colors",
+      "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/selective-color-adjustments/replace-object-colors-by-applying-a-hue-or-saturation-adjustment.html",
+      "note": "Read current selection to Hue/Saturation adjustment mask, slider adjustment and black/white mask refinement. Not a generative undressing workflow; fully clothed independent artwork and no Photoshop operation claimed.",
+      "observedOn": "2026-11-26",
+      "webRecord": "turn1138view4"
+    },
+    {
+      "name": "Adobe Photoshop Help: adjustment layers",
+      "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-color-adjustments-with-adjustments-panel.html",
+      "note": "Read October 6 separate adjustment-layer method and area selection/mask, preserving original image data. Not a guarantee of physical garment color or print matching.",
+      "observedOn": "2026-11-26",
+      "webRecord": "turn1135search4"
+    }
+  ],
+  "exampleType": "Original illustrative guidance, not an unperformed product test",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-26-two-blogs-per-site/sites/clothoffai.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-clothed-outfit-color-adjustment-mask-skin.webp",
+    "sha256": "86e5c7782fbc1052d34482c46d3d0211dfaf64064e6128951f82f040a6c09e76",
+    "originalPngSha256": "57c9fdc0e93a32ac3371b7b7f3804b1a45411ecae0bfbbe6bea3da2a73b5346a",
+    "width": 1672,
+    "height": 941,
+    "type": "Original imagegen editorial artwork",
+    "alt": "An original adult fictional woman wears the same fully covering wrap dress in emerald and aubergine across two independent concept panels.",
+    "deliveryConversion": "WebP quality 92; original dimensions retained; no content alteration",
+    "visuallyReviewed": true
+  },
+  "editorialReview": {
+    "readerAction": "Use a garment selection and a separate adjustment layer, then inspect the mask boundary and preserved clothing detail.",
+    "wordCount": 356,
+    "sourceLinksKeptInPrivateEvidence": true,
+    "factBasis": "Relevant primary documents and explicitly illustrative examples. No product operation, performance or actual print test is claimed.",
+    "reviewBasis": {
+      "intent": "How can I recolor a visible dress while keeping skin, hair and the background outside the adjustment?",
+      "independentValue": "Use a garment selection and a separate adjustment layer, then inspect the mask boundary and preserved clothing detail.",
+      "image": "An original adult fictional woman wears the same fully covering wrap dress in emerald and aubergine across two independent concept panels.",
+      "readability": "Individually edited answer-led prose and a bounded worked example; no copied brand-swap template.",
+      "layout": "Pending complete-build desktop/mobile checks; separately required before deployment."
+    }
+  }
+}

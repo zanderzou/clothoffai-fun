@@ -208,6 +208,56 @@
           "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-a-hue-or-saturation-adjustment.html"
         ]
       ]
+    },
+    {
+      "order": 9,
+      "slug": "clothed-outfit-color-adjustment-mask-skin",
+      "title": "Change a Clothed Outfit Color Without Tinting the Whole Image",
+      "readerQuestion": "How can I recolor a visible dress while keeping skin, hair and the background outside the adjustment?",
+      "releaseAt": "2026-12-10T16:18:48.000Z",
+      "notBefore": "2026-12-10T16:18:48.000Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-11-26",
+      "reviewedSha256": "345cf93094f8ecfc84e3ee52844c7889443042bbdd3334168c43f9c6c6540797",
+      "wordCount": 356,
+      "editorialIntent": "Use a garment selection and a separate adjustment layer, then inspect the mask boundary and preserved clothing detail.",
+      "sources": [
+        [
+          "Adobe Photoshop Help: replace object colors",
+          "https://helpx.adobe.com/photoshop/desktop/adjust-color/selective-color-adjustments/replace-object-colors-by-applying-a-hue-or-saturation-adjustment.html"
+        ],
+        [
+          "Adobe Photoshop Help: adjustment layers",
+          "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-color-adjustments-with-adjustments-panel.html"
+        ]
+      ]
+    },
+    {
+      "order": 10,
+      "slug": "outfit-cutout-png-transparency-jpeg-matte",
+      "title": "Outfit Cutout Export: Check Transparency Before Delivering the File",
+      "readerQuestion": "Why does a cutout show a solid box after I save or place it on another background?",
+      "releaseAt": "2026-12-17T16:18:48.000Z",
+      "notBefore": "2026-12-17T16:18:48.000Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-11-26",
+      "reviewedSha256": "654063e46ae07edd200c427c6ab8aff1e565eff43129d54a8d24df0aeb3fdaec",
+      "wordCount": 346,
+      "editorialIntent": "Separate a transparency-capable format from actual alpha pixels, and inspect hair, dress edges and shoes against light and dark backgrounds.",
+      "sources": [
+        [
+          "Adobe Photoshop Help: save PNG and GIF",
+          "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-in-png-and-gif-formats.html"
+        ],
+        [
+          "Adobe Photoshop Help: save JPEG",
+          "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-in-jpeg-format.html"
+        ]
+      ]
     }
   ],
   "baselinePhase": 1,
