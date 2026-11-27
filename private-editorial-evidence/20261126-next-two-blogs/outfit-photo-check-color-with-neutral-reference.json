@@ -1,0 +1,53 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "outfit-photo-check-color-with-neutral-reference",
+  "order": 12,
+  "reviewedAt": "2026-11-27T01:04:33.316Z",
+  "factsCheckedAt": "2026-11-27T01:04:33.316Z",
+  "contentSha256": "cff5a5c9c392f747120e78dbf750bdb2e37660ab8a57fa2baa862b123ead4d33",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-12-31T16:18:48.000Z",
+  "readerQuestion": "How can I see whether a color edit came from the clothing or from the light in the photo?",
+  "applicableClaims": [
+    {
+      "name": "Adobe Camera Raw: adjusting tone and color",
+      "url": "https://helpx.adobe.com/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+      "note": "Read September 29 documentation for channel clipping, preview and tonal adjustments, sampled neutral white/gray under scene light. No product edit or guaranteed textile color recovery.",
+      "observedOn": "2026-11-26",
+      "webRecord": "turn1195view0"
+    },
+    {
+      "name": "Adobe Photoshop Help: replace object colors",
+      "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/selective-color-adjustments/replace-object-colors-by-applying-a-hue-or-saturation-adjustment.html",
+      "note": "Read current selection to Hue/Saturation adjustment mask, slider adjustment and black/white mask refinement. Not a generative undressing workflow; fully clothed independent artwork and no Photoshop operation claimed.",
+      "observedOn": "2026-11-26",
+      "webRecord": "turn1138view4"
+    }
+  ],
+  "exampleType": "Original illustrative guidance, not an unperformed product test",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-26-next-two-blogs-per-site/sites/clothoffai.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-outfit-photo-check-color-with-neutral-reference.webp",
+    "sha256": "22166fa69b1a22fb0c2da025855ca9b1e64d3384e1797d07d98e296b99b0977f",
+    "originalPngSha256": "1dd4d9363e580659eb219c9d8a15827e6918894165099b007bfc096cd1049e74",
+    "width": 1672,
+    "height": 941,
+    "type": "Original imagegen editorial artwork",
+    "alt": "Adult fictional stylist comparing an emerald garment with two different reference swatches in soft light.",
+    "deliveryConversion": "WebP quality 92; original dimensions retained; no content alteration",
+    "visuallyReviewed": true
+  },
+  "editorialReview": {
+    "readerAction": "Use a known neutral patch under the same light, compare two copies and keep fabric color and white balance decisions separate.",
+    "wordCount": 213,
+    "sourceLinksKeptInPrivateEvidence": true,
+    "factBasis": "Relevant primary documents and explicitly illustrative examples. No product operation, performance or actual print test is claimed.",
+    "reviewBasis": {
+      "intent": "How can I see whether a color edit came from the clothing or from the light in the photo?",
+      "independentValue": "Use a known neutral patch under the same light, compare two copies and keep fabric color and white balance decisions separate.",
+      "image": "Adult fictional stylist comparing an emerald garment with two different reference swatches in soft light.",
+      "readability": "Individually edited answer-led prose and a bounded worked example; no copied brand-swap template.",
+      "layout": "Pending complete-build desktop/mobile checks; separately required before deployment."
+    }
+  }
+}

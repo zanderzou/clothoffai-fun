@@ -220,7 +220,7 @@
       "approved": true,
       "status": "editorially-reviewed",
       "sourcesCheckedAt": "2026-11-26",
-      "reviewedSha256": "345cf93094f8ecfc84e3ee52844c7889443042bbdd3334168c43f9c6c6540797",
+      "reviewedSha256": "b27ef54c23eb3d7229989c4ae8fc74e2fd204982dc441d78f0cfca5a9fcca208",
       "wordCount": 356,
       "editorialIntent": "Use a garment selection and a separate adjustment layer, then inspect the mask boundary and preserved clothing detail.",
       "sources": [
@@ -245,7 +245,7 @@
       "approved": true,
       "status": "editorially-reviewed",
       "sourcesCheckedAt": "2026-11-26",
-      "reviewedSha256": "654063e46ae07edd200c427c6ab8aff1e565eff43129d54a8d24df0aeb3fdaec",
+      "reviewedSha256": "050320a6651768b3047e13ef2ae6861c5ffa61e8c3516a82ffd5e78764f32546",
       "wordCount": 346,
       "editorialIntent": "Separate a transparency-capable format from actual alpha pixels, and inspect hair, dress edges and shoes against light and dark backgrounds.",
       "sources": [
@@ -256,6 +256,56 @@
         [
           "Adobe Photoshop Help: save JPEG",
           "https://helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-in-jpeg-format.html"
+        ]
+      ]
+    },
+    {
+      "order": 11,
+      "slug": "outfit-photo-reduce-glare-check-satin-folds",
+      "title": "Reduce Garment Glare While Keeping Fabric Folds Visible",
+      "readerQuestion": "How can I improve a bright reflection in a clothing photo without erasing its texture?",
+      "releaseAt": "2026-12-24T16:18:48.000Z",
+      "notBefore": "2026-12-24T16:18:48.000Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-11-27",
+      "reviewedSha256": "5986c7185d507ee2558b2e6f24bef91257af6b4c2593031300740f5e0f9f9ab8",
+      "wordCount": 219,
+      "editorialIntent": "Inspect the actual bright patch, try a reversible tonal adjustment and retake the clothed source photo if important texture is missing.",
+      "sources": [
+        [
+          "Adobe Camera Raw: adjusting tone and color",
+          "https://helpx.adobe.com/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html"
+        ],
+        [
+          "Adobe Photoshop Help: adjustment layers",
+          "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-color-adjustments-with-adjustments-panel.html"
+        ]
+      ]
+    },
+    {
+      "order": 12,
+      "slug": "outfit-photo-check-color-with-neutral-reference",
+      "title": "Check a Garment Color Against a Neutral Reference",
+      "readerQuestion": "How can I see whether a color edit came from the clothing or from the light in the photo?",
+      "releaseAt": "2026-12-31T16:18:48.000Z",
+      "notBefore": "2026-12-31T16:18:48.000Z",
+      "language": "en",
+      "approved": true,
+      "status": "editorially-reviewed",
+      "sourcesCheckedAt": "2026-11-27",
+      "reviewedSha256": "cff5a5c9c392f747120e78dbf750bdb2e37660ab8a57fa2baa862b123ead4d33",
+      "wordCount": 213,
+      "editorialIntent": "Use a known neutral patch under the same light, compare two copies and keep fabric color and white balance decisions separate.",
+      "sources": [
+        [
+          "Adobe Camera Raw: adjusting tone and color",
+          "https://helpx.adobe.com/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html"
+        ],
+        [
+          "Adobe Photoshop Help: replace object colors",
+          "https://helpx.adobe.com/photoshop/desktop/adjust-color/selective-color-adjustments/replace-object-colors-by-applying-a-hue-or-saturation-adjustment.html"
         ]
       ]
     }

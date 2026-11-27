@@ -4,7 +4,7 @@
   "order": 10,
   "reviewedAt": "2026-11-26T10:01:31.830Z",
   "factsCheckedAt": "2026-11-26T10:01:31.830Z",
-  "contentSha256": "654063e46ae07edd200c427c6ab8aff1e565eff43129d54a8d24df0aeb3fdaec",
+  "contentSha256": "050320a6651768b3047e13ef2ae6861c5ffa61e8c3516a82ffd5e78764f32546",
   "reviewStandard": "portfolio-basic-quality-20261027",
   "releaseAt": "2026-12-17T16:18:48.000Z",
   "readerQuestion": "Why does a cutout show a solid box after I save or place it on another background?",
@@ -49,5 +49,12 @@
       "readability": "Individually edited answer-led prose and a bounded worked example; no copied brand-swap template.",
       "layout": "Pending complete-build desktop/mobile checks; separately required before deployment."
     }
+  },
+  "reviewDateCorrection": {
+    "checkedAt": "2026-11-27T01:04:46.837Z",
+    "originalVerifiedReviewDate": "2026-11-26",
+    "previousContentSha256": "654063e46ae07edd200c427c6ab8aff1e565eff43129d54a8d24df0aeb3fdaec",
+    "previousCertificateDigest": "2afc32be1d80a4c44ca3ad2c264c282be7f73cc72ec06041685ed10ba08a526d",
+    "change": "Use the real editorial review date in updatedDate. The published date, activation time, body, artwork, sources and previous review remain the same."
   }
 }

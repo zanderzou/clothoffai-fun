@@ -2,7 +2,7 @@
 title: "Change a Clothed Outfit Color Without Tinting the Whole Image"
 description: "Use a garment selection and a separate adjustment layer, then inspect the mask boundary and preserved clothing detail."
 publishDate: "2026-12-11"
-updatedDate: "2026-12-11"
+updatedDate: "2026-11-26"
 category: "Practical Guides"
 readTime: "2 min read"
 answer: "Use a garment selection and a separate adjustment layer, then inspect the mask boundary and preserved clothing detail."

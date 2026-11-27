@@ -1,0 +1,53 @@
+{
+  "domain": "clothoffai.fun",
+  "slug": "outfit-photo-reduce-glare-check-satin-folds",
+  "order": 11,
+  "reviewedAt": "2026-11-27T01:04:33.316Z",
+  "factsCheckedAt": "2026-11-27T01:04:33.316Z",
+  "contentSha256": "5986c7185d507ee2558b2e6f24bef91257af6b4c2593031300740f5e0f9f9ab8",
+  "reviewStandard": "portfolio-basic-quality-20261027",
+  "releaseAt": "2026-12-24T16:18:48.000Z",
+  "readerQuestion": "How can I improve a bright reflection in a clothing photo without erasing its texture?",
+  "applicableClaims": [
+    {
+      "name": "Adobe Camera Raw: adjusting tone and color",
+      "url": "https://helpx.adobe.com/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+      "note": "Read September 29 documentation for channel clipping, preview and tonal adjustments, sampled neutral white/gray under scene light. No product edit or guaranteed textile color recovery.",
+      "observedOn": "2026-11-26",
+      "webRecord": "turn1195view0"
+    },
+    {
+      "name": "Adobe Photoshop Help: adjustment layers",
+      "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-color-adjustments-with-adjustments-panel.html",
+      "note": "Read October 6 separate adjustment-layer method and area selection/mask, preserving original image data. Not a guarantee of physical garment color or print matching.",
+      "observedOn": "2026-11-26",
+      "webRecord": "turn1135search4"
+    }
+  ],
+  "exampleType": "Original illustrative guidance, not an unperformed product test",
+  "proofOfExistingPublicPrefix": "research/prepublish-tested-seo-20261023/runs/2026-11-26-next-two-blogs-per-site/sites/clothoffai.fun/baseline.json",
+  "illustration": {
+    "path": "public/assets/editorial-outfit-photo-reduce-glare-check-satin-folds.webp",
+    "sha256": "b2916e57e7e48d792ca9483966a36e2a158c244a7ccfe656a7c0bba4ec55c15e",
+    "originalPngSha256": "cd182da3e80fda70020d739bbb143c4984b72ffa725cc6619732a4ebab0ecbb5",
+    "width": 1672,
+    "height": 941,
+    "type": "Original imagegen editorial artwork",
+    "alt": "Fashion studio illustration with a gold blouse and detail studies of a hard highlight and softer folds.",
+    "deliveryConversion": "WebP quality 92; original dimensions retained; no content alteration",
+    "visuallyReviewed": true
+  },
+  "editorialReview": {
+    "readerAction": "Inspect the actual bright patch, try a reversible tonal adjustment and retake the clothed source photo if important texture is missing.",
+    "wordCount": 219,
+    "sourceLinksKeptInPrivateEvidence": true,
+    "factBasis": "Relevant primary documents and explicitly illustrative examples. No product operation, performance or actual print test is claimed.",
+    "reviewBasis": {
+      "intent": "How can I improve a bright reflection in a clothing photo without erasing its texture?",
+      "independentValue": "Inspect the actual bright patch, try a reversible tonal adjustment and retake the clothed source photo if important texture is missing.",
+      "image": "Fashion studio illustration with a gold blouse and detail studies of a hard highlight and softer folds.",
+      "readability": "Individually edited answer-led prose and a bounded worked example; no copied brand-swap template.",
+      "layout": "Pending complete-build desktop/mobile checks; separately required before deployment."
+    }
+  }
+}

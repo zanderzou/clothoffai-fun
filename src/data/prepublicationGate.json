@@ -385,7 +385,7 @@
       "order": 9,
       "releaseAt": "2026-12-10T16:18:48.000Z",
       "activationAt": "2026-12-10T16:18:48.000Z",
-      "contentSha256": "345cf93094f8ecfc84e3ee52844c7889443042bbdd3334168c43f9c6c6540797",
+      "contentSha256": "b27ef54c23eb3d7229989c4ae8fc74e2fd204982dc441d78f0cfca5a9fcca208",
       "skill": {
         "name": "write-tested-seo",
         "version": "1.5"
@@ -413,7 +413,7 @@
           "evidence": [
             {
               "path": "private-editorial-evidence/20261126-two-blogs/clothed-outfit-color-adjustment-mask-skin.json",
-              "sha256": "bbd8f94a598d312a8e0fc3ceeac01aa9659a83282833dd526b8fc619bda0ec0f"
+              "sha256": "2802c3269d84611e9d224138d1306cd1445520964750b715c99cf554c79c7d45"
             }
           ]
         },
@@ -428,13 +428,13 @@
           "evidence": [
             {
               "path": "private-editorial-evidence/20261126-two-blogs/clothed-outfit-color-adjustment-mask-skin.json",
-              "sha256": "bbd8f94a598d312a8e0fc3ceeac01aa9659a83282833dd526b8fc619bda0ec0f"
+              "sha256": "2802c3269d84611e9d224138d1306cd1445520964750b715c99cf554c79c7d45"
             }
           ]
         }
       ],
       "observations": [],
-      "certificateDigest": "6e16f3416d9356400ee2149a62ec297bac8e75b6850d1353ed4921d5630495e8"
+      "certificateDigest": "cb0b7e2a7fe441ccca517e3efa213c5e762fe5bbef6233a329c428f15cc7b164"
     },
     "outfit-cutout-png-transparency-jpeg-matte": {
       "schemaVersion": 1,
@@ -443,7 +443,7 @@
       "order": 10,
       "releaseAt": "2026-12-17T16:18:48.000Z",
       "activationAt": "2026-12-17T16:18:48.000Z",
-      "contentSha256": "654063e46ae07edd200c427c6ab8aff1e565eff43129d54a8d24df0aeb3fdaec",
+      "contentSha256": "050320a6651768b3047e13ef2ae6861c5ffa61e8c3516a82ffd5e78764f32546",
       "skill": {
         "name": "write-tested-seo",
         "version": "1.5"
@@ -471,7 +471,7 @@
           "evidence": [
             {
               "path": "private-editorial-evidence/20261126-two-blogs/outfit-cutout-png-transparency-jpeg-matte.json",
-              "sha256": "93b5699ed5d48aa6b520528fc94c7d99c510c28d8dc48a897cf7e8a7fea8871d"
+              "sha256": "a5f1f45c98daccc6fad4928be5c70968901778b42881a8c14334dc421c6276ed"
             }
           ]
         },
@@ -486,13 +486,147 @@
           "evidence": [
             {
               "path": "private-editorial-evidence/20261126-two-blogs/outfit-cutout-png-transparency-jpeg-matte.json",
-              "sha256": "93b5699ed5d48aa6b520528fc94c7d99c510c28d8dc48a897cf7e8a7fea8871d"
+              "sha256": "a5f1f45c98daccc6fad4928be5c70968901778b42881a8c14334dc421c6276ed"
             }
           ]
         }
       ],
       "observations": [],
-      "certificateDigest": "2afc32be1d80a4c44ca3ad2c264c282be7f73cc72ec06041685ed10ba08a526d"
+      "certificateDigest": "749891871578436e0136db73faf894a1835ff9e0cdb17920be2198d547a5698c"
+    },
+    "outfit-photo-reduce-glare-check-satin-folds": {
+      "schemaVersion": 1,
+      "domain": "clothoffai.fun",
+      "slug": "outfit-photo-reduce-glare-check-satin-folds",
+      "order": 11,
+      "releaseAt": "2026-12-24T16:18:48.000Z",
+      "activationAt": "2026-12-24T16:18:48.000Z",
+      "contentSha256": "5986c7185d507ee2558b2e6f24bef91257af6b4c2593031300740f5e0f9f9ab8",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-27T01:04:33.316Z",
+      "factsCheckedAt": "2026-11-27T01:04:33.316Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Relevant primary documents and explicitly illustrative examples. No product operation, performance or actual print test is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "Adobe Camera Raw: adjusting tone and color",
+          "url": "https://helpx.adobe.com/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+          "note": "Read September 29 documentation for channel clipping, preview and tonal adjustments, sampled neutral white/gray under scene light. No product edit or guaranteed textile color recovery.",
+          "observedOn": "2026-11-26",
+          "webRecord": "turn1195view0",
+          "checkedAt": "2026-11-27T01:04:33.316Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261126-next-two-blogs/outfit-photo-reduce-glare-check-satin-folds.json",
+              "sha256": "11308e561381c0821777c5cd5b62b90ebf6e62e0668b8e7d3ab3d56239adc74c"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Photoshop Help: adjustment layers",
+          "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-corrections/apply-color-adjustments-with-adjustments-panel.html",
+          "note": "Read October 6 separate adjustment-layer method and area selection/mask, preserving original image data. Not a guarantee of physical garment color or print matching.",
+          "observedOn": "2026-11-26",
+          "webRecord": "turn1135search4",
+          "checkedAt": "2026-11-27T01:04:33.316Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261126-next-two-blogs/outfit-photo-reduce-glare-check-satin-folds.json",
+              "sha256": "11308e561381c0821777c5cd5b62b90ebf6e62e0668b8e7d3ab3d56239adc74c"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "771f9fec134041dd353dec1a3d284091089044f17ec36fda7b519f3cd6e48876"
+    },
+    "outfit-photo-check-color-with-neutral-reference": {
+      "schemaVersion": 1,
+      "domain": "clothoffai.fun",
+      "slug": "outfit-photo-check-color-with-neutral-reference",
+      "order": 12,
+      "releaseAt": "2026-12-31T16:18:48.000Z",
+      "activationAt": "2026-12-31T16:18:48.000Z",
+      "contentSha256": "cff5a5c9c392f747120e78dbf750bdb2e37660ab8a57fa2baa862b123ead4d33",
+      "skill": {
+        "name": "write-tested-seo",
+        "version": "1.5"
+      },
+      "reviewStandard": "portfolio-basic-quality-20261027",
+      "status": "validated",
+      "reviewedAt": "2026-11-27T01:04:33.316Z",
+      "factsCheckedAt": "2026-11-27T01:04:33.316Z",
+      "editorialReview": {
+        "readable": true,
+        "useful": true,
+        "factual": true,
+        "experienceClaims": "none",
+        "note": "Relevant primary documents and explicitly illustrative examples. No product operation, performance or actual print test is claimed."
+      },
+      "officialSources": [
+        {
+          "name": "Adobe Camera Raw: adjusting tone and color",
+          "url": "https://helpx.adobe.com/camera-raw/desktop/using/make-color-tonal-adjustments-camera.html",
+          "note": "Read September 29 documentation for channel clipping, preview and tonal adjustments, sampled neutral white/gray under scene light. No product edit or guaranteed textile color recovery.",
+          "observedOn": "2026-11-26",
+          "webRecord": "turn1195view0",
+          "checkedAt": "2026-11-27T01:04:33.316Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261126-next-two-blogs/outfit-photo-check-color-with-neutral-reference.json",
+              "sha256": "7035c7142180b2cf1130f7818f4c99b0b9028c7172dbc2415d87193270e78520"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Photoshop Help: replace object colors",
+          "url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/selective-color-adjustments/replace-object-colors-by-applying-a-hue-or-saturation-adjustment.html",
+          "note": "Read current selection to Hue/Saturation adjustment mask, slider adjustment and black/white mask refinement. Not a generative undressing workflow; fully clothed independent artwork and no Photoshop operation claimed.",
+          "observedOn": "2026-11-26",
+          "webRecord": "turn1138view4",
+          "checkedAt": "2026-11-27T01:04:33.316Z",
+          "status": "content-retrieved",
+          "evidence": [
+            {
+              "path": "private-editorial-evidence/20261126-next-two-blogs/outfit-photo-check-color-with-neutral-reference.json",
+              "sha256": "7035c7142180b2cf1130f7818f4c99b0b9028c7172dbc2415d87193270e78520"
+            }
+          ]
+        }
+      ],
+      "observations": [],
+      "certificateDigest": "af16b976b50daf630cfec4e9e096c2d264d33979b29299e0ee8770d3dbcfb79d"
+    }
+  },
+  "activationReceipts": {
+    "ask-permission-before-sharing-outfit-mockup": {
+      "domain": "clothoffai.fun",
+      "slug": "ask-permission-before-sharing-outfit-mockup",
+      "releaseAt": "2026-11-26T16:18:48.000Z",
+      "activationAt": "2026-11-26T16:18:48.000Z",
+      "contentSha256": "d270789114e1f777a071914a53946798fc1d6d6dbab417aeedb22774620107df",
+      "certificateDigest": "30b8723d1c35e391cf0bc268ee0e8ccddb92ab858fa66d5e937923d486c2c19f",
+      "deployedAt": "2026-11-26T10:10:25.912298Z",
+      "productionVerifiedAt": "2026-11-27T00:56:44.825Z",
+      "evidence": [
+        {
+          "path": "private-editorial-evidence/20261127-activations/ask-permission-before-sharing-outfit-mockup.json",
+          "sha256": "966b26b95892ccbeb1c5af496d15e92e8168f4c0f9dc4265c9c6cdb3f66db32f"
+        }
+      ]
     }
   }
 }

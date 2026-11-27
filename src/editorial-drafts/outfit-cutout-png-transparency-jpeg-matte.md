@@ -2,7 +2,7 @@
 title: "Outfit Cutout Export: Check Transparency Before Delivering the File"
 description: "Separate a transparency-capable format from actual alpha pixels, and inspect hair, dress edges and shoes against light and dark backgrounds."
 publishDate: "2026-12-18"
-updatedDate: "2026-12-18"
+updatedDate: "2026-11-26"
 category: "Practical Guides"
 readTime: "2 min read"
 answer: "Separate a transparency-capable format from actual alpha pixels, and inspect hair, dress edges and shoes against light and dark backgrounds."

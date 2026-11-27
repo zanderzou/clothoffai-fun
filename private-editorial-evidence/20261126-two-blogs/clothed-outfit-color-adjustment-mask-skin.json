@@ -4,7 +4,7 @@
   "order": 9,
   "reviewedAt": "2026-11-26T10:01:31.830Z",
   "factsCheckedAt": "2026-11-26T10:01:31.830Z",
-  "contentSha256": "345cf93094f8ecfc84e3ee52844c7889443042bbdd3334168c43f9c6c6540797",
+  "contentSha256": "b27ef54c23eb3d7229989c4ae8fc74e2fd204982dc441d78f0cfca5a9fcca208",
   "reviewStandard": "portfolio-basic-quality-20261027",
   "releaseAt": "2026-12-10T16:18:48.000Z",
   "readerQuestion": "How can I recolor a visible dress while keeping skin, hair and the background outside the adjustment?",
@@ -49,5 +49,12 @@
       "readability": "Individually edited answer-led prose and a bounded worked example; no copied brand-swap template.",
       "layout": "Pending complete-build desktop/mobile checks; separately required before deployment."
     }
+  },
+  "reviewDateCorrection": {
+    "checkedAt": "2026-11-27T01:04:46.837Z",
+    "originalVerifiedReviewDate": "2026-11-26",
+    "previousContentSha256": "345cf93094f8ecfc84e3ee52844c7889443042bbdd3334168c43f9c6c6540797",
+    "previousCertificateDigest": "6e16f3416d9356400ee2149a62ec297bac8e75b6850d1353ed4921d5630495e8",
+    "change": "Use the real editorial review date in updatedDate. The published date, activation time, body, artwork, sources and previous review remain the same."
   }
 }
